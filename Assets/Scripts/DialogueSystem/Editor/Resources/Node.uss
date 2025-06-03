@@ -1,0 +1,17 @@
+DialogueNode #title 
+{
+    background-color: rgba(30, 30, 30, 0.97);
+}
+.wrapping-text-field {
+    white-space: normal;
+    -unity-text-align: upper-left;
+
+    width: 100%;
+    max-width: 280px;
+
+    min-height: 23px;
+    height: auto;
+
+    padding: 4px;
+    flex-grow: 1;
+}
