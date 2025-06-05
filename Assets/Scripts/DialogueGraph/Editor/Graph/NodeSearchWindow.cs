@@ -42,6 +42,12 @@ namespace Subtegral.DialogueSystem.Editor
                     userData = DialogueNodeType.Choice
                 },
 
+                new SearchTreeEntry(new GUIContent("Event Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.Event
+                },
+
                 new SearchTreeEntry(new GUIContent("String Condition Node", indentationIcon))
                 {
                     level = 2,

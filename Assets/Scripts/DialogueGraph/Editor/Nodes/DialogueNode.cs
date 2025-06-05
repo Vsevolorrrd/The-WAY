@@ -1,5 +1,6 @@
 ﻿using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor.Experimental.GraphView;
+using Characters;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -11,8 +12,14 @@ namespace Subtegral.DialogueSystem.Editor
 
         public string DisplayText;
         public DialogueNodeType NodeType = DialogueNodeType.Basic;
+        public CharacterID Actor = CharacterID.Unknown;
+
+        // Conditions
         public BoolCondition BoolCondition;
         public IntCondition IntCondition;
         public StringCondition StringCondition;
+
+        // Events
+        public DialogueEvent Event;
     }
 }

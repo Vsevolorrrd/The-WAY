@@ -17,10 +17,6 @@ MonoBehaviour:
     BaseNodeGUID: c2aac5a1-756a-4fd9-91d5-c411b05be744
     TargetNodeGUID: c4caf201-75e7-4c26-8815-614180c283bb
     DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c4caf201-75e7-4c26-8815-614180c283bb
-    TargetNodeGUID: 3ffc165e-051f-42ec-bcee-6824f689ab0f
-    DisplayText: Next
   - PortName: Option 1
     BaseNodeGUID: 3ffc165e-051f-42ec-bcee-6824f689ab0f
     TargetNodeGUID: 971bfcaa-841d-43ed-96bc-6bd8c99925f0
@@ -31,29 +27,26 @@ MonoBehaviour:
     DisplayText: aaaaaa
   - PortName: True
     BaseNodeGUID: 971bfcaa-841d-43ed-96bc-6bd8c99925f0
-    TargetNodeGUID: 507752ac-fba2-4003-90ee-6af249f37f57
+    TargetNodeGUID: 42fcbb5a-0782-4762-a32e-920619b732ac
     DisplayText: True
   - PortName: False
     BaseNodeGUID: 971bfcaa-841d-43ed-96bc-6bd8c99925f0
-    TargetNodeGUID: 507752ac-fba2-4003-90ee-6af249f37f57
+    TargetNodeGUID: 42fcbb5a-0782-4762-a32e-920619b732ac
     DisplayText: False
+  - PortName: Next
+    BaseNodeGUID: 42fcbb5a-0782-4762-a32e-920619b732ac
+    TargetNodeGUID: 1fccdb4b-008c-4d2f-bdb9-4411ab748332
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c4caf201-75e7-4c26-8815-614180c283bb
+    TargetNodeGUID: 3ffc165e-051f-42ec-bcee-6824f689ab0f
+    DisplayText: Next
   DialogueNodeData:
-  - NodeGUID: c4caf201-75e7-4c26-8815-614180c283bb
-    DialogueText: fffff
-    Position: {x: 296.8, y: 188}
-    NodeType: 0
-    DisplayText: 
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
   - NodeGUID: 3ffc165e-051f-42ec-bcee-6824f689ab0f
     DialogueText: fffff
     Position: {x: 459.2, y: 174.40001}
     NodeType: 1
+    actor: 0
     DisplayText: 
     StringConditionKey: 
     BoolConditionKey: 
@@ -62,22 +55,28 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    EventType: 0
+    EventName: 
   - NodeGUID: 971bfcaa-841d-43ed-96bc-6bd8c99925f0
     DialogueText: ggggg
     Position: {x: 719.2, y: 164.8}
     NodeType: 3
+    actor: 0
     DisplayText: 
     StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: key
-    IntConditionComparison: 5
-    IntActionType: 2
-    IntConditionValue: 4444
-  - NodeGUID: 507752ac-fba2-4003-90ee-6af249f37f57
+    BoolConditionKey: saa
+    BoolConditionExpectedValue: 1
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+  - NodeGUID: 1fccdb4b-008c-4d2f-bdb9-4411ab748332
     DialogueText: End
-    Position: {x: 992, y: 174.40001}
-    NodeType: 5
+    Position: {x: 1200.8, y: 174.40001}
+    NodeType: 6
+    actor: 0
     DisplayText: 
     StringConditionKey: 
     BoolConditionKey: 
@@ -86,5 +85,37 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    EventType: 0
+    EventName: 
+  - NodeGUID: 42fcbb5a-0782-4762-a32e-920619b732ac
+    DialogueText: ffff
+    Position: {x: 951.2, y: 174.40001}
+    NodeType: 2
+    actor: 0
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 1
+    EventName: event
+  - NodeGUID: c4caf201-75e7-4c26-8815-614180c283bb
+    DialogueText: fffff
+    Position: {x: 233.6, y: 192}
+    NodeType: 0
+    actor: 2
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
   ExposedProperties: []
   CommentBlockData: []

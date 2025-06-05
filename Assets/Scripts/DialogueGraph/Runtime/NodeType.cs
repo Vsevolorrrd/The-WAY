@@ -4,6 +4,7 @@ namespace Subtegral.DialogueSystem
     {
         Basic,
         Choice,
+        Event,
         BoolCondition,
         IntCondition,
         StringCondition,

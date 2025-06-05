@@ -5,6 +5,7 @@ using UnityEngine.UIElements;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using Characters;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -93,9 +94,18 @@ namespace Subtegral.DialogueSystem.Editor
                     DisplayText = node.DisplayText
                 };
 
-                // Save condition UI data for condition nodes
+                // Save condition UI data for condition and event nodes
                 switch (node.NodeType)
                 {
+                    case DialogueNodeType.Basic:
+                        nodeData.actor = node.Actor;
+                        break;
+
+                    case DialogueNodeType.Event:
+                        nodeData.EventType = node.Event?.EventType ?? DialogueEventType.Custom;
+                        nodeData.EventName = node.Event?.EventName ?? "";
+                        break;
+
                     case DialogueNodeType.StringCondition:
                         nodeData.StringConditionKey = node.StringCondition?.Key ?? "";
                         break;

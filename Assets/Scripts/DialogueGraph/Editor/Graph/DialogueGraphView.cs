@@ -6,6 +6,8 @@ using System.Linq;
 using UnityEngine;
 using System;
 using Button = UnityEngine.UIElements.Button;
+using Characters;
+using UnityEditor.Overlays;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -144,6 +146,9 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.Choice:
                     tempDialogueNode.style.backgroundColor = new Color(0.1f, 0.1f, 0.7f);
                     break;
+                case DialogueNodeType.Event:
+                    tempDialogueNode.style.backgroundColor = new Color(0.7f, 0.7f, 0.1f);
+                    break;
                 case DialogueNodeType.End:
                     tempDialogueNode.style.backgroundColor = new Color(0.7f, 0.7f, 0.7f);
                     break;
@@ -161,10 +166,13 @@ namespace Subtegral.DialogueSystem.Editor
             switch (type)
             {
                 case DialogueNodeType.Basic:
-                    CreateBasicNodePorts(tempDialogueNode);
+                    CreateBasicNodeUI(tempDialogueNode, savedData);
                     break;
                 case DialogueNodeType.Choice:
                     CreateChoiceNodeUI(tempDialogueNode);
+                    break;
+                case DialogueNodeType.Event:
+                    CreateEventNodeUI(tempDialogueNode, savedData);
                     break;
                 case DialogueNodeType.BoolCondition:
                     CreateBoolConditionNodeUI(tempDialogueNode, savedData);
@@ -195,8 +203,19 @@ namespace Subtegral.DialogueSystem.Editor
             return tempDialogueNode;
         }
 
-        private void CreateBasicNodePorts(DialogueNode node)
+        private void CreateBasicNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
+
+            var characterField = new EnumField("Actor", CharacterID.Unknown);
+            characterField.value = savedData != null ? savedData.actor : CharacterID.Unknown;
+
+            characterField.RegisterValueChangedCallback(evt =>
+            {
+                node.Actor = (CharacterID)evt.newValue;
+            });
+
+            node.mainContainer.Add(characterField);
+
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
@@ -209,6 +228,44 @@ namespace Subtegral.DialogueSystem.Editor
                 text = "Add Choice"
             };
             node.titleButtonContainer.Add(button);
+        }
+        private void CreateEventNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var dialogueEvent = new DialogueEvent();
+
+            if (savedData != null) // loading the saved data
+            {
+                dialogueEvent.EventType = savedData.EventType;
+                dialogueEvent.EventName = savedData.EventName;
+            }
+
+            node.Event = dialogueEvent;
+
+            var eventTypeField = new EnumField("Event Type", DialogueEventType.Custom)
+            {
+                value = dialogueEvent.EventType
+            };
+            eventTypeField.RegisterValueChangedCallback(evt =>
+            {
+                dialogueEvent.EventType = (DialogueEventType)evt.newValue;
+            });
+
+            var eventNameField = new TextField("Event Name")
+            {
+                value = dialogueEvent.EventName
+            };
+            eventNameField.RegisterValueChangedCallback(evt =>
+            {
+                dialogueEvent.EventName = evt.newValue;
+            });
+
+            node.mainContainer.Add(eventTypeField);
+            node.mainContainer.Add(eventNameField);
+
+            // output port
+            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portName = "Next";
+            node.outputContainer.Add(outputPort);
         }
 
         private void CreateStringConditionNodeUI(DialogueNode node, DialogueNodeData savedData = null)
