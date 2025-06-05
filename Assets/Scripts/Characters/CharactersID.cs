@@ -8,6 +8,12 @@ namespace Characters
         Hound,
         Fox,
         Mouse,
-        OldLeader
+        OldLeader,
+
+        // Demo
+        Evan,
+        Risha,
+        Bren,
+        Harold
     }
 }

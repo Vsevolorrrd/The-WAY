@@ -7,7 +7,6 @@ using UnityEngine;
 using System;
 using Button = UnityEngine.UIElements.Button;
 using Characters;
-using UnityEditor.Overlays;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -390,7 +389,11 @@ namespace Subtegral.DialogueSystem.Editor
             textField.name = string.Empty;
             textField.style.flexGrow = 1;
 
-            var deleteButton = new Button(() => RemovePort(nodeCache, generatedPort))
+            var container = new VisualElement();
+            container.Add(generatedPort);
+            container.Add(portRow);
+
+            var deleteButton = new Button(() => RemovePort(nodeCache, container))
             {
                 text = "X"
             };
@@ -398,26 +401,22 @@ namespace Subtegral.DialogueSystem.Editor
             portRow.Add(textField);
             portRow.Add(deleteButton);
 
-            var container = new VisualElement();
-            container.Add(generatedPort);
-            container.Add(portRow);
-
             nodeCache.outputContainer.Add(container);
             nodeCache.RefreshPorts();
             nodeCache.RefreshExpandedState();
         }
 
-        private void RemovePort(Node node, Port socket)
+        private void RemovePort(Node node, VisualElement portContainer)
         {
-            var targetEdge = edges.ToList().Where(x => x.output.portName == socket.portName && x.output.node == socket.node);
-            if (targetEdge.Any())
+            var port = portContainer.Q<Port>();
+            var targetEdge = edges.ToList().FirstOrDefault(x => x.output == port);
+            if (targetEdge != null)
             {
-                var edge = targetEdge.First();
-                edge.input.Disconnect(edge);
-                RemoveElement(targetEdge.First());
+                targetEdge.input.Disconnect(targetEdge);
+                RemoveElement(targetEdge);
             }
 
-            node.outputContainer.Remove(socket);
+            node.outputContainer.Remove(portContainer);
             node.RefreshPorts();
             node.RefreshExpandedState();
         }
