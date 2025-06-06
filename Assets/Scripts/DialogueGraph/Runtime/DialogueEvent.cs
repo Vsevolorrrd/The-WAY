@@ -12,9 +12,12 @@ namespace Subtegral.DialogueSystem.DataContainers
     public enum DialogueEventType
     {
         Custom,
+        SetStringCondition,
+        SetBooleanCondition,
         PlaySound,
         ScreenShake,
         PostEffect,
+        SetPlayerName
     }
 
 }

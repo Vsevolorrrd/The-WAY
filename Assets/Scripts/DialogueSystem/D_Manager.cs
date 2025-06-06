@@ -6,7 +6,7 @@ using TMPro;
 
 namespace Subtegral.DialogueSystem.Runtime
 {
-    public class DialogueManager : Singleton<DialogueManager>
+    public class D_Manager : Singleton<D_Manager>
     {
         [SerializeField] private DialogueContainer dialogue;
         [SerializeField] private TextMeshProUGUI dialogueText;
@@ -14,6 +14,16 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Transform buttonContainer;
         private DialogueNodeData dialogueNodeData;
         private bool awatingImput = false;
+
+        // Dialogue managers
+        private conditionManager conditionManager;
+        private D_EventManager eventManager;
+
+        protected override void OnAwake()
+        {
+            conditionManager = GetComponent<conditionManager>();
+            eventManager = GetComponent<D_EventManager>();
+        }
 
         private void Start()
         {
@@ -41,6 +51,9 @@ namespace Subtegral.DialogueSystem.Runtime
                 case DialogueNodeType.Choice:
                     ChoiceNode(nodeData);
                     break;
+                case DialogueNodeType.Event:
+                    EventNode(nodeData);
+                    break;
 
                 case DialogueNodeType.StringCondition:
                     StringConditionNode(nodeData);
@@ -55,7 +68,7 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
 
                 case DialogueNodeType.End:
-                    HandleEndNode(nodeData);
+                    EndNode(nodeData);
                     break;
 
                 default:
@@ -85,18 +98,104 @@ namespace Subtegral.DialogueSystem.Runtime
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
             }
         }
+        private void EventNode(DialogueNodeData nodeData)
+        {
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
 
+            switch (nodeData.EventType)
+            {
+                case DialogueEventType.Custom:
+                    // fire event
+                    break;
+
+                case DialogueEventType.SetStringCondition:
+                    conditionManager.AddStringCondition(nodeData.EventName);
+                    break;
+
+                case DialogueEventType.SetBooleanCondition:
+                    conditionManager.SetBoolCondition(nodeData.EventName, true);
+                    break;
+
+                case DialogueEventType.PostEffect:
+                    // fire event
+                    break;
+
+                case DialogueEventType.PlaySound:
+                    SoundData soundData = AudioManager.Instance.GetSoundByName(nodeData.EventName);
+                    if (soundData != null) AudioManager.Instance.PlaySound(soundData.Clip, soundData.Volume);
+                    else Debug.LogWarning($"Sound '{nodeData.EventName}' not found in AudioManager.");
+                    break;
+
+                case DialogueEventType.ScreenShake:
+
+                    switch (nodeData.EventName)
+                    {
+                        case "light":
+                            // shake
+                            break;
+                        case "medium":
+                            // shake
+                            break;
+                        case "heavy":
+                            // shake
+                            break;
+
+                    }
+                    break;
+
+                case DialogueEventType.SetPlayerName:
+                    // change player name
+                    break;
+
+
+                default:
+                    Debug.LogWarning($"Invalid event: {nodeData.NodeType}");
+                    break;
+            }
+        }
         private void StringConditionNode(DialogueNodeData nodeData)
         {
+            bool result = conditionManager.StringCondition(nodeData.StringConditionKey);
 
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            x.BaseNodeGUID == nodeData.NodeGUID &&
+            x.PortName == (result ? "True" : "False"));
+
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
         }
         private void BoolConditionNode(DialogueNodeData nodeData)
         {
+            bool result = conditionManager.BoolCondition(nodeData.BoolConditionKey, nodeData.BoolConditionExpectedValue);
 
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            x.BaseNodeGUID == nodeData.NodeGUID &&
+            x.PortName == (result ? "True" : "False"));
+
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
         }
         private void IntConditionNode(DialogueNodeData nodeData)
         {
+            bool result = conditionManager.IntCondition(
+            nodeData.IntConditionKey,
+            nodeData.IntConditionComparison,
+            nodeData.IntConditionValue);
 
+            if (result)
+            {
+                conditionManager.ApplyIntAction
+                (nodeData.IntConditionKey, nodeData.IntActionType, nodeData.IntConditionValue);
+            }
+
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            x.BaseNodeGUID == nodeData.NodeGUID &&
+            x.PortName == (result ? "True" : "False"));
+
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
         }
 
         private string ProcessProperties(string text)
@@ -107,7 +206,7 @@ namespace Subtegral.DialogueSystem.Runtime
             }
             return text;
         }
-        private void HandleEndNode(DialogueNodeData nodeData)
+        private void EndNode(DialogueNodeData nodeData)
         {
             dialogueText.text = ProcessProperties(nodeData.DialogueText);
             Debug.Log("Dialogue has ended.");
