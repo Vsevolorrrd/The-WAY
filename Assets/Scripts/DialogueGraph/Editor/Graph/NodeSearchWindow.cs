@@ -66,6 +66,12 @@ namespace Subtegral.DialogueSystem.Editor
                     userData = DialogueNodeType.IntCondition
                 },
 
+                new SearchTreeEntry(new GUIContent("Animation Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.Animation
+                },
+
                 new SearchTreeEntry(new GUIContent("End Node", indentationIcon))
                 {
                     level = 2,

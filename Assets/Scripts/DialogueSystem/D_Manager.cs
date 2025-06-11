@@ -16,12 +16,12 @@ namespace Subtegral.DialogueSystem.Runtime
         private bool awatingImput = false;
 
         // Dialogue managers
-        private conditionManager conditionManager;
+        private D_conditionManager conditionManager;
         private D_EventManager eventManager;
 
         protected override void OnAwake()
         {
-            conditionManager = GetComponent<conditionManager>();
+            conditionManager = GetComponent<D_conditionManager>();
             eventManager = GetComponent<D_EventManager>();
         }
 
@@ -35,8 +35,8 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             var nodeData = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
 
+            dialogueText.text = null;
             var buttons = buttonContainer.GetComponentsInChildren<Button>();
-
             for (int i = 0; i < buttons.Length; i++)
             {
                 Destroy(buttons[i].gameObject);
@@ -51,6 +51,7 @@ namespace Subtegral.DialogueSystem.Runtime
                 case DialogueNodeType.Choice:
                     ChoiceNode(nodeData);
                     break;
+
                 case DialogueNodeType.Event:
                     EventNode(nodeData);
                     break;
@@ -81,20 +82,17 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             dialogueNodeData = nodeData;
             dialogueText.text = ProcessProperties(nodeData.DialogueText);
-            Debug.Log("Basic node");
             awatingImput = true;
         }
 
         private void ChoiceNode(DialogueNodeData nodeData)
         {
-            dialogueText.text = ProcessProperties(nodeData.DialogueText);
-
             // Display choices
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID);
             foreach (var choice in choices)
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
-                button.GetComponentInChildren<Text>().text = ProcessProperties(choice.DisplayText);
+                button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.DisplayText);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
             }
         }
@@ -115,7 +113,10 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
 
                 case DialogueEventType.SetBooleanCondition:
+                    if (nodeData.EventValue > 0)
                     conditionManager.SetBoolCondition(nodeData.EventName, true);
+                    else
+                    conditionManager.SetBoolCondition(nodeData.EventName, false);
                     break;
 
                 case DialogueEventType.PostEffect:
@@ -123,8 +124,8 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
 
                 case DialogueEventType.PlaySound:
-                    SoundData soundData = AudioManager.Instance.GetSoundByName(nodeData.EventName);
-                    if (soundData != null) AudioManager.Instance.PlaySound(soundData.Clip, soundData.Volume);
+                    AudioClip clip = AudioManager.Instance.GetSoundByName(nodeData.EventName);
+                    if (clip != null) AudioManager.Instance.PlaySound(clip, nodeData.EventValue);
                     else Debug.LogWarning($"Sound '{nodeData.EventName}' not found in AudioManager.");
                     break;
 
@@ -214,15 +215,19 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         private void Update()
         {
-            if (!awatingImput) return;
+            if (!awatingImput || dialogueNodeData == null) return;
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == dialogueNodeData.NodeGUID);
                 if (nextLink != null)
                 {
+                    awatingImput = false;
                     ProceedToNarrative(nextLink.TargetNodeGUID);
-                    dialogueNodeData = null;
+                }
+                else
+                {
+                    Debug.LogWarning("No next link found");
                 }
             }
         }

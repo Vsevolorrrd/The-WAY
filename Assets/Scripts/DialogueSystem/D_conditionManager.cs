@@ -2,7 +2,7 @@ using Subtegral.DialogueSystem.DataContainers;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class conditionManager : MonoBehaviour
+public class D_conditionManager : MonoBehaviour
 {
     private List<string> stringConditions = new List<string>(24);
     private Dictionary<string, bool> boolConditions = new Dictionary<string, bool>(10);

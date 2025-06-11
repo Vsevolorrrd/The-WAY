@@ -1,6 +1,5 @@
 ﻿using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor.Experimental.GraphView;
-using Characters;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -12,7 +11,8 @@ namespace Subtegral.DialogueSystem.Editor
 
         public string DisplayText;
         public DialogueNodeType NodeType = DialogueNodeType.Basic;
-        public CharacterID Actor = CharacterID.Unknown;
+        public string Actor = "Unknown";
+        public string AnimationName;
 
         // Conditions
         public BoolCondition BoolCondition;

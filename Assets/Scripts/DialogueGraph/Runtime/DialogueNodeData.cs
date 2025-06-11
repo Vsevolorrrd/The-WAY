@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System;
-using Characters;
 
 namespace Subtegral.DialogueSystem.DataContainers
 {
@@ -12,7 +11,7 @@ namespace Subtegral.DialogueSystem.DataContainers
         public Vector2 Position;
 
         public DialogueNodeType NodeType;
-        public CharacterID actor;
+        public string actor;
         public string DisplayText;
 
         // Condition data
@@ -29,5 +28,9 @@ namespace Subtegral.DialogueSystem.DataContainers
         // Event data
         public DialogueEventType EventType;
         public string EventName;
+        public float EventValue;
+
+        // Animation data
+        public string AnimationName;
     }
 }

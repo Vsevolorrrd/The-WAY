@@ -7,6 +7,7 @@ namespace Subtegral.DialogueSystem.DataContainers
     {
         public DialogueEventType EventType;
         public string EventName;
+        public float EventValue;
     }
 
     public enum DialogueEventType

@@ -102,16 +102,15 @@ public class AudioManager : Singleton<AudioManager>
         }
     }
 
-    public SoundData GetSoundByName(string clipName)
+    public AudioClip GetSoundByName(string clipName)
     {
         foreach (var sound in soundList)
         {
             if (sound.Clip != null && sound.name == clipName)
             {
-                return new SoundData(sound.Clip, sound.volume);
+                return sound.Clip;
             }
         }
-
         return null;
     }
 }
@@ -120,17 +119,5 @@ public class AudioManager : Singleton<AudioManager>
 public struct SoundList
 {
     public string name;
-    public float volume;
     public AudioClip Clip;
-}
-public class SoundData
-{
-    public AudioClip Clip;
-    public float Volume;
-
-    public SoundData(AudioClip clip, float volume)
-    {
-        Clip = clip;
-        Volume = volume;
-    }
 }

@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-using Characters;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -29,6 +28,8 @@ namespace Subtegral.DialogueSystem.Editor
         }
         public void SaveGraph(string fileName)
         {
+            if (!Edges.Any()) EditorUtility.DisplayDialog("Nodes disconected", "Some of the nodes are unconected", "OK");
+
             var dialogueContainerObject = ScriptableObject.CreateInstance<DialogueContainer>();
             if (!SaveNodes(fileName, dialogueContainerObject)) return;
             SaveExposedProperties(dialogueContainerObject);
@@ -63,8 +64,6 @@ namespace Subtegral.DialogueSystem.Editor
 
         private bool SaveNodes(string fileName, DialogueContainer dialogueContainerObject)
         {
-            if (!Edges.Any()) return false;
-
             var connectedSockets = Edges.Where(x => x.input.node != null).ToArray();
             for (var i = 0; i < connectedSockets.Count(); i++)
             {
@@ -104,6 +103,7 @@ namespace Subtegral.DialogueSystem.Editor
                     case DialogueNodeType.Event:
                         nodeData.EventType = node.Event?.EventType ?? DialogueEventType.Custom;
                         nodeData.EventName = node.Event?.EventName ?? "";
+                        nodeData.EventValue = node.Event?.EventValue ?? 0;
                         break;
 
                     case DialogueNodeType.StringCondition:
@@ -120,6 +120,10 @@ namespace Subtegral.DialogueSystem.Editor
                         nodeData.IntConditionComparison = node.IntCondition?.Comparison ?? ComparisonType.Equals;
                         nodeData.IntActionType = node.IntCondition?.Action ?? ActionType.None;
                         nodeData.IntConditionValue = node.IntCondition?.Value ?? 0;
+                        break;
+
+                    case DialogueNodeType.Animation:
+                        nodeData.AnimationName = node.AnimationName;
                         break;
                 }
 

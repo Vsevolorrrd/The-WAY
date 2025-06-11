@@ -8,6 +8,7 @@ namespace Subtegral.DialogueSystem
         BoolCondition,
         IntCondition,
         StringCondition,
+        Animation,
         End
     }
 }
