@@ -13,8 +13,6 @@ public class Character : ScriptableObject
 
     public List<CharacterAnimation> animations;
 
-    public bool isDead = false;
-
     public AnimationClip GetAnimationByName(string name)
     {
         return animations.Find(entry => entry.animationName == name)?.animationClip;

@@ -123,8 +123,21 @@ namespace Subtegral.DialogueSystem.Editor
                         break;
 
                     case DialogueNodeType.Animation:
+                        nodeData.actor = node.Actor;
                         nodeData.AnimationName = node.AnimationName;
                         break;
+
+                    case DialogueNodeType.MoveCharacter:
+                        nodeData.actor = node.Actor;
+                        nodeData.MoveTo = node.MoveTo;
+                        break;
+
+                    case DialogueNodeType.Camera:
+                        nodeData.CameraActionType = node.Camera?.CameraActionType ?? CameraActionType.MoveBy;
+                        nodeData.CameraActionDuration = node.Camera?.CameraActionDuration ?? 0f;
+                        nodeData.CameraActionPosition = node.Camera?.CameraActionPosition ?? Vector3.zero;
+                        break;
+
                 }
 
                 dialogueContainerObject.DialogueNodeData.Add(nodeData);

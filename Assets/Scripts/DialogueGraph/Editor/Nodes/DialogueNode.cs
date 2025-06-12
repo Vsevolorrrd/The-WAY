@@ -1,5 +1,6 @@
 ﻿using Subtegral.DialogueSystem.DataContainers;
 using UnityEditor.Experimental.GraphView;
+using UnityEngine;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -13,6 +14,7 @@ namespace Subtegral.DialogueSystem.Editor
         public DialogueNodeType NodeType = DialogueNodeType.Basic;
         public string Actor = "Unknown";
         public string AnimationName;
+        public Vector3 MoveTo = Vector3.zero;
 
         // Conditions
         public BoolCondition BoolCondition;
@@ -21,5 +23,8 @@ namespace Subtegral.DialogueSystem.Editor
 
         // Events
         public DialogueEvent Event;
+
+        // Camera
+        public DialogueCameraNode Camera;
     }
 }

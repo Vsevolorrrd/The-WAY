@@ -72,6 +72,18 @@ namespace Subtegral.DialogueSystem.Editor
                     userData = DialogueNodeType.Animation
                 },
 
+                new SearchTreeEntry(new GUIContent("MoveCharacter Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.MoveCharacter
+                },
+
+                new SearchTreeEntry(new GUIContent("Camera Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.Camera
+                },
+
                 new SearchTreeEntry(new GUIContent("End Node", indentationIcon))
                 {
                     level = 2,

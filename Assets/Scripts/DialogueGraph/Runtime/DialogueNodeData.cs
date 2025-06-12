@@ -14,12 +14,14 @@ namespace Subtegral.DialogueSystem.DataContainers
         public string actor;
         public string DisplayText;
 
-        // Condition data
+        // String Condition data
         public string StringConditionKey;
 
+        // Bool Condition data
         public string BoolConditionKey;
         public bool BoolConditionExpectedValue;
 
+        // Int Condition data
         public string IntConditionKey;
         public ComparisonType IntConditionComparison;
         public ActionType IntActionType;
@@ -32,5 +34,13 @@ namespace Subtegral.DialogueSystem.DataContainers
 
         // Animation data
         public string AnimationName;
+
+        // MoveCharacter data
+        public Vector3 MoveTo;
+
+        // Camera data
+        public CameraActionType CameraActionType;
+        public float CameraActionDuration = 1f;
+        public Vector3 CameraActionPosition;
     }
 }

@@ -73,7 +73,11 @@ public class AudioManager : Singleton<AudioManager>
     }
     public IEnumerator FadeOutSound(AudioClip audioClip, float duration)
     {
-        AudioSource audioSource = loopSources.Find(sources => sources.clip == audioClip);
+        if (loopSources == null) yield break;
+
+        AudioSource audioSource = loopSources.Find(s => s.clip == audioClip);
+        if (audioSource == null) yield break;
+
         float startVolume = audioSource.volume;
 
         while (audioSource.volume > 0)
@@ -81,6 +85,9 @@ public class AudioManager : Singleton<AudioManager>
             audioSource.volume -= startVolume * Time.deltaTime / duration;
             yield return null;
         }
+
+        audioSource.Stop();
+        loopSources.Remove(audioSource);
         Destroy(audioSource.gameObject);
     }
     public void StopAllLoopSources(float fadeDuration = 1f)
@@ -98,6 +105,8 @@ public class AudioManager : Singleton<AudioManager>
                 audioSource.volume -= startVolume * Time.deltaTime / duration;
                 yield return null;
             }
+            audioSource.Stop();
+            loopSources.Remove(audioSource);
             Destroy(audioSource.gameObject);
         }
     }

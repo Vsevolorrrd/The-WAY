@@ -151,6 +151,12 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.Animation:
                     tempDialogueNode.style.backgroundColor = new Color(0.1f, 0.1f, 0.7f);
                     break;
+                case DialogueNodeType.MoveCharacter:
+                    tempDialogueNode.style.backgroundColor = new Color(0.1f, 0.1f, 0.4f);
+                    break;
+                case DialogueNodeType.Camera:
+                    tempDialogueNode.style.backgroundColor = new Color(0.3f, 0.3f, 0.3f);
+                    break;
                 case DialogueNodeType.End:
                     tempDialogueNode.style.backgroundColor = new Color(0.7f, 0.7f, 0.7f);
                     break;
@@ -187,6 +193,12 @@ namespace Subtegral.DialogueSystem.Editor
                     break;
                 case DialogueNodeType.Animation:
                     CreateAnimationNodeUI(tempDialogueNode, savedData);
+                    break;
+                case DialogueNodeType.MoveCharacter:
+                    CreateMoveCharacterNodeUI(tempDialogueNode, savedData);
+                    break;
+                case DialogueNodeType.Camera:
+                    CreateCameraNodeUI(tempDialogueNode, savedData);
                     break;
             }
 
@@ -428,6 +440,128 @@ namespace Subtegral.DialogueSystem.Editor
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
+        }
+
+        private void CreateMoveCharacterNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+
+            if (savedData != null) // loading the saved data
+            {
+                node.MoveTo = savedData.MoveTo;
+            }
+
+            #region characters
+
+            var characterNames = CharacterDatabase.GetCharacterNames();
+            var characterIDs = CharacterDatabase.GetCharacterIDs();
+
+            string selectedID = savedData != null ? savedData.actor : characterIDs.FirstOrDefault();
+            string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
+            int selectedIndex = characterNames.IndexOf(selectedName);
+            if (selectedIndex < 0) selectedIndex = 0;
+
+            var characterDropdown = new PopupField<string>("Actor", characterNames, selectedIndex);
+            characterDropdown.RegisterValueChangedCallback(evt =>
+            {
+                node.Actor = CharacterDatabase.GetCharacterIDFromName(evt.newValue);
+            });
+
+            node.Actor = selectedID;
+            node.mainContainer.Add(characterDropdown);
+
+            #endregion
+
+            // Vector3 Position Fields
+            var positionX = new FloatField("Position X") { value = node.MoveTo.x };
+            var positionY = new FloatField("Position Y") { value = node.MoveTo.y };
+            var positionZ = new FloatField("Position Z") { value = node.MoveTo.z };
+
+            positionX.RegisterValueChangedCallback(evt =>
+            {
+                node.MoveTo.x = evt.newValue;
+            });
+
+            positionY.RegisterValueChangedCallback(evt =>
+            {
+                node.MoveTo.y = evt.newValue;
+            });
+
+            positionZ.RegisterValueChangedCallback(evt =>
+            {
+                node.MoveTo.z = evt.newValue;
+            });
+
+            // put them all in a container
+            var vectorContainer = new VisualElement();
+            vectorContainer.Add(positionX);
+            vectorContainer.Add(positionY);
+            vectorContainer.Add(positionZ);
+
+            // Output port
+            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portName = "Next";
+            node.outputContainer.Add(outputPort);
+
+            node.mainContainer.Add(vectorContainer);
+        }
+
+        private void CreateCameraNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var cameraNode = new DialogueCameraNode();
+
+            if (savedData != null) // loading the saved data
+            {
+                cameraNode.CameraActionType = savedData.CameraActionType;
+                cameraNode.CameraActionDuration = savedData.CameraActionDuration;
+                cameraNode.CameraActionPosition = savedData.CameraActionPosition;
+            }
+
+            var actionField = new EnumField("Action", CameraActionType.MoveBy)
+            {
+                value = cameraNode.CameraActionType
+            };
+            actionField.RegisterValueChangedCallback(evt => cameraNode.CameraActionType = (CameraActionType)evt.newValue);
+
+
+            var valueField = new FloatField("Duration") { value = cameraNode.CameraActionDuration };
+            valueField.RegisterValueChangedCallback(evt => cameraNode.CameraActionDuration = evt.newValue);
+
+            // Vector3 Position Fields
+            var positionX = new FloatField("Position X") { value = cameraNode.CameraActionPosition.x };
+            var positionY = new FloatField("Position Y") { value = cameraNode.CameraActionPosition.y };
+            var positionZ = new FloatField("Position Z") { value = cameraNode.CameraActionPosition.z };
+
+            positionX.RegisterValueChangedCallback(evt =>
+            {
+                cameraNode.CameraActionPosition.x = evt.newValue;
+            });
+
+            positionY.RegisterValueChangedCallback(evt =>
+            {
+                cameraNode.CameraActionPosition.y = evt.newValue;
+            });
+
+            positionZ.RegisterValueChangedCallback(evt =>
+            {
+                cameraNode.CameraActionPosition.z = evt.newValue;
+            });
+
+            // put them all in a container
+            var vectorContainer = new VisualElement();
+            vectorContainer.Add(positionX);
+            vectorContainer.Add(positionY);
+            vectorContainer.Add(positionZ);
+
+            // Output port
+            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portName = "Next";
+            node.outputContainer.Add(outputPort);
+
+            node.mainContainer.Add(vectorContainer);
+            node.mainContainer.Add(actionField);
+            node.mainContainer.Add(valueField);
+
+            node.Camera = cameraNode;
         }
 
         public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "", string displayText = "")

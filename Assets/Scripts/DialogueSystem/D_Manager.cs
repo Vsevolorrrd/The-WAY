@@ -68,6 +68,14 @@ namespace Subtegral.DialogueSystem.Runtime
                     IntConditionNode(nodeData);
                     break;
 
+                case DialogueNodeType.Animation:
+                    AnimationNode(nodeData);
+                    break;
+
+                case DialogueNodeType.Camera:
+                    CameraNode(nodeData);
+                    break;
+
                 case DialogueNodeType.End:
                     EndNode(nodeData);
                     break;
@@ -109,41 +117,56 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
 
                 case DialogueEventType.SetStringCondition:
-                    conditionManager.AddStringCondition(nodeData.EventName);
+                    conditionManager.AddStringCondition(nodeData.EventName.ToLowerInvariant());
                     break;
 
                 case DialogueEventType.SetBooleanCondition:
                     if (nodeData.EventValue > 0)
-                    conditionManager.SetBoolCondition(nodeData.EventName, true);
+                    conditionManager.SetBoolCondition(nodeData.EventName.ToLowerInvariant(), true);
                     else
-                    conditionManager.SetBoolCondition(nodeData.EventName, false);
+                    conditionManager.SetBoolCondition(nodeData.EventName.ToLowerInvariant(), false);
                     break;
 
-                case DialogueEventType.PostEffect:
+                case DialogueEventType.ChangeInteger:
                     // fire event
                     break;
 
                 case DialogueEventType.PlaySound:
-                    AudioClip clip = AudioManager.Instance.GetSoundByName(nodeData.EventName);
+                    AudioClip clip = AudioManager.Instance.GetSoundByName(nodeData.EventName.ToLowerInvariant());
                     if (clip != null) AudioManager.Instance.PlaySound(clip, nodeData.EventValue);
                     else Debug.LogWarning($"Sound '{nodeData.EventName}' not found in AudioManager.");
                     break;
 
+                case DialogueEventType.PlayMusic:
+                    AudioClip music = AudioManager.Instance.GetSoundByName(nodeData.EventName.ToLowerInvariant());
+                    if (music != null)
+                    AudioManager.Instance.PlaySound(music, nodeData.EventValue, null, true);
+                    else Debug.LogWarning($"Music '{nodeData.EventName}' not found in AudioManager.");
+                    break;
+
+                case DialogueEventType.StopAllMusic:
+                    AudioManager.Instance.StopAllLoopSources(nodeData.EventValue);
+                    break;
+
                 case DialogueEventType.ScreenShake:
 
-                    switch (nodeData.EventName)
+                    switch (nodeData.EventName.ToLowerInvariant())
                     {
                         case "light":
-                            // shake
+                            CameraShake.Instance.ShakeCamera(1f, nodeData.EventValue);
                             break;
                         case "medium":
-                            // shake
+                            CameraShake.Instance.ShakeCamera(3f, nodeData.EventValue);
                             break;
                         case "heavy":
-                            // shake
+                            CameraShake.Instance.ShakeCamera(5f, nodeData.EventValue);
                             break;
 
                     }
+                    break;
+
+                case DialogueEventType.PostEffect:
+                    PostFXManager.Instance.DialoguePostEffect(nodeData.EventName.ToLowerInvariant(), nodeData.EventValue);
                     break;
 
                 case DialogueEventType.SetPlayerName:
@@ -198,21 +221,23 @@ namespace Subtegral.DialogueSystem.Runtime
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
         }
-
-        private string ProcessProperties(string text)
+        private void AnimationNode(DialogueNodeData nodeData)
         {
-            foreach (var exposedProperty in dialogue.ExposedProperties)
-            {
-                text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue);
-            }
-            return text;
+
         }
+        private void CameraNode(DialogueNodeData nodeData)
+        {
+            D_Camera.Instance.MoveDialogueCamera
+            (nodeData.CameraActionType, nodeData.CameraActionDuration, nodeData.CameraActionPosition);
+        }
+
         private void EndNode(DialogueNodeData nodeData)
         {
             dialogueText.text = ProcessProperties(nodeData.DialogueText);
             Debug.Log("Dialogue has ended.");
             // trigger an event
         }
+
         private void Update()
         {
             if (!awatingImput || dialogueNodeData == null) return;
@@ -230,6 +255,15 @@ namespace Subtegral.DialogueSystem.Runtime
                     Debug.LogWarning("No next link found");
                 }
             }
+        }
+
+        private string ProcessProperties(string text)
+        {
+            foreach (var exposedProperty in dialogue.ExposedProperties)
+            {
+                text = text.Replace($"[{exposedProperty.PropertyName}]", exposedProperty.PropertyValue);
+            }
+            return text;
         }
     }
 }

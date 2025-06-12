@@ -9,6 +9,8 @@ namespace Subtegral.DialogueSystem
         IntCondition,
         StringCondition,
         Animation,
+        MoveCharacter,
+        Camera,
         End
     }
 }

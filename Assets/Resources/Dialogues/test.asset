@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: test
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: Next
+    BaseNodeGUID: e0b2ae86-0f52-4626-a89b-00909cf45faa
+    TargetNodeGUID: dadac14d-ab45-482a-bccb-d96f4bc39dfb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: dadac14d-ab45-482a-bccb-d96f4bc39dfb
+    TargetNodeGUID: 92f01e31-7bfd-4ecb-98a9-86d56cc3276f
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: 92f01e31-7bfd-4ecb-98a9-86d56cc3276f
+    TargetNodeGUID: cca33583-86dc-4fd7-8513-e3d85d86358a
+    DisplayText: test 1
+  - PortName: Next
+    BaseNodeGUID: cca33583-86dc-4fd7-8513-e3d85d86358a
+    TargetNodeGUID: 8804b747-7a3b-4beb-944c-db8f1af2ee5b
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 8804b747-7a3b-4beb-944c-db8f1af2ee5b
+    TargetNodeGUID: 3eff7194-b6a0-4166-a0ca-1d5bb3415d09
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 8804b747-7a3b-4beb-944c-db8f1af2ee5b
+    TargetNodeGUID: e86d3ac8-83f8-4c21-8612-d44f8ab6b272
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: 3eff7194-b6a0-4166-a0ca-1d5bb3415d09
+    TargetNodeGUID: 4f693a29-279b-4dae-a5f1-3ddfb3fd7d06
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 3eff7194-b6a0-4166-a0ca-1d5bb3415d09
+    TargetNodeGUID: 4f693a29-279b-4dae-a5f1-3ddfb3fd7d06
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: e86d3ac8-83f8-4c21-8612-d44f8ab6b272
+    TargetNodeGUID: 4f693a29-279b-4dae-a5f1-3ddfb3fd7d06
+    DisplayText: True
+  - PortName: Next
+    BaseNodeGUID: 4f693a29-279b-4dae-a5f1-3ddfb3fd7d06
+    TargetNodeGUID: 184f45a5-286a-4162-b9db-5926f44a52f9
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 184f45a5-286a-4162-b9db-5926f44a52f9
+    TargetNodeGUID: 7e462163-6d67-4dc9-a471-9365fa89cd83
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 7e462163-6d67-4dc9-a471-9365fa89cd83
+    TargetNodeGUID: 169f4232-e09d-43be-8ddd-0e9e47471f91
+    DisplayText: Next
+  DialogueNodeData:
+  - NodeGUID: dadac14d-ab45-482a-bccb-d96f4bc39dfb
+    DialogueText: Basic Node test
+    Position: {x: 236.8, y: 200}
+    NodeType: 0
+    actor: Guy
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 92f01e31-7bfd-4ecb-98a9-86d56cc3276f
+    DialogueText: test
+    Position: {x: 487.2, y: 200}
+    NodeType: 1
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: cca33583-86dc-4fd7-8513-e3d85d86358a
+    DialogueText: test
+    Position: {x: 735.2, y: 200}
+    NodeType: 2
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 9
+    EventName: test event
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 8804b747-7a3b-4beb-944c-db8f1af2ee5b
+    DialogueText: test
+    Position: {x: 1037.6, y: 204.8}
+    NodeType: 5
+    actor: 
+    DisplayText: 
+    StringConditionKey: tet key
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 3eff7194-b6a0-4166-a0ca-1d5bb3415d09
+    DialogueText: tet
+    Position: {x: 1268, y: 107.99999}
+    NodeType: 3
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: tet key
+    BoolConditionExpectedValue: 1
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: e86d3ac8-83f8-4c21-8612-d44f8ab6b272
+    DialogueText: ur
+    Position: {x: 1268, y: 284.80002}
+    NodeType: 4
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: test key
+    IntConditionComparison: 5
+    IntActionType: 2
+    IntConditionValue: 999
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 4f693a29-279b-4dae-a5f1-3ddfb3fd7d06
+    DialogueText: test
+    Position: {x: 1544, y: 182.40001}
+    NodeType: 6
+    actor: Guy
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: None
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 184f45a5-286a-4162-b9db-5926f44a52f9
+    DialogueText: test
+    Position: {x: 1790.4, y: 183.20001}
+    NodeType: 7
+    actor: Guy
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 888, y: 0.9, z: 77}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 7e462163-6d67-4dc9-a471-9365fa89cd83
+    DialogueText: test
+    Position: {x: 2034.4, y: 182.40001}
+    NodeType: 8
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 5
+    CameraActionDuration: 77
+    CameraActionPosition: {x: 0.55, y: 63, z: 21}
+  - NodeGUID: 169f4232-e09d-43be-8ddd-0e9e47471f91
+    DialogueText: end
+    Position: {x: 2276.8, y: 183.20001}
+    NodeType: 9
+    actor: 
+    DisplayText: 
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  ExposedProperties: []
+  CommentBlockData: []

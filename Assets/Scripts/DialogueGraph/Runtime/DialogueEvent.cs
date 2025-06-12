@@ -15,10 +15,12 @@ namespace Subtegral.DialogueSystem.DataContainers
         Custom,
         SetStringCondition,
         SetBooleanCondition,
+        ChangeInteger,
         PlaySound,
+        PlayMusic,
+        StopAllMusic,
         ScreenShake,
         PostEffect,
         SetPlayerName
     }
-
 }
