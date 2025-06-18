@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,12 +7,13 @@ namespace Characters
     public class CharacterHolder : MonoBehaviour
     {
         private Character character;
+        private Animator animator;
+        private Coroutine currentLoop;
         public string CharacterID { get; private set; }
         public string CharacterName { get; private set; }
         public bool IsDead { get; private set; }
 
         public Sprite Portrait { get; private set; }
-        public List<CharacterAnimation> Animations { get; private set; }
 
         public void CreateCharacter(Character characterInfo)
         {
@@ -19,13 +21,45 @@ namespace Characters
             CharacterID = characterInfo.CharacterID;
             CharacterName = characterInfo.CharacterName;
             Portrait = characterInfo.Portrait;
-            Animations = new List<CharacterAnimation>(characterInfo.animations);
             IsDead = false;
+            animator = GetComponent<Animator>();
+        }
+        public void PlayAnimation(string animationName, bool loop)
+        {
+            if (character == null || animator == null) return;
+
+            AnimationClip clip = character.GetAnimationByName(animationName);
+            if (clip == null)
+            {
+                Debug.LogWarning($"Animation '{animationName}' not found for character '{CharacterName}'");
+                return;
+            }
+
+            animator.Play(clip.name); // Assumes clip is on Animator's controller, or...
+
+            if (loop)
+            {
+                if (currentLoop != null) StopCoroutine(currentLoop);
+                currentLoop = StartCoroutine(LoopAnimation(clip));
+            }
         }
 
-        public AnimationClip GetAnimation(string name)
+        private IEnumerator LoopAnimation(AnimationClip clip)
         {
-            return Animations.Find(entry => entry.animationName == name)?.animationClip;
+            while (true)
+            {
+                animator.Play(clip.name);
+                yield return new WaitForSeconds(clip.length);
+            }
+        }
+
+        public void StopAnimationLoop()
+        {
+            if (currentLoop != null)
+            {
+                StopCoroutine(currentLoop);
+                currentLoop = null;
+            }
         }
     }
 }

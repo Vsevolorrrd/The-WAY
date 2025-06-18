@@ -7,6 +7,7 @@ using UnityEngine;
 using System;
 using Button = UnityEngine.UIElements.Button;
 using Characters;
+using static Codice.Client.BaseCommands.WkStatus.Printers.StatusChangeInfo;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -228,6 +229,16 @@ namespace Subtegral.DialogueSystem.Editor
             var characterNames = CharacterDatabase.GetCharacterNames();
             var characterIDs = CharacterDatabase.GetCharacterIDs();
 
+            // addin Narrator
+            const string narratorName = "Narrator";
+            const string narratorID = "narrator_id";
+
+            if (!characterNames.Contains(narratorName))
+            {
+                characterNames.Insert(0, narratorName);
+                characterIDs.Insert(0, narratorID);
+            }
+
             string selectedID = savedData != null ? savedData.actor : characterIDs.FirstOrDefault();
             string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
             int selectedIndex = characterNames.IndexOf(selectedName);
@@ -294,6 +305,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             node.mainContainer.Add(eventTypeField);
             node.mainContainer.Add(eventNameField);
+            node.mainContainer.Add(valueField);
 
             // output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
@@ -422,7 +434,6 @@ namespace Subtegral.DialogueSystem.Editor
             });
 
             node.Actor = selectedID;
-            node.mainContainer.Add(characterDropdown);
 
             // animations
 
@@ -430,11 +441,19 @@ namespace Subtegral.DialogueSystem.Editor
             {
                 node.AnimationName = evt.newValue;
             });
-            node.mainContainer.Add(animationDropdown);
 
             // Set saved animation if available
             node.AnimationName = savedData?.AnimationName ?? null;
             UpdateAnimationDropdown(node, animationDropdown, node.AnimationName);
+
+            // loop bool
+            node.LoopAnimation = savedData?.LoopAnimation ?? true;
+            var loop = new Toggle("Loop animation") { value = node.LoopAnimation };
+            loop.RegisterValueChangedCallback(evt => node.LoopAnimation = evt.newValue);
+
+            node.mainContainer.Add(characterDropdown);
+            node.mainContainer.Add(animationDropdown);
+            node.mainContainer.Add(loop);
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);

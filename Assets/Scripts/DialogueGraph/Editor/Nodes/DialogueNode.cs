@@ -10,10 +10,12 @@ namespace Subtegral.DialogueSystem.Editor
         public string GUID;
         public bool EntyPoint = false;
 
+        // Misc
         public string DisplayText;
         public DialogueNodeType NodeType = DialogueNodeType.Basic;
         public string Actor = "Unknown";
         public string AnimationName;
+        public bool LoopAnimation = true;
         public Vector3 MoveTo = Vector3.zero;
 
         // Conditions

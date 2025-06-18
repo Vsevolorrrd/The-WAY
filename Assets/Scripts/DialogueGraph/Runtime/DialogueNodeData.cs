@@ -34,6 +34,7 @@ namespace Subtegral.DialogueSystem.DataContainers
 
         // Animation data
         public string AnimationName;
+        public bool LoopAnimation = true;
 
         // MoveCharacter data
         public Vector3 MoveTo;

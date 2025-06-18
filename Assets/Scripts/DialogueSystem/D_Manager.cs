@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Linq;
 using UnityEngine;
 using TMPro;
+using Characters;
 
 namespace Subtegral.DialogueSystem.Runtime
 {
@@ -72,6 +73,10 @@ namespace Subtegral.DialogueSystem.Runtime
                     AnimationNode(nodeData);
                     break;
 
+                case DialogueNodeType.MoveCharacter:
+                    MoveCharacterNode(nodeData);
+                    break;
+
                 case DialogueNodeType.Camera:
                     CameraNode(nodeData);
                     break;
@@ -88,6 +93,15 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void BasicNode(DialogueNodeData nodeData)
         {
+            if (nodeData.actor == "narrator_id")
+            Debug.Log("I'm narrator");
+            else
+            {
+                GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+                if (character)
+                Debug.Log(character);
+            }
+
             dialogueNodeData = nodeData;
             dialogueText.text = ProcessProperties(nodeData.DialogueText);
             awatingImput = true;
@@ -128,11 +142,11 @@ namespace Subtegral.DialogueSystem.Runtime
                     break;
 
                 case DialogueEventType.ChangeInteger:
-                    // fire event
+                    VariablesManager.Instance.ModifyValue(nodeData.EventName.ToLowerInvariant(), Mathf.RoundToInt(nodeData.EventValue));
                     break;
 
                 case DialogueEventType.PlaySound:
-                    AudioClip clip = AudioManager.Instance.GetSoundByName(nodeData.EventName.ToLowerInvariant());
+                    AudioClip clip = AudioManager.Instance.GetSoundByName(nodeData.EventName);
                     if (clip != null) AudioManager.Instance.PlaySound(clip, nodeData.EventValue);
                     else Debug.LogWarning($"Sound '{nodeData.EventName}' not found in AudioManager.");
                     break;
@@ -155,11 +169,11 @@ namespace Subtegral.DialogueSystem.Runtime
                         case "light":
                             CameraShake.Instance.ShakeCamera(1f, nodeData.EventValue);
                             break;
-                        case "medium":
-                            CameraShake.Instance.ShakeCamera(3f, nodeData.EventValue);
-                            break;
                         case "heavy":
                             CameraShake.Instance.ShakeCamera(5f, nodeData.EventValue);
+                            break;
+                        default:
+                            CameraShake.Instance.ShakeCamera(3f, nodeData.EventValue);
                             break;
 
                     }
@@ -223,10 +237,40 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         private void AnimationNode(DialogueNodeData nodeData)
         {
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
 
+            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+            if (character)
+            {
+                var holder = character.GetComponent<CharacterHolder>();
+
+                if (holder)
+                holder.PlayAnimation(nodeData.AnimationName, nodeData.LoopAnimation);
+            }
         }
+        private void MoveCharacterNode(DialogueNodeData nodeData)
+        {
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
+
+            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+            if (character)
+            {
+                var holder = character.GetComponent<CharacterHolder>();
+                //if (holder)
+                //holder.MoveToPosition(nodeData.MoveTo);
+            }
+        }
+
         private void CameraNode(DialogueNodeData nodeData)
         {
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
+
             D_Camera.Instance.MoveDialogueCamera
             (nodeData.CameraActionType, nodeData.CameraActionDuration, nodeData.CameraActionPosition);
         }
@@ -242,7 +286,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             if (!awatingImput || dialogueNodeData == null) return;
 
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
                 var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == dialogueNodeData.NodeGUID);
                 if (nextLink != null)

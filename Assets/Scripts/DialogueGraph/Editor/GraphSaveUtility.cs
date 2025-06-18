@@ -125,6 +125,7 @@ namespace Subtegral.DialogueSystem.Editor
                     case DialogueNodeType.Animation:
                         nodeData.actor = node.Actor;
                         nodeData.AnimationName = node.AnimationName;
+                        nodeData.LoopAnimation = node.LoopAnimation;
                         break;
 
                     case DialogueNodeType.MoveCharacter:

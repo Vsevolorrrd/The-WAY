@@ -24,12 +24,14 @@ namespace Characters
 
         public static string GetCharacterIDFromName(string name)
         {
+            if (name == "Narrator") return "narrator_id";  // Special case for Narrator
             var character = LoadAllCharacters().FirstOrDefault(c => c.CharacterName == name);
             return character != null ? character.CharacterID : "Unknown";
         }
 
         public static string GetCharacterNameFromID(string id)
         {
+            if (id == "narrator_id") return "Narrator";  // Special case for Narrator
             var character = LoadAllCharacters().FirstOrDefault(c => c.CharacterID == id);
             return character != null ? character.CharacterName : "Unknown";
         }

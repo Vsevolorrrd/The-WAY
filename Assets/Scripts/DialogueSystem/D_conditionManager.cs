@@ -6,7 +6,6 @@ public class D_conditionManager : MonoBehaviour
 {
     private List<string> stringConditions = new List<string>(24);
     private Dictionary<string, bool> boolConditions = new Dictionary<string, bool>(10);
-    private Dictionary<string, int> intConditions = new Dictionary<string, int>(8);
 
     // strings
     public bool StringCondition(string condition)
@@ -16,7 +15,7 @@ public class D_conditionManager : MonoBehaviour
     public void AddStringCondition(string condition)
     {
         if (!stringConditions.Contains(condition))
-            stringConditions.Add(condition);
+        stringConditions.Add(condition);
     }
 
     // bools
@@ -33,7 +32,7 @@ public class D_conditionManager : MonoBehaviour
     // ints
     public bool IntCondition(string key, ComparisonType comparison, int target)
     {
-        if (!intConditions.TryGetValue(key, out int value)) return false;
+        if (!VariablesManager.Instance.TryGetValue(key, out int value)) return false;
 
         switch (comparison)
         {
@@ -47,19 +46,12 @@ public class D_conditionManager : MonoBehaviour
         }
     }
 
-    public void SetIntCondition(string key, int value)
-    {
-        intConditions[key] = value;
-    }
-
     public void ApplyIntAction(string key, ActionType action, int value)
     {
-        if (!intConditions.ContainsKey(key)) return;
-
         switch (action)
         {
-            case ActionType.Increase: intConditions[key] += value; break;
-            case ActionType.Decrease: intConditions[key] -= value; break;
+            case ActionType.Increase: VariablesManager.Instance.ModifyValue(key, +value); break;
+            case ActionType.Decrease: VariablesManager.Instance.ModifyValue(key, -value); break;
         }
     }
 }

@@ -16,5 +16,8 @@ MonoBehaviour:
   CharacterName: Budy
   Portrait: {fileID: 0}
   bio: 
-  animations: []
-  isDead: 0
+  animations:
+  - animationName: Idle
+    animationClip: {fileID: 7400000, guid: 9a35d8c160e2759469530b3a490fcb08, type: 2}
+  - animationName: Test
+    animationClip: {fileID: 7400000, guid: 6af9b8a5d64fd5f4fa6caf0244ed281d, type: 2}
