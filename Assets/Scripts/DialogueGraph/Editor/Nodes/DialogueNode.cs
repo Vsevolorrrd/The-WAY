@@ -17,11 +17,13 @@ namespace Subtegral.DialogueSystem.Editor
         public string AnimationName;
         public bool LoopAnimation = true;
         public Vector3 MoveTo = Vector3.zero;
+        public float FailTime = 5f;
 
         // Conditions
         public BoolCondition BoolCondition;
         public IntCondition IntCondition;
         public StringCondition StringCondition;
+        public RandomCondition RandomCondition;
 
         // Events
         public DialogueEvent Event;

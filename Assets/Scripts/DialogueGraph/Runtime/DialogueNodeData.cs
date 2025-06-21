@@ -11,8 +11,9 @@ namespace Subtegral.DialogueSystem.DataContainers
         public Vector2 Position;
 
         public DialogueNodeType NodeType;
-        public string actor;
+        public string Actor;
         public string DisplayText;
+        public float FailTime = 5f;
 
         // String Condition data
         public string StringConditionKey;
@@ -26,6 +27,9 @@ namespace Subtegral.DialogueSystem.DataContainers
         public ComparisonType IntConditionComparison;
         public ActionType IntActionType;
         public int IntConditionValue;
+
+        // Random Condition data
+        public int RandomConditionValue;
 
         // Event data
         public DialogueEventType EventType;

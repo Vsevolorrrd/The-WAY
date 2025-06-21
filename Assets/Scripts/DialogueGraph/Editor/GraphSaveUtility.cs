@@ -14,7 +14,7 @@ namespace Subtegral.DialogueSystem.Editor
         private List<DialogueNode> Nodes => _graphView.nodes.ToList().Cast<DialogueNode>().ToList();
 
         private List<Group> CommentBlocks =>
-            _graphView.graphElements.ToList().Where(x => x is Group).Cast<Group>().ToList();
+        _graphView.graphElements.ToList().Where(x => x is Group).Cast<Group>().ToList();
 
         private DialogueContainer _dialogueContainer;
         private DialogueGraphView _graphView;
@@ -97,7 +97,11 @@ namespace Subtegral.DialogueSystem.Editor
                 switch (node.NodeType)
                 {
                     case DialogueNodeType.Basic:
-                        nodeData.actor = node.Actor;
+                        nodeData.Actor = node.Actor;
+                        break;
+
+                    case DialogueNodeType.TimedChoice:
+                        nodeData.FailTime = node.FailTime;
                         break;
 
                     case DialogueNodeType.Event:
@@ -122,14 +126,18 @@ namespace Subtegral.DialogueSystem.Editor
                         nodeData.IntConditionValue = node.IntCondition?.Value ?? 0;
                         break;
 
+                    case DialogueNodeType.RandomCondition:
+                        nodeData.RandomConditionValue = node.RandomCondition?.Value ?? 0;
+                        break;
+
                     case DialogueNodeType.Animation:
-                        nodeData.actor = node.Actor;
+                        nodeData.Actor = node.Actor;
                         nodeData.AnimationName = node.AnimationName;
                         nodeData.LoopAnimation = node.LoopAnimation;
                         break;
 
                     case DialogueNodeType.MoveCharacter:
-                        nodeData.actor = node.Actor;
+                        nodeData.Actor = node.Actor;
                         nodeData.MoveTo = node.MoveTo;
                         break;
 
@@ -226,12 +234,14 @@ namespace Subtegral.DialogueSystem.Editor
                 _graphView.AddElement(tempNode);
 
                 // Add choice ports if needed
-                if (tempNode.NodeType == DialogueNodeType.Choice)
+                if (tempNode.NodeType == DialogueNodeType.Choice || tempNode.NodeType == DialogueNodeType.TimedChoice)
                 {
                     var nodePorts = _dialogueContainer.NodeLinks
                     .Where(x => x.BaseNodeGUID == perNode.NodeGUID).ToList();
 
-                    nodePorts.ForEach(x => _graphView.AddChoicePort(tempNode, x.PortName, x.DisplayText));
+                    nodePorts.ForEach(x =>
+                    { if (x.PortName != "Fail") 
+                    _graphView.AddChoicePort(tempNode, x.PortName, x.DisplayText); });
                 }
             }
         }
@@ -249,8 +259,8 @@ namespace Subtegral.DialogueSystem.Editor
                     LinkNodesTogether(Nodes[i].outputContainer[j].Q<Port>(), (Port)targetNode.inputContainer[0]);
 
                     targetNode.SetPosition(new Rect(
-                        _dialogueContainer.DialogueNodeData.First(x => x.NodeGUID == targetNodeGUID).Position,
-                        _graphView.DefaultNodeSize));
+                    _dialogueContainer.DialogueNodeData.First(x => x.NodeGUID == targetNodeGUID).Position,
+                    _graphView.DefaultNodeSize));
                 }
             }
         }
@@ -285,8 +295,8 @@ namespace Subtegral.DialogueSystem.Editor
 
             foreach (var commentBlockData in _dialogueContainer.CommentBlockData)
             {
-                var block = _graphView.CreateCommentBlock(new Rect(commentBlockData.Position, _graphView.DefaultCommentBlockSize),
-                     commentBlockData);
+                var block = _graphView.CreateCommentBlock
+                (new Rect(commentBlockData.Position, _graphView.DefaultCommentBlockSize), commentBlockData);
                 block.AddElements(Nodes.Where(x => commentBlockData.ChildNodes.Contains(x.GUID)));
             }
         }

@@ -7,7 +7,6 @@ using UnityEngine;
 using System;
 using Button = UnityEngine.UIElements.Button;
 using Characters;
-using static Codice.Client.BaseCommands.WkStatus.Printers.StatusChangeInfo;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -78,7 +77,7 @@ namespace Subtegral.DialogueSystem.Editor
             if (!loadMode)
             {
                 while (ExposedProperties.Any(x => x.PropertyName == localPropertyName))
-                    localPropertyName = $"{localPropertyName}(1)";
+                localPropertyName = $"{localPropertyName}(1)";
             }
 
             var item = ExposedProperty.CreateInstance();
@@ -146,8 +145,11 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.Choice:
                     tempDialogueNode.style.backgroundColor = new Color(0.5f, 0.1f, 0.8f);
                     break;
+                case DialogueNodeType.TimedChoice:
+                    tempDialogueNode.style.backgroundColor = new Color(0.6f, 0.1f, 0.7f);
+                    break;
                 case DialogueNodeType.Event:
-                    tempDialogueNode.style.backgroundColor = new Color(0.7f, 0.7f, 0.1f);
+                    tempDialogueNode.style.backgroundColor = new Color(0.7f, 0.6f, 0f);
                     break;
                 case DialogueNodeType.Animation:
                     tempDialogueNode.style.backgroundColor = new Color(0.1f, 0.1f, 0.7f);
@@ -180,8 +182,14 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.Choice:
                     CreateChoiceNodeUI(tempDialogueNode);
                     break;
+                case DialogueNodeType.TimedChoice:
+                    CreateTimedChoiceNodeUI(tempDialogueNode, savedData);
+                    break;
                 case DialogueNodeType.Event:
                     CreateEventNodeUI(tempDialogueNode, savedData);
+                    break;
+                case DialogueNodeType.StringCondition:
+                    CreateStringConditionNodeUI(tempDialogueNode, savedData);
                     break;
                 case DialogueNodeType.BoolCondition:
                     CreateBoolConditionNodeUI(tempDialogueNode, savedData);
@@ -189,8 +197,8 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.IntCondition:
                     CreateIntConditionNodeUI(tempDialogueNode, savedData);
                     break;
-                case DialogueNodeType.StringCondition:
-                    CreateStringConditionNodeUI(tempDialogueNode, savedData);
+                case DialogueNodeType.RandomCondition:
+                    CreateRandomConditionNodeUI(tempDialogueNode, savedData);
                     break;
                 case DialogueNodeType.Animation:
                     CreateAnimationNodeUI(tempDialogueNode, savedData);
@@ -239,7 +247,7 @@ namespace Subtegral.DialogueSystem.Editor
                 characterIDs.Insert(0, narratorID);
             }
 
-            string selectedID = savedData != null ? savedData.actor : characterIDs.FirstOrDefault();
+            string selectedID = savedData != null ? savedData.Actor : characterIDs.FirstOrDefault();
             string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
             int selectedIndex = characterNames.IndexOf(selectedName);
             if (selectedIndex < 0) selectedIndex = 0;
@@ -268,6 +276,43 @@ namespace Subtegral.DialogueSystem.Editor
                 text = "Add Choice"
             };
             node.titleButtonContainer.Add(button);
+        }
+
+        private void CreateTimedChoiceNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var button = new Button(() => { AddChoicePort(node); })
+            {
+                text = "Add Choice"
+            };
+
+            if (savedData != null)
+            node.FailTime = savedData.FailTime;
+
+            var failPort = GetPortInstance(node, Direction.Output);
+            failPort.portName = "Fail";
+
+            var container = new VisualElement();
+            container.style.flexDirection = FlexDirection.Column;
+            container.style.marginBottom = 5;
+
+            var timeField = new FloatField("Time Limit") { value = savedData != null ? savedData.FailTime : 5f };
+            timeField.RegisterValueChangedCallback(evt =>
+            {
+                // Clamp the value between 0 and 100
+                node.FailTime = Mathf.Clamp(evt.newValue, 0, 120);
+                timeField.SetValueWithoutNotify(node.FailTime);
+            });
+
+            var failPortContainer = new VisualElement();
+            failPortContainer.Add(failPort);
+
+            container.Add(failPortContainer);
+            container.Add(timeField);
+
+            node.titleButtonContainer.Add(button);
+            node.outputContainer.Add(container);
+            node.RefreshPorts();
+            node.RefreshExpandedState();
         }
         private void CreateEventNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
@@ -412,6 +457,36 @@ namespace Subtegral.DialogueSystem.Editor
             node.IntCondition = condition;
         }
 
+        private void CreateRandomConditionNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var condition = new RandomCondition();
+
+            if (savedData != null) // loading the saved data
+            {
+                condition.Value = savedData.RandomConditionValue;
+            }
+
+            var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portName = "True";
+            node.outputContainer.Add(truePort);
+
+            var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portName = "False";
+            node.outputContainer.Add(falsePort);
+
+            var valueField = new IntegerField("Value %") { value = condition.Value };
+            valueField.RegisterValueChangedCallback(evt =>
+            {
+                // Clamp the value between 0% and 100%
+                condition.Value = Mathf.Clamp(evt.newValue, 0, 100);
+                valueField.SetValueWithoutNotify(condition.Value);
+            });
+
+            node.mainContainer.Add(valueField);
+
+            node.RandomCondition = condition;
+        }
+
         private void CreateAnimationNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
             var animationDropdown = new PopupField<string>("Animation", new List<string> { "None" }, 0);
@@ -421,7 +496,7 @@ namespace Subtegral.DialogueSystem.Editor
             var characterNames = CharacterDatabase.GetCharacterNames();
             var characterIDs = CharacterDatabase.GetCharacterIDs();
 
-            string selectedID = savedData != null ? savedData.actor : characterIDs.FirstOrDefault();
+            string selectedID = savedData != null ? savedData.Actor : characterIDs.FirstOrDefault();
             string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
             int selectedIndex = characterNames.IndexOf(selectedName);
             if (selectedIndex < 0) selectedIndex = 0;
@@ -474,7 +549,7 @@ namespace Subtegral.DialogueSystem.Editor
             var characterNames = CharacterDatabase.GetCharacterNames();
             var characterIDs = CharacterDatabase.GetCharacterIDs();
 
-            string selectedID = savedData != null ? savedData.actor : characterIDs.FirstOrDefault();
+            string selectedID = savedData != null ? savedData.Actor : characterIDs.FirstOrDefault();
             string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
             int selectedIndex = characterNames.IndexOf(selectedName);
             if (selectedIndex < 0) selectedIndex = 0;

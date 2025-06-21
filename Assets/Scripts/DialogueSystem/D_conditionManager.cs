@@ -54,4 +54,11 @@ public class D_conditionManager : MonoBehaviour
             case ActionType.Decrease: VariablesManager.Instance.ModifyValue(key, -value); break;
         }
     }
+
+    // Random
+    public bool RandomCondition(int difficulty)
+    {
+        int R = Random.Range(0, 101);
+        return R <= difficulty;
+    }
 }

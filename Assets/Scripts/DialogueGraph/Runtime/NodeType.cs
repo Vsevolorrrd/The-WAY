@@ -8,9 +8,11 @@ namespace Subtegral.DialogueSystem
         BoolCondition,
         IntCondition,
         StringCondition,
+        RandomCondition,
         Animation,
         MoveCharacter,
         Camera,
+        TimedChoice,
         End
     }
 }

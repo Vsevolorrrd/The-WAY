@@ -42,6 +42,12 @@ namespace Subtegral.DialogueSystem.Editor
                     userData = DialogueNodeType.Choice
                 },
 
+                new SearchTreeEntry(new GUIContent("Timed Choice Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.TimedChoice
+                },
+
                 new SearchTreeEntry(new GUIContent("Event Node", indentationIcon))
                 {
                     level = 2,
@@ -64,6 +70,12 @@ namespace Subtegral.DialogueSystem.Editor
                 {
                     level = 2,
                     userData = DialogueNodeType.IntCondition
+                },
+
+                new SearchTreeEntry(new GUIContent("Random Condition Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.RandomCondition
                 },
 
                 new SearchTreeEntry(new GUIContent("Animation Node", indentationIcon))

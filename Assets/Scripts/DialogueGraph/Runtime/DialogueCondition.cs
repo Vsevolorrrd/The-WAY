@@ -28,6 +28,12 @@ namespace Subtegral.DialogueSystem.DataContainers
         public int Value;
     }
 
+    [Serializable]
+    public class RandomCondition : DialogueCondition
+    {
+        public int Value;
+    }
+
     public enum ComparisonType
     {
         Equals,

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterID: Guy
   CharacterName: Budy
-  Portrait: {fileID: 0}
+  Portrait: {fileID: 9110974772542166742, guid: 1793fd85197d32b4b93e0aa8a80cb66d, type: 3}
   bio: 
   animations:
   - animationName: Idle

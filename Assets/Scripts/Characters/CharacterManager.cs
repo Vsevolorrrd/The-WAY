@@ -69,6 +69,7 @@ namespace Characters
         {
             if (characters.TryGetValue(id, out var character))
             return character;
+
             Debug.LogWarning($"Character with ID '{id}' not found.");
             return null;
         }

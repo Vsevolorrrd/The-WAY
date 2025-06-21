@@ -1,4 +1,5 @@
 using Subtegral.DialogueSystem.DataContainers;
+using System.Collections;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEngine;
@@ -15,6 +16,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private Transform buttonContainer;
         private DialogueNodeData dialogueNodeData;
         private bool awatingImput = false;
+        private Coroutine choiceTimerRoutine;
 
         // Dialogue managers
         private D_conditionManager conditionManager;
@@ -53,6 +55,10 @@ namespace Subtegral.DialogueSystem.Runtime
                     ChoiceNode(nodeData);
                     break;
 
+                case DialogueNodeType.TimedChoice:
+                    TimedChoiceNode(nodeData);
+                    break;
+
                 case DialogueNodeType.Event:
                     EventNode(nodeData);
                     break;
@@ -67,6 +73,10 @@ namespace Subtegral.DialogueSystem.Runtime
 
                 case DialogueNodeType.IntCondition:
                     IntConditionNode(nodeData);
+                    break;
+
+                case DialogueNodeType.RandomCondition:
+                    RandomConditionNode(nodeData);
                     break;
 
                 case DialogueNodeType.Animation:
@@ -93,11 +103,11 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void BasicNode(DialogueNodeData nodeData)
         {
-            if (nodeData.actor == "narrator_id")
+            if (nodeData.Actor == "narrator_id")
             Debug.Log("I'm narrator");
             else
             {
-                GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+                GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.Actor);
                 if (character)
                 Debug.Log(character);
             }
@@ -109,13 +119,43 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void ChoiceNode(DialogueNodeData nodeData)
         {
-            // Display choices
+            var links = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID).ToList();
+
             var choices = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID);
             foreach (var choice in choices)
             {
                 var button = Instantiate(choicePrefab, buttonContainer);
                 button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.DisplayText);
                 button.onClick.AddListener(() => ProceedToNarrative(choice.TargetNodeGUID));
+            }
+        }
+        private void TimedChoiceNode(DialogueNodeData nodeData)
+        {
+            var links = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID).ToList();
+
+            // Skip "Fail" port
+            foreach (var choice in links.Where(x => x.PortName != "Fail"))
+            {
+                var button = Instantiate(choicePrefab, buttonContainer);
+                button.GetComponentInChildren<TextMeshProUGUI>().text = ProcessProperties(choice.DisplayText);
+                button.onClick.AddListener(() =>
+                {
+                    if (choiceTimerRoutine != null)
+                        StopCoroutine(choiceTimerRoutine);
+
+                    ProceedToNarrative(choice.TargetNodeGUID);
+                });
+            }
+
+            // Timed node
+            var failLink = links.FirstOrDefault(x => x.PortName == "Fail");
+
+            if (nodeData.FailTime > 0 && failLink != null)
+            {
+                if (choiceTimerRoutine != null)
+                    StopCoroutine(choiceTimerRoutine);
+
+                choiceTimerRoutine = StartCoroutine(TimedFailCountdown(failLink.TargetNodeGUID, nodeData.FailTime));
             }
         }
         private void EventNode(DialogueNodeData nodeData)
@@ -235,13 +275,24 @@ namespace Subtegral.DialogueSystem.Runtime
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
         }
+        private void RandomConditionNode(DialogueNodeData nodeData)
+        {
+            bool result = conditionManager.RandomCondition(nodeData.RandomConditionValue);
+
+            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            x.BaseNodeGUID == nodeData.NodeGUID &&
+            x.PortName == (result ? "True" : "False"));
+
+            if (nextLink != null)
+            ProceedToNarrative(nextLink.TargetNodeGUID);
+        }
         private void AnimationNode(DialogueNodeData nodeData)
         {
             var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
 
-            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.Actor);
             if (character)
             {
                 var holder = character.GetComponent<CharacterHolder>();
@@ -256,7 +307,7 @@ namespace Subtegral.DialogueSystem.Runtime
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
 
-            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.actor);
+            GameObject character = CharacterManager.Instance.GetCharacterInScene(nodeData.Actor);
             if (character)
             {
                 var holder = character.GetComponent<CharacterHolder>();
@@ -299,6 +350,12 @@ namespace Subtegral.DialogueSystem.Runtime
                     Debug.LogWarning("No next link found");
                 }
             }
+        }
+        private IEnumerator TimedFailCountdown(string failTargetNodeGUID, float time)
+        {
+            yield return new WaitForSeconds(time);
+
+            ProceedToNarrative(failTargetNodeGUID);
         }
 
         private string ProcessProperties(string text)
