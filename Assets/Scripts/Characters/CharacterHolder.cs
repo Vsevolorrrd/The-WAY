@@ -7,7 +7,7 @@ namespace Characters
     {
         private Character character;
         private Animator animator;
-        private Coroutine currentLoop;
+
         public string CharacterID { get; private set; }
         public string CharacterName { get; private set; }
         public bool IsDead { get; private set; }
@@ -23,7 +23,7 @@ namespace Characters
             IsDead = false;
             animator = GetComponent<Animator>();
         }
-        public void PlayAnimation(string animationName, bool loop)
+        public void PlayAnimation(string animationName, bool loop = false)
         {
             if (character == null || animator == null) return;
 
@@ -35,30 +35,33 @@ namespace Characters
             }
 
             animator.Play(clip.name); // Assumes clip is on Animator's controller, or...
-
-            if (loop)
-            {
-                if (currentLoop != null) StopCoroutine(currentLoop);
-                currentLoop = StartCoroutine(LoopAnimation(clip));
-            }
         }
-
-        private IEnumerator LoopAnimation(AnimationClip clip)
+        public void MoveToPosition(Vector3 position)
         {
-            while (true)
+            StopAllCoroutines();
+            StartCoroutine(Move(position));
+        }
+        public void MoveBy(Vector3 position)
+        {
+            StopAllCoroutines();
+            StartCoroutine(Move(position + transform.position));
+        }
+        private IEnumerator Move(Vector3 targetPosition)
+        {
+            PlayAnimation("walk");
+
+            float speed = 2f;
+            float distanceThreshold = 0.05f;
+
+            while (Vector3.Distance(transform.position, targetPosition) > distanceThreshold)
             {
-                animator.Play(clip.name);
-                yield return new WaitForSeconds(clip.length);
+                transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+                yield return null;
             }
+
+            transform.position = targetPosition;
+            PlayAnimation("idle");
         }
 
-        public void StopAnimationLoop()
-        {
-            if (currentLoop != null)
-            {
-                StopCoroutine(currentLoop);
-                currentLoop = null;
-            }
-        }
     }
 }

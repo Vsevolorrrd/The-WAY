@@ -258,7 +258,7 @@ namespace Subtegral.DialogueSystem.Editor
                 node.Actor = CharacterDatabase.GetCharacterIDFromName(evt.newValue);
             });
 
-            node.Actor = selectedID;
+            node.Actor = CharacterDatabase.GetCharacterIDFromName(characterDropdown.value);
             node.mainContainer.Add(characterDropdown);
 
             #endregion
@@ -290,27 +290,21 @@ namespace Subtegral.DialogueSystem.Editor
 
             var failPort = GetPortInstance(node, Direction.Output);
             failPort.portName = "Fail";
-
-            var container = new VisualElement();
-            container.style.flexDirection = FlexDirection.Column;
-            container.style.marginBottom = 5;
+            node.outputContainer.Add(failPort);
 
             var timeField = new FloatField("Time Limit") { value = savedData != null ? savedData.FailTime : 5f };
             timeField.RegisterValueChangedCallback(evt =>
             {
-                // Clamp the value between 0 and 100
+                // Clamp the value between 0 and 120
                 node.FailTime = Mathf.Clamp(evt.newValue, 0, 120);
                 timeField.SetValueWithoutNotify(node.FailTime);
             });
+            timeField.style.marginTop = 5;
+            timeField.style.marginBottom = 5;
 
-            var failPortContainer = new VisualElement();
-            failPortContainer.Add(failPort);
-
-            container.Add(failPortContainer);
-            container.Add(timeField);
-
+            node.mainContainer.Add(timeField); 
             node.titleButtonContainer.Add(button);
-            node.outputContainer.Add(container);
+            node.outputContainer.Add(failPort);
             node.RefreshPorts();
             node.RefreshExpandedState();
         }

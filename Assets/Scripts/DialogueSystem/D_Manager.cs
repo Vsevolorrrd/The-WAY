@@ -13,6 +13,7 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] private DialogueContainer dialogue;
         [SerializeField] private TextMeshProUGUI dialogueText;
         [SerializeField] private Button choicePrefab;
+        [SerializeField] private Image timerBar;
         [SerializeField] private Transform buttonContainer;
         private DialogueNodeData dialogueNodeData;
         private bool awatingImput = false;
@@ -32,6 +33,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
             ProceedToNarrative(narrativeData.TargetNodeGUID);
+            timerBar.fillAmount = 0;
         }
 
         private void ProceedToNarrative(string narrativeDataGUID)
@@ -141,7 +143,10 @@ namespace Subtegral.DialogueSystem.Runtime
                 button.onClick.AddListener(() =>
                 {
                     if (choiceTimerRoutine != null)
+                    {
                         StopCoroutine(choiceTimerRoutine);
+                        timerBar.fillAmount = 0;
+                    }
 
                     ProceedToNarrative(choice.TargetNodeGUID);
                 });
@@ -153,7 +158,10 @@ namespace Subtegral.DialogueSystem.Runtime
             if (nodeData.FailTime > 0 && failLink != null)
             {
                 if (choiceTimerRoutine != null)
+                {
                     StopCoroutine(choiceTimerRoutine);
+                    timerBar.fillAmount = 0;
+                }
 
                 choiceTimerRoutine = StartCoroutine(TimedFailCountdown(failLink.TargetNodeGUID, nodeData.FailTime));
             }
@@ -311,8 +319,8 @@ namespace Subtegral.DialogueSystem.Runtime
             if (character)
             {
                 var holder = character.GetComponent<CharacterHolder>();
-                //if (holder)
-                //holder.MoveToPosition(nodeData.MoveTo);
+                if (holder)
+                holder.MoveToPosition(nodeData.MoveTo);
             }
         }
 
@@ -353,7 +361,16 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         private IEnumerator TimedFailCountdown(string failTargetNodeGUID, float time)
         {
-            yield return new WaitForSeconds(time);
+            float timer = 0f;
+
+            while (timer < time)
+            {
+                timer += Time.deltaTime;
+                float progress = timer / time;
+                timerBar.fillAmount = Mathf.Clamp01(progress);
+
+                yield return null;
+            }
 
             ProceedToNarrative(failTargetNodeGUID);
         }
