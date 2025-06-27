@@ -48,7 +48,7 @@ namespace Characters
         }
         private IEnumerator Move(Vector3 targetPosition)
         {
-            PlayAnimation("walk");
+            PlayAnimation("Walk");
 
             float speed = 2f;
             float distanceThreshold = 0.05f;
@@ -60,7 +60,7 @@ namespace Characters
             }
 
             transform.position = targetPosition;
-            PlayAnimation("idle");
+            PlayAnimation("Idle");
         }
 
     }

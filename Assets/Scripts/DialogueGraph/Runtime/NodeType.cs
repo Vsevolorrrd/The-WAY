@@ -13,6 +13,7 @@ namespace Subtegral.DialogueSystem
         MoveCharacter,
         Camera,
         TimedChoice,
+        CharacterCondition,
         End
     }
 }

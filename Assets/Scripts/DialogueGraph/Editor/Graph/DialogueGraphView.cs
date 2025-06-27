@@ -200,6 +200,9 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.RandomCondition:
                     CreateRandomConditionNodeUI(tempDialogueNode, savedData);
                     break;
+                case DialogueNodeType.CharacterCondition:
+                    CreateCharacterConditionNodeUI(tempDialogueNode, savedData);
+                    break;
                 case DialogueNodeType.Animation:
                     CreateAnimationNodeUI(tempDialogueNode, savedData);
                     break;
@@ -231,7 +234,6 @@ namespace Subtegral.DialogueSystem.Editor
 
         private void CreateBasicNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
-
             #region characters
 
             var characterNames = CharacterDatabase.GetCharacterNames();
@@ -375,6 +377,7 @@ namespace Subtegral.DialogueSystem.Editor
             node.mainContainer.Add(keyField);
             node.StringCondition = condition;
         }
+
         private void CreateBoolConditionNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
             var condition = new BoolCondition();
@@ -481,6 +484,61 @@ namespace Subtegral.DialogueSystem.Editor
             node.RandomCondition = condition;
         }
 
+        private void CreateCharacterConditionNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var condition = new CharacterCondition();
+
+            if (savedData != null)
+            {
+                condition.Attribute = savedData.CharacterAttribute;
+                condition.Target = savedData.CharacterTarget;
+                condition.ComparisonValue = savedData.CharacterComparisonValue;
+                condition.Action = savedData.CharacterAction;
+            }
+
+            var attributeField = new EnumField("Attribute", CharacterAttribute.Relations)
+            {
+                value = condition.Attribute
+            };
+            attributeField.RegisterValueChangedCallback(evt => condition.Attribute = (CharacterAttribute)evt.newValue);
+
+            var targetField = new EnumField("Target", CharacterTarget.Player)
+            {
+                value = condition.Target
+            };
+            targetField.RegisterValueChangedCallback(evt => condition.Target = (CharacterTarget)evt.newValue);
+
+            var valueField = new IntegerField("Value") { value = condition.ComparisonValue };
+            valueField.RegisterValueChangedCallback(evt =>
+            {
+                condition.ComparisonValue = evt.newValue;
+                valueField.SetValueWithoutNotify(condition.ComparisonValue);
+            });
+
+            var actionField = new EnumField("Action", CharacterAction.None)
+            {
+                value = condition.Action
+            };
+            actionField.RegisterValueChangedCallback(evt => condition.Action = (CharacterAction)evt.newValue);
+
+            node.mainContainer.Add(CreateCharacterDropdown(node, savedData));
+            node.mainContainer.Add(attributeField);
+            node.mainContainer.Add(targetField);
+            node.mainContainer.Add(valueField);
+            node.mainContainer.Add(actionField);
+
+            node.CharacterCondition = condition;
+
+            // Add ports
+            var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portName = "True";
+            node.outputContainer.Add(truePort);
+
+            var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portName = "False";
+            node.outputContainer.Add(falsePort);
+        }
+
         private void CreateAnimationNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
             var animationDropdown = new PopupField<string>("Animation", new List<string> { "None" }, 0);
@@ -538,27 +596,6 @@ namespace Subtegral.DialogueSystem.Editor
                 node.MoveTo = savedData.MoveTo;
             }
 
-            #region characters
-
-            var characterNames = CharacterDatabase.GetCharacterNames();
-            var characterIDs = CharacterDatabase.GetCharacterIDs();
-
-            string selectedID = savedData != null ? savedData.Actor : characterIDs.FirstOrDefault();
-            string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
-            int selectedIndex = characterNames.IndexOf(selectedName);
-            if (selectedIndex < 0) selectedIndex = 0;
-
-            var characterDropdown = new PopupField<string>("Actor", characterNames, selectedIndex);
-            characterDropdown.RegisterValueChangedCallback(evt =>
-            {
-                node.Actor = CharacterDatabase.GetCharacterIDFromName(evt.newValue);
-            });
-
-            node.Actor = selectedID;
-            node.mainContainer.Add(characterDropdown);
-
-            #endregion
-
             // Vector3 Position Fields
             var positionX = new FloatField("Position X") { value = node.MoveTo.x };
             var positionY = new FloatField("Position Y") { value = node.MoveTo.y };
@@ -585,12 +622,13 @@ namespace Subtegral.DialogueSystem.Editor
             vectorContainer.Add(positionY);
             vectorContainer.Add(positionZ);
 
+            node.mainContainer.Add(CreateCharacterDropdown(node, savedData));
+            node.mainContainer.Add(vectorContainer);
+
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
-
-            node.mainContainer.Add(vectorContainer);
         }
 
         private void CreateCameraNodeUI(DialogueNode node, DialogueNodeData savedData = null)
@@ -640,16 +678,17 @@ namespace Subtegral.DialogueSystem.Editor
             vectorContainer.Add(positionY);
             vectorContainer.Add(positionZ);
 
-            // Output port
-            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
-            outputPort.portName = "Next";
-            node.outputContainer.Add(outputPort);
-
+            node.mainContainer.Add(CreateCharacterDropdown(node, savedData));
             node.mainContainer.Add(vectorContainer);
             node.mainContainer.Add(actionField);
             node.mainContainer.Add(valueField);
 
             node.Camera = cameraNode;
+
+            // Output port
+            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portName = "Next";
+            node.outputContainer.Add(outputPort);
         }
 
         public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "", string displayText = "")
@@ -734,6 +773,25 @@ namespace Subtegral.DialogueSystem.Editor
             nodeCache.RefreshPorts();
             nodeCache.SetPosition(new Rect(100, 200, 100, 150));
             return nodeCache;
+        }
+        private PopupField<string> CreateCharacterDropdown(DialogueNode node, DialogueNodeData savedData, string label = "Actor")
+        {
+            var characterNames = CharacterDatabase.GetCharacterNames();
+            var characterIDs = CharacterDatabase.GetCharacterIDs();
+
+            string selectedID = savedData != null ? savedData.Actor : characterIDs.FirstOrDefault();
+            string selectedName = CharacterDatabase.GetCharacterNameFromID(selectedID);
+            int selectedIndex = characterNames.IndexOf(selectedName);
+            if (selectedIndex < 0) selectedIndex = 0;
+
+            var dropdown = new PopupField<string>(label, characterNames, selectedIndex);
+            dropdown.RegisterValueChangedCallback(evt =>
+            {
+                node.Actor = CharacterDatabase.GetCharacterIDFromName(evt.newValue);
+            });
+
+            node.Actor = selectedID;
+            return dropdown;
         }
 
         private void UpdateAnimationDropdown(DialogueNode node, PopupField<string> dropdown, string defaultSelection = null)

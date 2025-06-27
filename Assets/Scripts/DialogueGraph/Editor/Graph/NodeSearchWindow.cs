@@ -78,6 +78,12 @@ namespace Subtegral.DialogueSystem.Editor
                     userData = DialogueNodeType.RandomCondition
                 },
 
+                new SearchTreeEntry(new GUIContent("Character Condition Node", indentationIcon))
+                {
+                    level = 2,
+                    userData = DialogueNodeType.CharacterCondition
+                },
+
                 new SearchTreeEntry(new GUIContent("Animation Node", indentationIcon))
                 {
                     level = 2,

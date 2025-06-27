@@ -9,14 +9,15 @@ namespace Subtegral.DialogueSystem.Editor
         public string DialogueText;
         public string GUID;
         public bool EntyPoint = false;
-
-        // Misc
         public string DisplayText;
         public DialogueNodeType NodeType = DialogueNodeType.Basic;
+
+        // Misc
         public string Actor = "Unknown";
         public string AnimationName;
         public bool LoopAnimation = true;
-        public Vector3 MoveTo = Vector3.zero;
+
+        // Timed Choice
         public float FailTime = 5f;
 
         // Conditions
@@ -24,9 +25,13 @@ namespace Subtegral.DialogueSystem.Editor
         public IntCondition IntCondition;
         public StringCondition StringCondition;
         public RandomCondition RandomCondition;
+        public CharacterCondition CharacterCondition;
 
         // Events
         public DialogueEvent Event;
+
+        // Move Character
+        public Vector3 MoveTo = Vector3.zero;
 
         // Camera
         public DialogueCameraNode Camera;

@@ -5,7 +5,7 @@ namespace Subtegral.DialogueSystem.DataContainers
     [Serializable]
     public abstract class DialogueCondition
     {
-        public string Key; // what ot check
+        public string Key; // what to check
     }
 
     [Serializable]
@@ -34,6 +34,15 @@ namespace Subtegral.DialogueSystem.DataContainers
         public int Value;
     }
 
+    [Serializable]
+    public class CharacterCondition
+    {
+        public CharacterAttribute Attribute;
+        public CharacterTarget Target;
+        public int ComparisonValue;
+        public CharacterAction Action;
+    }
+
     public enum ComparisonType
     {
         Equals,
@@ -48,5 +57,30 @@ namespace Subtegral.DialogueSystem.DataContainers
         None,
         Decrease,
         Increase
+    }
+    public enum CharacterAttribute
+    {
+        Relations,
+        IsInScene,
+        IsAlive,
+        Morale,
+        Stamina
+    }
+
+    public enum CharacterTarget
+    {
+        Player,
+        Doc,
+        Gravehound,
+        Rook,
+        Vale,
+        Ash
+    }
+
+    public enum CharacterAction
+    {
+        None,
+        SpawnOnRight,
+        SpawnOnLeft
     }
 }

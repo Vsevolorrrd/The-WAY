@@ -28,6 +28,12 @@ namespace Subtegral.DialogueSystem.DataContainers
         public ActionType IntActionType;
         public int IntConditionValue;
 
+        // Character Condition data
+        public CharacterAttribute CharacterAttribute;
+        public CharacterTarget CharacterTarget;
+        public int CharacterComparisonValue;
+        public CharacterAction CharacterAction;
+
         // Random Condition data
         public int RandomConditionValue;
 

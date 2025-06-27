@@ -17,38 +17,6 @@ MonoBehaviour:
     BaseNodeGUID: c9467d11-e6a0-471e-a1e9-765ce24e61fd
     TargetNodeGUID: fd8251b2-ef9c-448f-a36f-deab7ccc04e6
     DisplayText: Next
-  - PortName: Option 1
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: a125a100-6da2-42de-adf9-debc47e9e44c
-    DisplayText: Play Sound
-  - PortName: Option 2
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: 8fa5deeb-c014-4675-8fb5-89c81bf2ae95
-    DisplayText: Change animation
-  - PortName: Option 3
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: 428d4379-0489-4e75-9778-c47605a0a721
-    DisplayText: Change Camera view
-  - PortName: Option 4
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: 375a5952-cf49-46a0-984f-3f48ff92f634
-    DisplayText: End Dialoge
-  - PortName: Option 5
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: 07982c2d-f0f7-4aa9-8170-a843aae99266
-    DisplayText: Shake Camera
-  - PortName: Option 6
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: 6f8f7e50-c59a-46cb-a1c9-a2dcafd7d2cb
-    DisplayText: Start Test Dialogue
-  - PortName: Option 7
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
-    DisplayText: Move Character
-  - PortName: Option 8
-    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    TargetNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
-    DisplayText: Test Your Luck
   - PortName: Next
     BaseNodeGUID: 0bbc8a36-5f10-4b21-9bc8-6990fc4b0b5d
     TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
@@ -62,22 +30,6 @@ MonoBehaviour:
     TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
-    TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
-    TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    DisplayText: Next
-  - PortName: True
-    BaseNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
-    TargetNodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
-    DisplayText: True
-  - PortName: False
-    BaseNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
-    TargetNodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
-    DisplayText: False
-  - PortName: Next
     BaseNodeGUID: 8fa5deeb-c014-4675-8fb5-89c81bf2ae95
     TargetNodeGUID: 16f3fc09-f74f-43af-aaad-57bfc12962cc
     DisplayText: Next
@@ -87,7 +39,7 @@ MonoBehaviour:
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 375a5952-cf49-46a0-984f-3f48ff92f634
-    TargetNodeGUID: d5f91dc6-fb11-4519-bd1d-137cd5e72df1
+    TargetNodeGUID: 514dab39-e8fd-49d3-b353-9288862c9c9d
     DisplayText: Next
   - PortName: Option 1
     BaseNodeGUID: 16f3fc09-f74f-43af-aaad-57bfc12962cc
@@ -106,16 +58,8 @@ MonoBehaviour:
     TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
-    TargetNodeGUID: 9f39c214-aeea-4daf-9979-751b501d1641
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: b3542544-11c0-4664-9e27-d37fbf1869a6
     TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 48dcb201-22b8-4dbf-aee5-bf6edb7300b4
-    TargetNodeGUID: f6a2b21e-dbc7-4aef-89a1-8e6abe1629b6
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 3ee85593-6e27-44ba-9744-21c2ac7ef6ce
@@ -183,53 +127,85 @@ MonoBehaviour:
     DisplayText: Fail
   - PortName: Option 2
     BaseNodeGUID: d0986f63-6b72-4cc1-9a2d-b5c05ecccf45
-    TargetNodeGUID: a9d9109a-7fc8-453c-84fa-933b785cb93f
-    DisplayText: No thanks
+    TargetNodeGUID: 593f8033-2b2f-44f5-aebc-d24f681686aa
+    DisplayText: Absolutly
   - PortName: Option 3
     BaseNodeGUID: d0986f63-6b72-4cc1-9a2d-b5c05ecccf45
     TargetNodeGUID: 593f8033-2b2f-44f5-aebc-d24f681686aa
-    DisplayText: Absolutly
+    DisplayText: YES
   - PortName: Option 4
     BaseNodeGUID: d0986f63-6b72-4cc1-9a2d-b5c05ecccf45
     TargetNodeGUID: 593f8033-2b2f-44f5-aebc-d24f681686aa
-    DisplayText: YES
+    DisplayText: What?
   - PortName: Option 5
     BaseNodeGUID: d0986f63-6b72-4cc1-9a2d-b5c05ecccf45
-    TargetNodeGUID: 593f8033-2b2f-44f5-aebc-d24f681686aa
-    DisplayText: What?
+    TargetNodeGUID: 6ebba1ee-f5d1-4a68-8917-3ca4beb5fd3b
+    DisplayText: No thanks
   - PortName: Next
     BaseNodeGUID: 8aa33c30-f9ab-46f7-9e69-6d4d775901b0
     TargetNodeGUID: 92cadd5f-3429-4ab8-a5c0-4d977b01ae34
     DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: a125a100-6da2-42de-adf9-debc47e9e44c
+    DisplayText: Play Sound
+  - PortName: Option 2
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: 8fa5deeb-c014-4675-8fb5-89c81bf2ae95
+    DisplayText: Change animation
+  - PortName: Option 3
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: 428d4379-0489-4e75-9778-c47605a0a721
+    DisplayText: Change Camera view
+  - PortName: Option 4
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: 375a5952-cf49-46a0-984f-3f48ff92f634
+    DisplayText: End Dialoge
+  - PortName: Option 5
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: 07982c2d-f0f7-4aa9-8170-a843aae99266
+    DisplayText: Shake Camera
+  - PortName: Option 6
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: 6f8f7e50-c59a-46cb-a1c9-a2dcafd7d2cb
+    DisplayText: Start Test Dialogue
+  - PortName: Option 7
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
+    DisplayText: Move Character
+  - PortName: Option 8
+    BaseNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    TargetNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
+    DisplayText: Test Your Luck
+  - PortName: Next
+    BaseNodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
+    TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
+    TargetNodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
+    TargetNodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
+    TargetNodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
+    DisplayText: False
+  - PortName: Next
+    BaseNodeGUID: 48dcb201-22b8-4dbf-aee5-bf6edb7300b4
+    TargetNodeGUID: f6a2b21e-dbc7-4aef-89a1-8e6abe1629b6
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
+    TargetNodeGUID: 9f39c214-aeea-4daf-9979-751b501d1641
+    DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 92cadd5f-3429-4ab8-a5c0-4d977b01ae34
-    TargetNodeGUID: a9d9109a-7fc8-453c-84fa-933b785cb93f
+    TargetNodeGUID: 6ebba1ee-f5d1-4a68-8917-3ca4beb5fd3b
     DisplayText: Next
   DialogueNodeData:
-  - NodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
-    DialogueText: Choice Node
-    Position: {x: 501.6, y: 200}
-    NodeType: 1
-    Actor: 
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
   - NodeGUID: 0bbc8a36-5f10-4b21-9bc8-6990fc4b0b5d
     DialogueText: Did you hear that?
     Position: {x: 592, y: -14.4}
@@ -244,6 +220,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -268,6 +248,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -292,82 +276,14 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 7
     EventName: 
     EventValue: 1
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
-    DialogueText: You're Lucky!
-    Position: {x: 478.4, y: 677.6}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
-    DialogueText: You're Unlucky
-    Position: {x: 478.4, y: 808}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
-    DialogueText: RandomCondition Node
-    Position: {x: 241.6, y: 677.6}
-    NodeType: 6
-    Actor: 
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 50
-    EventType: 0
-    EventName: 
-    EventValue: 0
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
@@ -388,6 +304,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -412,6 +332,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -436,6 +360,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -460,6 +388,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -484,6 +416,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -495,33 +431,9 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
   - NodeGUID: 9f39c214-aeea-4daf-9979-751b501d1641
-    DialogueText: "He\u2019s moved!"
+    DialogueText: I'm moving
     Position: {x: 1127.2, y: 191.20001}
     NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
-    DialogueText: MoveCharacter Node
-    Position: {x: 894.4, y: 294.4}
-    NodeType: 8
     Actor: Guy
     DisplayText: 
     FailTime: 5
@@ -532,13 +444,17 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
     EventValue: 0
     AnimationName: 
     LoopAnimation: 1
-    MoveTo: {x: 5, y: 0, z: 0}
+    MoveTo: {x: 0, y: 0, z: 0}
     CameraActionType: 0
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
@@ -556,6 +472,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -566,30 +486,6 @@ MonoBehaviour:
     CameraActionType: 0
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: 48dcb201-22b8-4dbf-aee5-bf6edb7300b4
-    DialogueText: Camera Node
-    Position: {x: 1229.6, y: 656}
-    NodeType: 9
-    Actor: 
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 5, z: 0}
   - NodeGUID: 3ee85593-6e27-44ba-9744-21c2ac7ef6ce
     DialogueText: Camera Node
     Position: {x: 1229.6, y: 846.39996}
@@ -604,6 +500,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -628,6 +528,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -652,6 +556,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -676,6 +584,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -700,6 +612,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -724,30 +640,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: d5f91dc6-fb11-4519-bd1d-137cd5e72df1
-    DialogueText: End
-    Position: {x: 1331.2, y: 330.4}
-    NodeType: 11
-    Actor: 
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -772,6 +668,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 7
     EventName: heavy
@@ -796,6 +696,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 8
     EventName: pain
@@ -820,6 +724,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 4
     EventName: bootUp
@@ -844,6 +752,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -868,6 +780,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -892,6 +808,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 4
     EventName: shot
@@ -899,6 +819,230 @@ MonoBehaviour:
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 514dab39-e8fd-49d3-b353-9288862c9c9d
+    DialogueText: End
+    Position: {x: 1352.8, y: 330.4}
+    NodeType: 12
+    Actor: 
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 6ebba1ee-f5d1-4a68-8917-3ca4beb5fd3b
+    DialogueText: End
+    Position: {x: 2920.8, y: 408}
+    NodeType: 12
+    Actor: 
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: fa2007da-fbfb-4f5c-9cf1-3f9914eb7f5b
+    DialogueText: Choice Node
+    Position: {x: 501.6, y: 200}
+    NodeType: 1
+    Actor: 
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: a644a29e-fdd8-4cc5-814d-290cd209a60b
+    DialogueText: You're Lucky!
+    Position: {x: 527.2, y: 717.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 1668b698-65a7-4a5f-9d54-3bd6810a0427
+    DialogueText: You're Unlucky
+    Position: {x: 527.2, y: 848}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: da4ce75c-109c-4bfa-8f81-e3f49b0f6b30
+    DialogueText: RandomCondition Node
+    Position: {x: 292.8, y: 753.6}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 50
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+  - NodeGUID: 48dcb201-22b8-4dbf-aee5-bf6edb7300b4
+    DialogueText: Camera Node
+    Position: {x: 1229.6, y: 638.39996}
+    NodeType: 9
+    Actor: 
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 5, z: 0}
+  - NodeGUID: b57147c7-c193-4013-a634-bb7b0bdbb027
+    DialogueText: MoveCharacter Node
+    Position: {x: 894.4, y: 294.4}
+    NodeType: 8
+    Actor: Guy
+    DisplayText: 
+    FailTime: 5
+    StringConditionKey: 
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 5, y: 0, z: 0}
     CameraActionType: 0
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
@@ -916,30 +1060,10 @@ MonoBehaviour:
     IntConditionComparison: 0
     IntActionType: 0
     IntConditionValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-  - NodeGUID: a9d9109a-7fc8-453c-84fa-933b785cb93f
-    DialogueText: End
-    Position: {x: 2919.2, y: 359.2}
-    NodeType: 11
-    Actor: 
-    DisplayText: 
-    FailTime: 5
-    StringConditionKey: 
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 

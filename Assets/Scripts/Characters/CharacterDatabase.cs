@@ -16,6 +16,10 @@ namespace Characters
         {
             return LoadAllCharacters().Select(c => c.CharacterID).ToList();
         }
+        public static Character GetCharacterByID(string id)
+        {
+            return LoadAllCharacters().FirstOrDefault(c => c.CharacterID == id);
+        }
 
         public static List<string> GetCharacterNames()
         {

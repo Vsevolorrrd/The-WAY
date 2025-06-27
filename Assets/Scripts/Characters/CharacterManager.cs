@@ -14,6 +14,9 @@ namespace Characters
         private Dictionary<string, GameObject> activeCharacters = new();
         public IReadOnlyDictionary<string, GameObject> ActiveCharacters => activeCharacters;
 
+        private Dictionary<string, CompanionInstance> companionInstances = new();
+        public IReadOnlyDictionary<string, CompanionInstance> CompanionInstances => companionInstances;
+
         void Awake()
         {
             if (Instance != null && Instance != this)
@@ -30,13 +33,22 @@ namespace Characters
         void LoadAllCharacters()
         {
             Character[] loadedCharacters = Resources.LoadAll<Character>("Characters");
-
             foreach (var character in loadedCharacters)
             {
                 if (!characters.ContainsKey(character.CharacterID))
                 characters.Add(character.CharacterID, character);
-                else
-                Debug.LogWarning($"Duplicate character ID: {character.CharacterID}");
+            }
+
+            Companion[] loadedCompanions = Resources.LoadAll<Companion>("Characters");
+            foreach (var companion in loadedCompanions)
+            {
+                characters[companion.CharacterID] = companion;
+
+                if (!companionInstances.ContainsKey(companion.CharacterID))
+                {
+                    var instance = new CompanionInstance(companion);
+                    companionInstances.Add(companion.CharacterID, instance);
+                }
             }
         }
         public GameObject SpawnCharacter(Character character, Vector3 position)
@@ -80,6 +92,15 @@ namespace Characters
             return characterObj;
 
             Debug.LogWarning($"Character with ID '{id}' is not currently in the scene.");
+            return null;
+        }
+
+        public CompanionInstance GetCharacterInstance(string id)
+        {
+            if (companionInstances.TryGetValue(id, out var instance))
+            return instance;
+
+            Debug.LogWarning($"Instance for character ID '{id}' not found.");
             return null;
         }
         /*

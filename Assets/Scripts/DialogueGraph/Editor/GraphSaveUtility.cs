@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using UnityEditor.Overlays;
+using static UnityEngine.GraphicsBuffer;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -128,6 +130,14 @@ namespace Subtegral.DialogueSystem.Editor
 
                     case DialogueNodeType.RandomCondition:
                         nodeData.RandomConditionValue = node.RandomCondition?.Value ?? 0;
+                        break;
+
+                    case DialogueNodeType.CharacterCondition:
+                        nodeData.Actor = node.Actor;
+                        nodeData.CharacterAttribute = node.CharacterCondition?.Attribute ?? CharacterAttribute.Relations;
+                        nodeData.CharacterTarget = node.CharacterCondition?.Target ?? CharacterTarget.Player;
+                        nodeData.CharacterComparisonValue = node.CharacterCondition?.ComparisonValue ?? 0;
+                        nodeData.CharacterAction = node.CharacterCondition?.Action ?? CharacterAction.None;
                         break;
 
                     case DialogueNodeType.Animation:

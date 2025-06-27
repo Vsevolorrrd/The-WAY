@@ -6,7 +6,7 @@ public class Character : ScriptableObject
 {
     public string CharacterID;
     public string CharacterName;
-    public Sprite Portrait;
+    public Sprite Portrait; 
 
     [TextArea]
     public string bio;
