@@ -8,7 +8,8 @@ namespace Subtegral.DialogueSystem.Runtime
 {
     public class D_Manager : Singleton<D_Manager>
     {
-        [SerializeField] private DialogueContainer dialogue;
+        [SerializeField] DialogueContainer dialogueContainer;
+
         private DialogueNodeData savedDialogueNodeData;
         private bool awatingImput = false;
         private Coroutine choiceTimerRoutine;
@@ -25,16 +26,17 @@ namespace Subtegral.DialogueSystem.Runtime
             UIManager = GetComponent<D_UI>();
         }
 
-        private void Start()
+        public void StartDialogue(DialogueContainer dialogue)
         {
+            dialogueContainer = dialogue;
             UIManager.OpenDialogueUI();
-            var narrativeData = dialogue.NodeLinks.First(); //Entrypoint node
+            var narrativeData = dialogueContainer.NodeLinks.First(); //Entrypoint node
             ProceedToNarrative(narrativeData.TargetNodeGUID);
         }
 
         public void ProceedToNarrative(string narrativeDataGUID)
         {
-            var nodeData = dialogue.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
+            var nodeData = dialogueContainer.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
             UIManager.ClearButtons();
             UIManager.ClearText();
 
@@ -104,30 +106,43 @@ namespace Subtegral.DialogueSystem.Runtime
 
             savedDialogueNodeData = nodeData;
             awatingImput = true;
+
+            if (nodeData.CheckThisNode == false) return;
+
         }
 
         private void ChoiceNode(DialogueNodeData nodeData)
         {
-            UIManager.CreateButtons(dialogue, nodeData, this);
+            UIManager.CreateButtons(dialogueContainer, nodeData, this);
         }
         private void TimedChoiceNode(DialogueNodeData nodeData)
         {
-            UIManager.CreateTimedButtons(dialogue, nodeData, this);
+            UIManager.CreateTimedButtons(dialogueContainer, nodeData, this);
             StartTimedCountdown(nodeData);
         }
         private void EventNode(DialogueNodeData nodeData)
         {
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
-            if (nextLink != null)
-            ProceedToNarrative(nextLink.TargetNodeGUID);
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink == null) return;
 
+            if (nodeData.EventType == DialogueEventType.Delay) // for delay
+            {
+                StartCoroutine(Delay(nextLink.TargetNodeGUID, nodeData.EventValue));
+                return;
+            }
+
+            ProceedToNarrative(nextLink.TargetNodeGUID);
             eventManager.DialogueEvent(nodeData, conditionManager);
         }
         private void StringConditionNode(DialogueNodeData nodeData)
         {
-            bool result = conditionManager.StringCondition(nodeData.StringConditionKey);
+            bool result = false;
 
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            if (nodeData.ConditionType == StringConditionType.Default)
+            result = conditionManager.StringCondition(nodeData.StringConditionKey);
+            else result = conditionManager.MemoryCondition(nodeData.StringConditionKey);
+
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x =>
             x.BaseNodeGUID == nodeData.NodeGUID &&
             x.PortName == (result ? "True" : "False"));
 
@@ -138,7 +153,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             bool result = conditionManager.BoolCondition(nodeData.BoolConditionKey, nodeData.BoolConditionExpectedValue);
 
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x =>
             x.BaseNodeGUID == nodeData.NodeGUID &&
             x.PortName == (result ? "True" : "False"));
 
@@ -158,7 +173,7 @@ namespace Subtegral.DialogueSystem.Runtime
                 (nodeData.IntConditionKey, nodeData.IntActionType, nodeData.IntConditionValue);
             }
 
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x =>
             x.BaseNodeGUID == nodeData.NodeGUID &&
             x.PortName == (result ? "True" : "False"));
 
@@ -169,7 +184,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             bool result = conditionManager.RandomCondition(nodeData.RandomConditionValue);
 
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x =>
             x.BaseNodeGUID == nodeData.NodeGUID &&
             x.PortName == (result ? "True" : "False"));
 
@@ -180,7 +195,7 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             bool result = conditionManager.CharacterCondition(nodeData);
 
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x =>
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x =>
             x.BaseNodeGUID == nodeData.NodeGUID &&
             x.PortName == (result ? "True" : "False"));
 
@@ -189,7 +204,7 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         private void AnimationNode(DialogueNodeData nodeData)
         {
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
 
@@ -204,7 +219,7 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         private void MoveCharacterNode(DialogueNodeData nodeData)
         {
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
 
@@ -219,7 +234,7 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void CameraNode(DialogueNodeData nodeData)
         {
-            var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
 
@@ -229,10 +244,13 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void EndNode(DialogueNodeData nodeData)
         {
-            UIManager.CreateText(nodeData);
             UIManager.CloseDialogueUI();
+            if (CampfireManager.Instance != null)
+            CampfireManager.Instance.AdvanceCampfire();
+
             Debug.Log("Dialogue has ended.");
-            // trigger an event
+            if (nodeData.EndAction == EndAction.LoadScene)
+            SceneLoader.Instance.LoadScene(nodeData.DisplayText);
         }
 
         private void Update()
@@ -241,7 +259,7 @@ namespace Subtegral.DialogueSystem.Runtime
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
-                var nextLink = dialogue.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == savedDialogueNodeData.NodeGUID);
+                var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == savedDialogueNodeData.NodeGUID);
                 if (nextLink != null)
                 {
                     awatingImput = false;
@@ -255,7 +273,7 @@ namespace Subtegral.DialogueSystem.Runtime
         }
         public void StartTimedCountdown(DialogueNodeData nodeData)
         {
-            var links = dialogue.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID).ToList();
+            var links = dialogueContainer.NodeLinks.Where(x => x.BaseNodeGUID == nodeData.NodeGUID).ToList();
             var failLink = links.FirstOrDefault(x => x.PortName == "Fail");
 
             if (nodeData.FailTime > 0 && failLink != null)
@@ -286,6 +304,17 @@ namespace Subtegral.DialogueSystem.Runtime
 
             UIManager.HideChoiceBar();
             ProceedToNarrative(failTargetNodeGUID);
+        }
+        private IEnumerator Delay(string targetNodeGUID, float time)
+        {
+            float timer = 0f;
+
+            while (timer < time)
+            {
+                timer += Time.deltaTime;
+                yield return null;
+            }
+            ProceedToNarrative(targetNodeGUID);
         }
     }
 }

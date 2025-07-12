@@ -1,15 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Characters/Character")]
+[CreateAssetMenu(menuName = "Scriptable Objects/Character")]
 public class Character : ScriptableObject
 {
     public string CharacterID;
     public string CharacterName;
     public Sprite Portrait; 
-
-    [TextArea]
-    public string bio;
 
     public List<CharacterAnimation> animations;
 

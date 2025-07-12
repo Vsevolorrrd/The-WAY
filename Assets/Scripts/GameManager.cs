@@ -4,13 +4,13 @@ public class GameManager : Singleton<GameManager>
 {
     private GamePhase currentPhase;
     private TravelManager travel;
-    private SceneManager scene;
+    private S_Controller scene;
     private CampfireManager campfire;
 
     protected override void OnAwake()
     {
         travel = GetComponent<TravelManager>();
-        scene = GetComponent<SceneManager>();
+        scene = GetComponent<S_Controller>();
         campfire = GetComponent<CampfireManager>();
     }
 

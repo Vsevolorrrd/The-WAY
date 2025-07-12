@@ -1,5 +1,6 @@
 using Subtegral.DialogueSystem.DataContainers;
 using UnityEngine;
+using System;
 
 public class D_EventManager : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class D_EventManager : MonoBehaviour
         switch (nodeData.EventType)
         {
             case DialogueEventType.Custom:
-                // fire event
+                // add
                 break;
 
             case DialogueEventType.SetStringCondition:
@@ -35,7 +36,7 @@ public class D_EventManager : MonoBehaviour
             case DialogueEventType.PlayMusic:
                 AudioClip music = AudioManager.Instance.GetSoundByName(nodeData.EventName.ToLowerInvariant());
                 if (music != null)
-                    AudioManager.Instance.PlaySound(music, nodeData.EventValue, null, true);
+                AudioManager.Instance.PlaySound(music, nodeData.EventValue, null, true);
                 else Debug.LogWarning($"Music '{nodeData.EventName}' not found in AudioManager.");
                 break;
 
@@ -61,7 +62,11 @@ public class D_EventManager : MonoBehaviour
                 break;
 
             case DialogueEventType.PostEffect:
-                PostFXManager.Instance.DialoguePostEffect(nodeData.EventName.ToLowerInvariant(), nodeData.EventValue);
+                PostFXManager.Instance.DialoguePostEffect(nodeData.EventName, nodeData.EventValue);
+                break;
+
+            case DialogueEventType.AddMemory:
+                conditionManager.AddMemory(nodeData.EventName);
                 break;
 
             case DialogueEventType.SetPlayerName:

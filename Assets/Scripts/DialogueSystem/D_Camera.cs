@@ -9,11 +9,13 @@ public class D_Camera : Singleton<D_Camera>
     [SerializeField] private CinemachineCamera virtualCamera;
     [SerializeField] private Transform targetTransform;
 
+    private PlayerCamera playerCam;
     private Vector3 originalOffset;
     private Coroutine currentCoroutine;
 
     protected override void OnAwake()
     {
+        playerCam = GetComponent<PlayerCamera>();
         if (virtualCamera != null && virtualCamera.Follow != null)
         originalOffset = virtualCamera.transform.position - virtualCamera.Follow.position;
     }

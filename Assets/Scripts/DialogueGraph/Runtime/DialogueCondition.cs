@@ -11,6 +11,7 @@ namespace Subtegral.DialogueSystem.DataContainers
     [Serializable]
     public class StringCondition : DialogueCondition
     {
+        public StringConditionType ConditionType;
         public string Value;
     }
 
@@ -82,5 +83,10 @@ namespace Subtegral.DialogueSystem.DataContainers
         None,
         SpawnOnRight,
         SpawnOnLeft
+    }
+    public enum StringConditionType
+    {
+        Default,
+        Memory
     }
 }

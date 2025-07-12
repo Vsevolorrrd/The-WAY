@@ -21,6 +21,8 @@ namespace Subtegral.DialogueSystem.DataContainers
         StopAllMusic,
         ScreenShake,
         PostEffect,
+        Delay,
+        AddMemory,
         SetPlayerName
     }
 }

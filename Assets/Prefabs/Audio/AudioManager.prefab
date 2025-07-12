@@ -48,10 +48,10 @@ MonoBehaviour:
   maxSoundsPlaying: 25
   soundList:
   - name: shot
-    volume: 1
     Clip: {fileID: 0}
   - name: bootUp
-    volume: 1
     Clip: {fileID: 8300000, guid: 16969fe75116790448c15e02b8668d76, type: 3}
+  - name: thunder
+    Clip: {fileID: 8300000, guid: 5ade7edbffaaef946ab3f1ef59a11386, type: 3}
   buttonSound: {fileID: 0}
   hoverSound: {fileID: 0}

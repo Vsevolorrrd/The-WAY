@@ -5,8 +5,6 @@ using UnityEngine.UIElements;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
-using UnityEditor.Overlays;
-using static UnityEngine.GraphicsBuffer;
 
 namespace Subtegral.DialogueSystem.Editor
 {
@@ -100,6 +98,7 @@ namespace Subtegral.DialogueSystem.Editor
                 {
                     case DialogueNodeType.Basic:
                         nodeData.Actor = node.Actor;
+                        nodeData.CheckThisNode = node.CheckThisNode;
                         break;
 
                     case DialogueNodeType.TimedChoice:
@@ -114,6 +113,7 @@ namespace Subtegral.DialogueSystem.Editor
 
                     case DialogueNodeType.StringCondition:
                         nodeData.StringConditionKey = node.StringCondition?.Key ?? "";
+                        nodeData.ConditionType = node.StringCondition?.ConditionType ?? StringConditionType.Default;
                         break;
 
                     case DialogueNodeType.BoolCondition:
@@ -155,6 +155,10 @@ namespace Subtegral.DialogueSystem.Editor
                         nodeData.CameraActionType = node.Camera?.CameraActionType ?? CameraActionType.MoveBy;
                         nodeData.CameraActionDuration = node.Camera?.CameraActionDuration ?? 0f;
                         nodeData.CameraActionPosition = node.Camera?.CameraActionPosition ?? Vector3.zero;
+                        break;
+
+                    case DialogueNodeType.End:
+                        nodeData.EndAction = node.EndAction; 
                         break;
 
                 }

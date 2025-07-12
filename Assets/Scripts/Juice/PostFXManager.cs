@@ -1,24 +1,32 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class PostFXManager : Singleton<PostFXManager>
 {
-    [Header("Post Effects")]
-    [SerializeField] private Volume painEffect;
-    [SerializeField] private Volume dizzyEffect;
+    [Header("Pain")]
+    [SerializeField] Volume painEffect;
+    [Header("Dizzyness")]
+    [SerializeField] Volume dizzyEffect;
+    [SerializeField] float speed;
+    [SerializeField] float minIntensity;
+    [SerializeField] float maxIntensity;
+
+    private ChromaticAberration chromaticAberration;
+    private bool stop = false;
 
     [Header("Settings")]
     [SerializeField] private float effectDecaySpeed = 1f;
     public void DialoguePostEffect(string effectName, float duration)
     {
-        switch (effectName)
+        switch (effectName.ToLower())
         {
             case "pain":
                 PainEffect(duration);
                 break;
             case "dizzy":
-                PainEffect(duration);
+                DizzyEffect(duration);
                 break;
             default:
                 Debug.LogWarning($"Unknown post effect name: {effectName}");
@@ -31,6 +39,7 @@ public class PostFXManager : Singleton<PostFXManager>
     }
     public void DizzyEffect(float duration)
     {
+        TriggerDizzyness();
         StartCoroutine(PlayEffect(dizzyEffect, duration));
     }
     private IEnumerator PlayEffect(Volume effect, float duration)
@@ -47,6 +56,50 @@ public class PostFXManager : Singleton<PostFXManager>
             effect.weight -= effectDecaySpeed * Time.deltaTime;
             effect.weight = Mathf.Max(effect.weight, 0);
             yield return null;
+        }
+        if (effect == dizzyEffect)
+        StopDizzyness();
+    }
+    protected override void OnAwake()
+    {
+        if (!dizzyEffect.profile.TryGet(out chromaticAberration))
+        {
+            Debug.LogError("Chromatic Aberration not found in dizzyEffect profile.");
+        }
+        else
+        {
+            chromaticAberration.intensity.overrideState = true;
+        }
+    }
+
+    private void StopDizzyness()
+    {
+        stop = true;
+    }
+
+    private void TriggerDizzyness()
+    {
+        stop = false;
+        StartCoroutine(DizzynessCycle());
+        IEnumerator DizzynessCycle()
+        {
+            int direction = 1;
+
+            while (!stop || (stop && chromaticAberration.intensity.value > minIntensity))
+            {
+                chromaticAberration.intensity.value += direction * speed * Time.deltaTime;
+                if (chromaticAberration.intensity.value <= minIntensity)
+                {
+                    chromaticAberration.intensity.value = minIntensity;
+                    direction = 1;
+                }
+                else if (chromaticAberration.intensity.value >= maxIntensity)
+                {
+                    chromaticAberration.intensity.value = maxIntensity;
+                    direction = -1;
+                }
+                yield return null;
+            }
         }
     }
 }

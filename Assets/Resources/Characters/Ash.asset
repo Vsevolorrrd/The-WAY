@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82a512c34110104469a9304a57ace388, type: 3}
+  m_Name: Ash
+  m_EditorClassIdentifier: 
+  CharacterID: Ash
+  CharacterName: Ash
+  Portrait: {fileID: 0}
+  bio: 
+  animations: []
+  RealName: Tomas
+  Relations_Player: 70
+  Relations_Doc: 60
+  Relations_Grave: 50
+  Relations_Rook: 50
+  Relations_Vale: 70
+  Relations_Ash: 0
+  Morale: 60
+  Stamina: 100

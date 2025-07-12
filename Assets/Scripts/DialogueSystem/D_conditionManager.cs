@@ -5,8 +5,20 @@ using UnityEngine;
 
 public class D_conditionManager : MonoBehaviour
 {
+    private List<string> memories = new List<string>();
     private List<string> stringConditions = new List<string>(24);
     private Dictionary<string, bool> boolConditions = new Dictionary<string, bool>(10);
+
+    // memories
+    public bool MemoryCondition(string memory)
+    {
+        return memories.Contains(memory);
+    }
+    public void AddMemory(string memory)
+    {
+        if (!memories.Contains(memory))
+        memories.Add(memory);
+    }
 
     // strings
     public bool StringCondition(string condition)

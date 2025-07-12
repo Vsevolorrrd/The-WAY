@@ -212,6 +212,9 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.Camera:
                     CreateCameraNodeUI(tempDialogueNode, savedData);
                     break;
+                case DialogueNodeType.End:
+                    CreateEndNodeUI(tempDialogueNode, savedData);
+                    break;
             }
 
 
@@ -234,6 +237,12 @@ namespace Subtegral.DialogueSystem.Editor
 
         private void CreateBasicNodeUI(DialogueNode node, DialogueNodeData savedData = null)
         {
+
+            if (savedData != null) // loading the saved data
+            {
+                node.CheckThisNode = savedData.CheckThisNode;
+            }
+
             #region characters
 
             var characterNames = CharacterDatabase.GetCharacterNames();
@@ -264,6 +273,10 @@ namespace Subtegral.DialogueSystem.Editor
             node.mainContainer.Add(characterDropdown);
 
             #endregion
+
+            var Toggle = new Toggle("Check This Node") { value = node.CheckThisNode };
+            Toggle.RegisterValueChangedCallback(evt => node.CheckThisNode = evt.newValue);
+            node.mainContainer.Add(Toggle);
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
@@ -361,6 +374,7 @@ namespace Subtegral.DialogueSystem.Editor
             if (savedData != null) // loading the saved data
             {
                 condition.Key = savedData.StringConditionKey;
+                condition.ConditionType = savedData.ConditionType;
             }
 
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
@@ -371,9 +385,16 @@ namespace Subtegral.DialogueSystem.Editor
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
 
+            var conditionType = new EnumField("Comparison", StringConditionType.Default)
+            {
+                value = condition.ConditionType
+            };
+            conditionType.RegisterValueChangedCallback(evt => condition.ConditionType = (StringConditionType)evt.newValue);
+
             var keyField = new TextField("Key") { value = condition.Key };
             keyField.RegisterValueChangedCallback(evt => condition.Key = evt.newValue);
 
+            node.mainContainer.Add(conditionType);
             node.mainContainer.Add(keyField);
             node.StringCondition = condition;
         }
@@ -689,6 +710,22 @@ namespace Subtegral.DialogueSystem.Editor
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
+        }
+
+        private void CreateEndNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            if (savedData != null) // loading the saved data
+            {
+                node.EndAction = savedData.EndAction;
+            }
+
+            var actionField = new EnumField("End Action", EndAction.LoadScene)
+            {
+                value = node.EndAction
+            };
+            actionField.RegisterValueChangedCallback(evt => node.EndAction = (EndAction)evt.newValue);
+
+            node.mainContainer.Add(actionField);
         }
 
         public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "", string displayText = "")

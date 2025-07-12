@@ -17,6 +17,9 @@ namespace Subtegral.DialogueSystem.Editor
         public string AnimationName;
         public bool LoopAnimation = true;
 
+        // Basic data
+        public bool CheckThisNode = false;
+
         // Timed Choice
         public float FailTime = 5f;
 
@@ -35,5 +38,8 @@ namespace Subtegral.DialogueSystem.Editor
 
         // Camera
         public DialogueCameraNode Camera;
+
+        // End
+        public EndAction EndAction;
     }
 }

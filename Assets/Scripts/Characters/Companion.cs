@@ -1,8 +1,9 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Characters/Companion")]
+[CreateAssetMenu(menuName = "Scriptable Objects/Companion")]
 public class Companion : Character
 {
+    public string RealName;
     public int Relations_Player;
     public int Relations_Doc;
     public int Relations_Grave;

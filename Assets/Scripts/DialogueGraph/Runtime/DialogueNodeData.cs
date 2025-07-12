@@ -13,10 +13,16 @@ namespace Subtegral.DialogueSystem.DataContainers
         public DialogueNodeType NodeType;
         public string Actor;
         public string DisplayText;
+
+        // Basic data
+        public bool CheckThisNode = false;
+
+        // Timed Choice data
         public float FailTime = 5f;
 
         // String Condition data
         public string StringConditionKey;
+        public StringConditionType ConditionType;
 
         // Bool Condition data
         public string BoolConditionKey;
@@ -53,5 +59,8 @@ namespace Subtegral.DialogueSystem.DataContainers
         public CameraActionType CameraActionType;
         public float CameraActionDuration = 1f;
         public Vector3 CameraActionPosition;
+
+        // End data
+        public EndAction EndAction;
     }
 }

@@ -17,6 +17,8 @@ namespace Characters
         private Dictionary<string, CompanionInstance> companionInstances = new();
         public IReadOnlyDictionary<string, CompanionInstance> CompanionInstances => companionInstances;
 
+        [SerializeField] private List<CompanionInstanceDebugView> companionDebugView = new(); // remove me later
+
         void Awake()
         {
             if (Instance != null && Instance != this)
@@ -32,6 +34,8 @@ namespace Characters
 
         void LoadAllCharacters()
         {
+            companionDebugView.Clear(); // remove me later
+
             Character[] loadedCharacters = Resources.LoadAll<Character>("Characters");
             foreach (var character in loadedCharacters)
             {
@@ -48,6 +52,7 @@ namespace Characters
                 {
                     var instance = new CompanionInstance(companion);
                     companionInstances.Add(companion.CharacterID, instance);
+                    companionDebugView.Add(new CompanionInstanceDebugView(companion.CharacterID, instance)); // remove me later
                 }
             }
         }
@@ -115,5 +120,17 @@ namespace Characters
             return characters.TryGetValue(id, out var c) && c.isDead;
         }
         */
+    }
+    [System.Serializable]
+    public class CompanionInstanceDebugView // remove me later
+    {
+        public string ID;
+        public CompanionInstance Instance;
+
+        public CompanionInstanceDebugView(string id, CompanionInstance instance)
+        {
+            ID = id;
+            Instance = instance;
+        }
     }
 }
