@@ -10,7 +10,7 @@ public class PlayerCamera : MonoBehaviour
 
     private void Start()
     {
-        player = PlayerManager.Instance.transform;
+        player = PlayerManager.Instance.CameraAnchor;
     }
     void Update()
     {

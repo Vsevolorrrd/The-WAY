@@ -158,7 +158,7 @@ namespace Subtegral.DialogueSystem.Editor
                         break;
 
                     case DialogueNodeType.End:
-                        nodeData.EndAction = node.EndAction; 
+                        nodeData.EndAction = node.EndAction;
                         break;
 
                 }

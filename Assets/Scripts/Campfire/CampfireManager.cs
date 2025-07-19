@@ -7,6 +7,7 @@ public class CampfireManager : Singleton<CampfireManager>
 {
     public enum CampfireState
     {
+        RationState,
         DialogueState,
         CampState
     }
@@ -33,18 +34,32 @@ public class CampfireManager : Singleton<CampfireManager>
     {
         if (isRunning) return;
 
+        isRunning = true;
+        CurrentState = CampfireState.RationState;
+
+        ShowRationUI();
+    }
+    private void ShowRationUI()
+    {
+        Debug.Log("Rationing phase started. Choose who to feed...");
+    }
+    public void ProceedFromRationPhase()
+    {
         QueueMatchingDialogues();
 
         if (dialogueQueue.Count > 0)
         {
-            isRunning = true;
             CurrentState = CampfireState.DialogueState;
-            AdvanceCampfire(); // Start first dialogue
+            AdvanceCampfire();
         }
         else
         {
-            Debug.Log("No valid dialogues for this campfire sequence.");
+            EndMemorySequence();
         }
+    }
+    public void OnConfirmRationing()
+    {
+        ProceedFromRationPhase();
     }
 
     private void QueueMatchingDialogues()
@@ -63,9 +78,6 @@ public class CampfireManager : Singleton<CampfireManager>
         }
     }
 
-    /// <summary>
-    /// Call this manually when a dialogue ends.
-    /// </summary>
     public void AdvanceCampfire()
     {
         if (dialogueQueue.Count == 0)

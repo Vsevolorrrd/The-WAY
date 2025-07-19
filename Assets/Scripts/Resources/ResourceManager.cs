@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ResourceManager : Singleton<ResourceManager>
 {
-
     [Serializable]
     public class Resource
     {
@@ -44,7 +43,7 @@ public class ResourceManager : Singleton<ResourceManager>
     public bool Spend(string resourceName, int amount)
     {
         if (Get(resourceName) < amount)
-            return false;
+        return false;
 
         resources[resourceName] -= amount;
         OnResourceChanged?.Invoke(resourceName, resources[resourceName]);

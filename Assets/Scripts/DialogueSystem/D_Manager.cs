@@ -11,14 +11,16 @@ namespace Subtegral.DialogueSystem.Runtime
         [SerializeField] DialogueContainer dialogueContainer;
 
         private DialogueNodeData savedDialogueNodeData;
-        private bool awatingImput = false;
         private Coroutine choiceTimerRoutine;
+        private bool awatingImput = false;
+        private bool dialogueIsGoing = false;
 
         // Dialogue managers
         private D_conditionManager conditionManager;
         private D_EventManager eventManager;
         private D_UI UIManager;
 
+        public bool DialogueIsGoing() { return dialogueIsGoing; }
         protected override void OnAwake()
         {
             conditionManager = GetComponent<D_conditionManager>();
@@ -32,6 +34,7 @@ namespace Subtegral.DialogueSystem.Runtime
             UIManager.OpenDialogueUI();
             var narrativeData = dialogueContainer.NodeLinks.First(); //Entrypoint node
             ProceedToNarrative(narrativeData.TargetNodeGUID);
+            dialogueIsGoing = true;
         }
 
         public void ProceedToNarrative(string narrativeDataGUID)
@@ -245,12 +248,13 @@ namespace Subtegral.DialogueSystem.Runtime
         private void EndNode(DialogueNodeData nodeData)
         {
             UIManager.CloseDialogueUI();
+            dialogueIsGoing = false;
             if (CampfireManager.Instance != null)
             CampfireManager.Instance.AdvanceCampfire();
 
             Debug.Log("Dialogue has ended.");
             if (nodeData.EndAction == EndAction.LoadScene)
-            SceneLoader.Instance.LoadScene(nodeData.DisplayText);
+            SceneLoader.Instance.LoadScene(nodeData.DialogueText);
         }
 
         private void Update()

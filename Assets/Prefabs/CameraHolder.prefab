@@ -255,6 +255,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c52a03f60ecc6eb4caae5c33cb5919fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Cam: {fileID: 375940946373498037}
+  threshhold: 5
+  speed: 5
+  direction: {x: 0, y: 0, z: 0}
 --- !u!1 &7259032753678711650
 GameObject:
   m_ObjectHideFlags: 0

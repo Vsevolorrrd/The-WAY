@@ -81,6 +81,18 @@ namespace Characters
                 activeCharacters.Remove(id);
             }
         }
+        public void RegisterCharacterInScene(string id, GameObject obj)
+        {
+            if (!activeCharacters.ContainsKey(id))
+            {
+                activeCharacters.Add(id, obj);
+                Debug.Log($"Registered character '{id}' already present in the scene.");
+            }
+            else
+            {
+                Debug.LogWarning($"Character '{id}' is already registered.");
+            }
+        }
 
         public Character GetCharacter(string id)
         {

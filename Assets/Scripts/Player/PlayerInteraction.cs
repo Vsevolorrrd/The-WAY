@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
 {
+    public void BlockMovement(bool state) { blockMovement = state; }
     [SerializeField] LayerMask interactiveLayer;
-    private GameObject interactiveObj;
+    [SerializeField] LayerMask walkableLayer;
+    [SerializeField] bool blockMovement = false;
     private PlayerMovement playerMovement;
 
     private void Awake()
@@ -20,7 +22,23 @@ public class PlayerInteraction : MonoBehaviour
 
         if (Hit.collider != null)
         {
-            playerMovement.MovePlayerTo(Hit.collider.gameObject);
+            if (blockMovement)
+            {
+                Hit.collider.gameObject.GetComponent<IInteractable>().Interact();
+                return;
+            }
+
+            playerMovement.MovePlayerToObject(Hit.collider.gameObject);
+            return;
+        }
+
+        if (blockMovement) 
+        return;
+
+        RaycastHit2D groundHit = Physics2D.GetRayIntersection(ray, 100, walkableLayer);
+        if (groundHit.collider != null)
+        {
+            playerMovement.MovePlayerTo(groundHit.point);
         }
     }
 }

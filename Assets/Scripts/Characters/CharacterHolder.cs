@@ -5,7 +5,7 @@ namespace Characters
 {
     public class CharacterHolder : MonoBehaviour
     {
-        private Character character;
+        [SerializeField] Character character;
         private Animator animator;
 
         public string CharacterID { get; private set; }
@@ -14,6 +14,12 @@ namespace Characters
 
         public Sprite Portrait { get; private set; }
 
+        private void Start()
+        {
+            if (character == null) return;
+            CreateCharacter(character);
+            CharacterManager.Instance.RegisterCharacterInScene(CharacterID, gameObject);
+        }
         public void CreateCharacter(Character characterInfo)
         {
             character = characterInfo;
