@@ -40,6 +40,10 @@ namespace Subtegral.DialogueSystem.DataContainers
         public int CharacterComparisonValue;
         public CharacterAction CharacterAction;
 
+        // Character Attribute
+        public TargetAttribute TargetAttribute;
+        public int AttributeValue;
+
         // Random Condition data
         public int RandomConditionValue;
 

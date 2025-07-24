@@ -203,6 +203,9 @@ namespace Subtegral.DialogueSystem.Editor
                 case DialogueNodeType.CharacterCondition:
                     CreateCharacterConditionNodeUI(tempDialogueNode, savedData);
                     break;
+                case DialogueNodeType.CharacterAttribute:
+                    CreateCharacterAttributeNodeUI(tempDialogueNode, savedData);
+                    break;
                 case DialogueNodeType.Animation:
                     CreateAnimationNodeUI(tempDialogueNode, savedData);
                     break;
@@ -558,6 +561,49 @@ namespace Subtegral.DialogueSystem.Editor
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
+        }
+
+        private void CreateCharacterAttributeNodeUI(DialogueNode node, DialogueNodeData savedData = null)
+        {
+            var characterAttribute = new ChangeCharacterAttribute();
+
+            if (savedData != null)
+            {
+                characterAttribute.Attribute = savedData.TargetAttribute;
+                characterAttribute.Target = savedData.CharacterTarget;
+                characterAttribute.Value = savedData.AttributeValue;
+            }
+
+            var attributeField = new EnumField("Attribute", TargetAttribute.Relations)
+            {
+                value = characterAttribute.Attribute
+            };
+            attributeField.RegisterValueChangedCallback(evt => characterAttribute.Attribute = (TargetAttribute)evt.newValue);
+
+            var targetField = new EnumField("Target", CharacterTarget.Player)
+            {
+                value = characterAttribute.Target
+            };
+            targetField.RegisterValueChangedCallback(evt => characterAttribute.Target = (CharacterTarget)evt.newValue);
+
+            var valueField = new IntegerField("Value") { value = characterAttribute.Value };
+            valueField.RegisterValueChangedCallback(evt =>
+            {
+                characterAttribute.Value = evt.newValue;
+                valueField.SetValueWithoutNotify(characterAttribute.Value);
+            });
+
+            node.mainContainer.Add(CreateCharacterDropdown(node, savedData));
+            node.mainContainer.Add(attributeField);
+            node.mainContainer.Add(targetField);
+            node.mainContainer.Add(valueField);
+
+            node.CharacterAttribute = characterAttribute;
+
+            // Output port
+            var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portName = "Next";
+            node.outputContainer.Add(outputPort);
         }
 
         private void CreateAnimationNodeUI(DialogueNode node, DialogueNodeData savedData = null)

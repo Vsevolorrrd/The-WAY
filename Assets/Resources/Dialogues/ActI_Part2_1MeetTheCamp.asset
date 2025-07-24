@@ -53,6 +53,10 @@ MonoBehaviour:
     BaseNodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
     TargetNodeGUID: c6509531-56a7-4b0f-90e2-4dbfbae5da0b
     DisplayText: Nothing. Not even my name.
+  - PortName: Option 2
+    BaseNodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
+    TargetNodeGUID: c6509531-56a7-4b0f-90e2-4dbfbae5da0b
+    DisplayText: ...Should I?
   - PortName: Next
     BaseNodeGUID: c6509531-56a7-4b0f-90e2-4dbfbae5da0b
     TargetNodeGUID: 7929cf41-6d15-470f-a3e7-c2fb96e9157d
@@ -115,7 +119,7 @@ MonoBehaviour:
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 19a4ada2-8498-4b6c-b585-17b2b46de7b4
-    TargetNodeGUID: 347bc461-3b7a-4f8d-ab93-4d56959ded3b
+    TargetNodeGUID: 4e628cd9-63f0-4ad4-b2cd-101adf429ec2
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: b3f74f2a-a888-4d1f-9e80-38e6b873ecbb
@@ -128,6 +132,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -138,6 +143,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -163,6 +170,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -173,6 +181,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -185,7 +195,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: a8e13730-fd0d-4673-8404-34e3d9ac07e0
-    DialogueText: Alright, listen up. PLAYER.name... lost their memory.
+    DialogueText: Alright, listen up. PLAYER.name... lost his memory.
     Position: {x: 647.2, y: 200}
     NodeType: 0
     Actor: Reed
@@ -193,6 +203,7 @@ MonoBehaviour:
     CheckThisNode: 1
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -203,6 +214,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -223,6 +236,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -233,6 +247,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 9
     EventName: 
@@ -253,6 +269,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -263,6 +280,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -283,6 +302,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -293,6 +313,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -313,6 +335,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -323,6 +346,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -343,6 +368,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -353,6 +379,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -373,6 +401,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -383,6 +412,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -405,6 +436,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -415,6 +447,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -435,6 +469,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -445,6 +480,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -465,6 +502,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -475,6 +513,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -497,6 +537,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -507,6 +548,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -528,6 +571,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -538,6 +582,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -559,6 +605,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -569,6 +616,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -589,6 +638,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -599,6 +649,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 9
     EventName: 
@@ -619,6 +671,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -629,6 +682,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -650,6 +705,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -660,6 +716,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -681,6 +739,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -691,6 +750,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -713,6 +774,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -723,6 +785,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -744,6 +808,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -754,6 +819,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -777,6 +844,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -787,6 +855,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -807,6 +877,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -817,6 +888,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 9
     EventName: 
@@ -837,6 +910,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -847,6 +921,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -868,6 +944,7 @@ MonoBehaviour:
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -878,6 +955,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -889,15 +968,16 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 347bc461-3b7a-4f8d-ab93-4d56959ded3b
+  - NodeGUID: 4e628cd9-63f0-4ad4-b2cd-101adf429ec2
     DialogueText: End Node
-    Position: {x: 6851.2, y: 200}
-    NodeType: 12
+    Position: {x: 6854.4, y: 200}
+    NodeType: 13
     Actor: 
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5
     StringConditionKey: 
+    ConditionType: 0
     BoolConditionKey: 
     BoolConditionExpectedValue: 0
     IntConditionKey: 
@@ -908,6 +988,8 @@ MonoBehaviour:
     CharacterTarget: 0
     CharacterComparisonValue: 0
     CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 

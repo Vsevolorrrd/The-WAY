@@ -105,8 +105,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5bf8302b63d8e4a4084126b763e12dc5, type: 2}
+  m_sharedMaterial: {fileID: 490431407034445676, guid: 5bf8302b63d8e4a4084126b763e12dc5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -402,7 +402,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd3706812b1ccc341a4ac4790e9f3512, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 897d1f4646a9d224c9d63fe1bb15cea5, type: 2}
+  dialogueContainer: {fileID: 0}
 --- !u!114 &8590916996284074955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,7 +569,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7768813763106734656}
   m_Enabled: 1
-  m_Alpha: 1
+  m_Alpha: 0
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0

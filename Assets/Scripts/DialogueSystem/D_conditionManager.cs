@@ -92,7 +92,7 @@ public class D_conditionManager : MonoBehaviour
         switch (nodeData.CharacterAttribute)
         {
             case CharacterAttribute.Relations:
-                //result = CompareRelations(character, nodeData.CharacterTarget, nodeData.CharacterComparisonValue);
+                result = CompareRelations(character, nodeData.CharacterTarget, nodeData.CharacterComparisonValue);
                 break;
             case CharacterAttribute.Morale:
                 break;
@@ -112,49 +112,43 @@ public class D_conditionManager : MonoBehaviour
 
         return result;
     }
-    /*
     private bool CompareRelations(Character character, CharacterTarget charTarget, int value)
     {
-        var target;
+        CompanionInstance instance = CharacterManager.Instance.GetCharacterInstance(character.CharacterID);
+        if (instance == null)
+        {
+            Debug.LogWarning($"CompareRelations: No instance found for character '{character.CharacterID}'");
+            return false;
+        }
 
+        int relationValue = 0;
         switch (charTarget)
         {
             case CharacterTarget.Player:
-                target = CharacterManager.Instance.GetCharacter("Player");
-                if (target == null)
-                {
-                    Debug.LogWarning("CharacterCondition: Character Player not found.");
-                    return false;
-                }
+                relationValue = instance.Relations_Player;
                 break;
             case CharacterTarget.Doc:
-                target = CharacterManager.Instance.GetCharacter("Player");
-                if (target == null)
-                {
-                    Debug.LogWarning("CharacterCondition: Character Player not found.");
-                    return false;
-                }
+                relationValue = instance.Relations_Doc;
                 break;
             case CharacterTarget.Gravehound:
-                target = CharacterManager.Instance.GetCharacter("Player");
-                if (target == null)
-                {
-                    Debug.LogWarning("CharacterCondition: Character Player not found.");
-                    return false;
-                }
+                relationValue = instance.Relations_Grave;
                 break;
             case CharacterTarget.Rook:
-                result = character.IsAlive;
+                relationValue = instance.Relations_Rook;
                 break;
             case CharacterTarget.Vale:
-                result = CharacterManager.Instance.GetCharacterInScene(characterID) != null;
+                relationValue = instance.Relations_Vale;
                 break;
             case CharacterTarget.Ash:
-                result = CharacterManager.Instance.GetCharacterInScene(characterID) != null;
+                relationValue = instance.Relations_Ash;
                 break;
+            default:
+                Debug.LogWarning($"CompareRelations: Unknown target '{charTarget}'");
+                return false;
         }
+
+        return relationValue >= value;
     }
-    */
     private void HandleCharacterAction(CharacterAction action, Character character)
     {
         Vector3 spawnPosition = Vector3.zero;

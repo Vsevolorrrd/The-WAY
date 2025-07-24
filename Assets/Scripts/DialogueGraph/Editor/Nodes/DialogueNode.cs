@@ -30,6 +30,9 @@ namespace Subtegral.DialogueSystem.Editor
         public RandomCondition RandomCondition;
         public CharacterCondition CharacterCondition;
 
+        // Attribute
+        public ChangeCharacterAttribute CharacterAttribute;
+
         // Events
         public DialogueEvent Event;
 

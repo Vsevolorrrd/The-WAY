@@ -10,6 +10,7 @@ public class ResourceUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI ammoText;
     private void Start()
     {
+        if (ResourceManager.Instance)
         ResourceManager.Instance.OnResourceChanged += UpdateUI;
         resourceUI.SetActive(false);
     }

@@ -140,6 +140,13 @@ namespace Subtegral.DialogueSystem.Editor
                         nodeData.CharacterAction = node.CharacterCondition?.Action ?? CharacterAction.None;
                         break;
 
+                    case DialogueNodeType.CharacterAttribute:
+                        nodeData.Actor = node.Actor;
+                        nodeData.TargetAttribute = node.CharacterAttribute?.Attribute ?? TargetAttribute.Relations;
+                        nodeData.CharacterTarget = node.CharacterAttribute?.Target ?? CharacterTarget.Player;
+                        nodeData.AttributeValue = node.CharacterAttribute?.Value ?? 0;
+                        break;
+
                     case DialogueNodeType.Animation:
                         nodeData.Actor = node.Actor;
                         nodeData.AnimationName = node.AnimationName;

@@ -11,6 +11,7 @@ namespace Subtegral.DialogueSystem
         StringCondition,
         RandomCondition,
         CharacterCondition,
+        CharacterAttribute,
         Animation,
         MoveCharacter,
         Camera,

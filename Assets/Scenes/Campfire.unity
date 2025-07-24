@@ -234,7 +234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &695794805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +264,9 @@ MonoBehaviour:
   interactiveLayer:
     serializedVersion: 2
     m_Bits: 8
+  walkableLayer:
+    serializedVersion: 2
+    m_Bits: 0
   blockMovement: 1
 --- !u!114 &695794807
 MonoBehaviour:
@@ -279,6 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 0}
   playerInteraction: {fileID: 0}
+  CameraAnchor: {fileID: 0}
 --- !u!4 &695794808
 Transform:
   m_ObjectHideFlags: 0

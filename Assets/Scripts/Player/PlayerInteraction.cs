@@ -1,3 +1,4 @@
+using Subtegral.DialogueSystem.Runtime;
 using UnityEngine;
 
 public class PlayerInteraction : MonoBehaviour
@@ -15,6 +16,8 @@ public class PlayerInteraction : MonoBehaviour
 
     void Update()
     {
+        if (D_Manager.Instance.DialogueIsGoing()) return;
+
         if (!Input.GetMouseButtonDown(0) || Camera.main == null) return;
 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -32,6 +35,7 @@ public class PlayerInteraction : MonoBehaviour
             return;
         }
 
+        /*
         if (blockMovement) 
         return;
 
@@ -40,5 +44,6 @@ public class PlayerInteraction : MonoBehaviour
         {
             playerMovement.MovePlayerTo(groundHit.point);
         }
+        */
     }
 }

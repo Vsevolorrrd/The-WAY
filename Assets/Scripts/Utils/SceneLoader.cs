@@ -46,6 +46,7 @@ public class SceneLoader : MonoBehaviour
         }
         else
         {
+            DontDestroyOnLoad(gameObject);
             _instance = this;  // Assign this object as the instance
         }
     }

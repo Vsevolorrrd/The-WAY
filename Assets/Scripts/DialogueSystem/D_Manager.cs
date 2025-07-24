@@ -81,6 +81,10 @@ namespace Subtegral.DialogueSystem.Runtime
                     CharacterConditionNode(nodeData);
                     break;
 
+                case DialogueNodeType.CharacterAttribute:
+                    CharacterAttributeNode(nodeData);
+                    break;
+
                 case DialogueNodeType.Animation:
                     AnimationNode(nodeData);
                     break;
@@ -205,6 +209,14 @@ namespace Subtegral.DialogueSystem.Runtime
             if (nextLink != null)
             ProceedToNarrative(nextLink.TargetNodeGUID);
         }
+        private void CharacterAttributeNode(DialogueNodeData nodeData)
+        {
+            var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
+            if (nextLink == null) return;
+
+            ProceedToNarrative(nextLink.TargetNodeGUID);
+            eventManager.ChangeAttribute(nodeData);
+        }
         private void AnimationNode(DialogueNodeData nodeData)
         {
             var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == nodeData.NodeGUID);
@@ -247,12 +259,12 @@ namespace Subtegral.DialogueSystem.Runtime
 
         private void EndNode(DialogueNodeData nodeData)
         {
+            Debug.Log("Dialogue has ended.");
+
             UIManager.CloseDialogueUI();
             dialogueIsGoing = false;
             if (CampfireManager.Instance != null)
             CampfireManager.Instance.AdvanceCampfire();
-
-            Debug.Log("Dialogue has ended.");
             if (nodeData.EndAction == EndAction.LoadScene)
             SceneLoader.Instance.LoadScene(nodeData.DialogueText);
         }

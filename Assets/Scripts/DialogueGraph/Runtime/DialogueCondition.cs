@@ -67,7 +67,6 @@ namespace Subtegral.DialogueSystem.DataContainers
         Morale,
         Stamina
     }
-
     public enum CharacterTarget
     {
         Player,
@@ -77,7 +76,6 @@ namespace Subtegral.DialogueSystem.DataContainers
         Vale,
         Ash
     }
-
     public enum CharacterAction
     {
         None,
