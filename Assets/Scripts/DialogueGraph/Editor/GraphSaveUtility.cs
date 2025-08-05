@@ -32,7 +32,6 @@ namespace Subtegral.DialogueSystem.Editor
 
             var dialogueContainerObject = ScriptableObject.CreateInstance<DialogueContainer>();
             if (!SaveNodes(fileName, dialogueContainerObject)) return;
-            SaveExposedProperties(dialogueContainerObject);
             SaveCommentBlocks(dialogueContainerObject);
 
             // Ensure folders exist
@@ -54,7 +53,6 @@ namespace Subtegral.DialogueSystem.Editor
                 DialogueContainer container = loadedAsset as DialogueContainer;
                 container.NodeLinks = dialogueContainerObject.NodeLinks;
                 container.DialogueNodeData = dialogueContainerObject.DialogueNodeData;
-                container.ExposedProperties = dialogueContainerObject.ExposedProperties;
                 container.CommentBlockData = dialogueContainerObject.CommentBlockData;
                 EditorUtility.SetDirty(container);
             }
@@ -176,12 +174,6 @@ namespace Subtegral.DialogueSystem.Editor
             return true;
         }
 
-        private void SaveExposedProperties(DialogueContainer dialogueContainer)
-        {
-            dialogueContainer.ExposedProperties.Clear();
-            dialogueContainer.ExposedProperties.AddRange(_graphView.ExposedProperties);
-        }
-
         private void SaveCommentBlocks(DialogueContainer dialogueContainer)
         {
             foreach (var block in CommentBlocks)
@@ -220,7 +212,6 @@ namespace Subtegral.DialogueSystem.Editor
             ClearGraph();
             GenerateDialogueNodes();
             ConnectDialogueNodes();
-            AddExposedProperties();
             GenerateCommentBlocks();
         }
 
@@ -296,15 +287,6 @@ namespace Subtegral.DialogueSystem.Editor
             tempEdge?.input.Connect(tempEdge);
             tempEdge?.output.Connect(tempEdge);
             _graphView.Add(tempEdge);
-        }
-
-        private void AddExposedProperties()
-        {
-            _graphView.ClearBlackBoardAndExposedProperties();
-            foreach (var exposedProperty in _dialogueContainer.ExposedProperties)
-            {
-                _graphView.AddPropertyToBlackBoard(exposedProperty);
-            }
         }
 
         private void GenerateCommentBlocks()

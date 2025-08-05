@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
-  m_Name: ActI_Part2_1MeetTheCamp
+  m_Name: RActI_Part2_2MeetTheCamp
   m_EditorClassIdentifier: 
   NodeLinks:
   - PortName: Next
@@ -786,7 +786,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 6ad2d7ad-f864-43b1-8109-b0d9f2250450
     DialogueText: Doc stops. Straightens slowly. Eyes flick toward you.
-    Position: {x: 1742.4, y: 200}
+    Position: {x: 1742.3999, y: 200}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -885,7 +885,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b02b57b8-60ca-4f40-bde8-9ea275761f3b
     DialogueText: Event Node
-    Position: {x: 2557.6, y: 196}
+    Position: {x: 2557.5999, y: 196}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -918,7 +918,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: e2b91d65-d711-4a6d-86a4-f63e50212b0f
     DialogueText: ' ...Anomaly?'
-    Position: {x: 2757.6, y: 196}
+    Position: {x: 2757.5999, y: 196}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -951,7 +951,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: beaf80ae-84a5-4ab4-b085-18ebd17280cb
     DialogueText: "That\u2019s the guess."
-    Position: {x: 2961.6, y: 196}
+    Position: {x: 2961.5999, y: 196}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1519,7 +1519,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 238e7fb6-124b-4d05-b5eb-2e27655282ab
     DialogueText: Event Node
-    Position: {x: 6794.4, y: 199.2}
+    Position: {x: 6794.4004, y: 199.2}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1552,7 +1552,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 344adb4d-2ddd-40b4-9bfd-dd389fbaa997
     DialogueText: Choice Node
-    Position: {x: 7002.4, y: 199.2}
+    Position: {x: 7002.4004, y: 199.2}
     NodeType: 1
     Actor: 
     DisplayText: 
@@ -1618,7 +1618,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: a77636b6-5c9c-40c1-ae26-db13b6d1907e
     DialogueText: CharacterAttribute Node
-    Position: {x: 7622.4, y: 463.2}
+    Position: {x: 7622.4004, y: 463.2}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -1818,7 +1818,7 @@ MonoBehaviour:
   - NodeGUID: 0c5f12f3-7cf3-45d6-951e-be0d2523b378
     DialogueText: "Gravehound\u2019s eyes narrow. He doesn\u2019t respond\u2014but
       you feel the weight of his stare."
-    Position: {x: 8293.6, y: 260.8}
+    Position: {x: 8293.601, y: 260.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1852,7 +1852,7 @@ MonoBehaviour:
   - NodeGUID: caee3bb7-cf08-4ddd-a7a5-f669ba4286da
     DialogueText: "Only when he breathes. \n(Gravehound grunts, then rolls his eyes
       slowly.)"
-    Position: {x: 8293.6, y: 75.2}
+    Position: {x: 8293.601, y: 75.2}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -1919,7 +1919,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: c90f41ee-e343-43eb-b25a-718dec242793
     DialogueText: CharacterAttribute Node
-    Position: {x: 7854.4, y: 260.8}
+    Position: {x: 7854.4004, y: 260.8}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -1952,7 +1952,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: d3d0d011-42f9-4d00-97e0-276e7498b09c
     DialogueText: CharacterAttribute Node
-    Position: {x: 7562.4, y: 256.8}
+    Position: {x: 7562.4004, y: 256.8}
     NodeType: 9
     Actor: Ash
     DisplayText: 
@@ -1985,7 +1985,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 613d3326-e4df-4217-8fd4-efa63830ace1
     DialogueText: CharacterAttribute Node
-    Position: {x: 7854.4, y: -106.4}
+    Position: {x: 7854.4004, y: -106.4}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   - NodeGUID: 9bdf8343-8373-4c20-8d53-9ca5a115ff8b
     DialogueText: "Y\u2019all got a point. But sometimes the way a man survives says
       more than the fact he did."
-    Position: {x: 9441.6, y: 436.8}
+    Position: {x: 9441.601, y: 436.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2218,7 +2218,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5eac7970-4595-48ca-a416-d2630db0301a
     DialogueText: Alright then.
-    Position: {x: 9369.6, y: -62.4}
+    Position: {x: 9369.601, y: -62.4}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2421,7 +2421,7 @@ MonoBehaviour:
     DialogueText: "(grinning a little)\nAlright, alright. That\u2019s how Ash told
       it.\r\nYou know how he gets \u2014 throw in some bad guys, maybe a ghost for
       drama."
-    Position: {x: 10829.6, y: 67.2}
+    Position: {x: 10829.601, y: 67.2}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2454,7 +2454,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 555f8b35-2106-4c7e-9afc-264205d84ac9
     DialogueText: Reed glances at you again.
-    Position: {x: 15621.6, y: 66.4}
+    Position: {x: 15621.601, y: 66.4}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2655,7 +2655,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 24842a10-cfe3-4157-a2bb-d318616c1e3e
     DialogueText: CharacterAttribute Node
-    Position: {x: 9793.6, y: 264}
+    Position: {x: 9793.601, y: 264}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -2688,7 +2688,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 3dd03702-8c0a-46d1-ac47-ac5d1c1da9f5
     DialogueText: Especially when survival involves skull fractures and screaming.
-    Position: {x: 9793.6, y: 440}
+    Position: {x: 9793.601, y: 440}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -2790,7 +2790,7 @@ MonoBehaviour:
     DialogueText: '(low to himself)
 
       They wanted to kill us.'
-    Position: {x: 10153.6, y: 440}
+    Position: {x: 10153.601, y: 440}
     NodeType: 0
     Actor: Grave
     DisplayText: 
@@ -2823,7 +2823,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 527fcc25-2fc6-4d1d-81dc-5b4dc7789179
     DialogueText: "Gravehound watches you. Quiet. Like he\u2019s deciding something."
-    Position: {x: 10085.6, y: 621.6}
+    Position: {x: 10085.601, y: 621.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2857,7 +2857,7 @@ MonoBehaviour:
   - NodeGUID: 0a988a96-719d-426c-a8ee-db361576b613
     DialogueText: "Still. Man earns your trust, you oughta know what he\u2019s made
       of. When you\u2019re ready."
-    Position: {x: 10473.6, y: 260.8}
+    Position: {x: 10473.601, y: 260.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2890,7 +2890,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 97e19909-94e4-44cb-bd00-0a9bc46a43f1
     DialogueText: CharacterAttribute Node
-    Position: {x: 10445.6, y: 433.6}
+    Position: {x: 10445.601, y: 433.6}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -2923,7 +2923,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: cbd00753-eb0b-42e7-afca-35cd91db8855
     DialogueText: CharacterAttribute Node
-    Position: {x: 10685.6, y: 433.6}
+    Position: {x: 10685.601, y: 433.6}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -3055,7 +3055,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 9e47f1d3-21a5-47ff-b577-e4e53493743c
     DialogueText: CharacterAttribute Node
-    Position: {x: 17918.4, y: 188.8}
+    Position: {x: 17918.398, y: 188.8}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -3121,7 +3121,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 62cadc67-a471-4a8d-b554-c28e01c4017d
     DialogueText: ...Yeah. I will
-    Position: {x: 17604.8, y: 638.4}
+    Position: {x: 17604.799, y: 638.4}
     NodeType: 0
     Actor: Grave
     DisplayText: 
@@ -3154,7 +3154,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 4f07a651-e6a8-423c-aa13-62ba1522209c
     DialogueText: "(softly, almost amused) \nHuh."
-    Position: {x: 17842.4, y: 638.4}
+    Position: {x: 17842.398, y: 638.4}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -3253,7 +3253,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 3f0135a2-e1bd-4914-8a80-8b856d4439a9
     DialogueText: CharacterAttribute Node
-    Position: {x: 18134.4, y: 188.8}
+    Position: {x: 18134.398, y: 188.8}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -3420,7 +3420,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 44e6376a-d07c-47a2-92e0-2fa318f14bfa
     DialogueText: CharacterAttribute Node
-    Position: {x: 18020.8, y: -204.8}
+    Position: {x: 18020.799, y: -204.8}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -3453,7 +3453,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: de69a4af-87fd-4225-bad6-3d1453470e22
     DialogueText: CharacterAttribute Node
-    Position: {x: 18244.8, y: -204.8}
+    Position: {x: 18244.799, y: -204.8}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -3486,7 +3486,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: f1fd0f3c-f896-4e6a-ab70-cb630b9f7327
     DialogueText: "Someone had to say it. Didn\u2019t think it\u2019d be you."
-    Position: {x: 18040.8, y: 11.200001}
+    Position: {x: 18040.799, y: 11.200001}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -3519,7 +3519,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 19602ab0-df5d-492f-968b-b2bae62d50e8
     DialogueText: CharacterAttribute Node
-    Position: {x: 18336.8, y: 11.200001}
+    Position: {x: 18336.799, y: 11.200001}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -3618,7 +3618,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: cc432ae2-1fca-4af2-ba2b-f511b064d39b
     DialogueText: CharacterAttribute Node
-    Position: {x: 18608.8, y: 188.8}
+    Position: {x: 18608.799, y: 188.8}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -3755,7 +3755,7 @@ MonoBehaviour:
     DialogueText: '(soft)
 
       We got through it. Let the dead stay dead.'
-    Position: {x: 19772.8, y: 396}
+    Position: {x: 19772.799, y: 396}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -3789,7 +3789,7 @@ MonoBehaviour:
   - NodeGUID: 69251c59-24e6-4840-b9f6-795cb30c575c
     DialogueText: Gravehound leans back. Doc mutters something under her breath,
       returning to her work.
-    Position: {x: 20038.4, y: 396}
+    Position: {x: 20038.398, y: 396}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3822,7 +3822,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 69c0bf92-0207-435a-997e-c43b55f048eb
     DialogueText: CharacterAttribute Node
-    Position: {x: 20344.8, y: 396}
+    Position: {x: 20344.799, y: 396}
     NodeType: 9
     Actor: Doc
     DisplayText: 
@@ -3855,7 +3855,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: cf29ce1d-6aaa-4fee-9bbf-21f77a8fbfaf
     DialogueText: CharacterAttribute Node
-    Position: {x: 20582.4, y: 396}
+    Position: {x: 20582.398, y: 396}
     NodeType: 9
     Actor: Grave
     DisplayText: 
@@ -3888,7 +3888,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5af99481-02b1-44cd-8617-8dfbdbfd7d44
     DialogueText: '[Reed nudges your shoulder lightly.]'
-    Position: {x: 20886.4, y: 1102.4}
+    Position: {x: 20886.398, y: 1102.4}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4157,7 +4157,7 @@ MonoBehaviour:
   - NodeGUID: d3ab835a-7bff-44cc-a09c-0df34a03548e
     DialogueText: "Point is, they were cornered. Guns up, demands barked out. Give
       up the packs, weapons, coats \u2014 hell, I think one wanted Ash\u2019s boots."
-    Position: {x: 11309.6, y: 67.2}
+    Position: {x: 11309.601, y: 67.2}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -4871,7 +4871,7 @@ MonoBehaviour:
     DialogueText: 'Let ''em take everything.
 
       Let ''em kill us after that.'
-    Position: {x: 17822.4, y: 396}
+    Position: {x: 17822.398, y: 396}
     NodeType: 0
     Actor: Grave
     DisplayText: 
@@ -5007,7 +5007,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 42d08606-db18-4708-b4aa-635be15f583a
     DialogueText: "(quiet, firm)\nThey weren\u2019t going to walk away."
-    Position: {x: 18748.8, y: 396}
+    Position: {x: 18748.799, y: 396}
     NodeType: 0
     Actor: Grave
     DisplayText: 

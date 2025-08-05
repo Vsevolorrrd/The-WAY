@@ -47,6 +47,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6339393100206253575}
+  - component: {fileID: 8586103566905717941}
   - component: {fileID: 5672447757730464846}
   - component: {fileID: 135875013033450687}
   m_Layer: 5
@@ -75,6 +76,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 800, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &8586103566905717941
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3833635743581850723}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!222 &5672447757730464846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -183,6 +196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5165099687735030434}
+  - component: {fileID: 7466312800127562124}
   - component: {fileID: 1331825044678291579}
   - component: {fileID: 6119154571151186676}
   - component: {fileID: 2713231052727828195}
@@ -210,8 +224,20 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 450, y: 400}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &7466312800127562124
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3976185624864772957}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!222 &1331825044678291579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -417,10 +443,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 3251421011463899770}
   dialogueText: {fileID: 135875013033450687}
+  dialogueCG: {fileID: 8586103566905717941}
   textBoxPrefab: {fileID: 7422139618903557084, guid: 2e0bc943751b3374aacf172fa4e749fd, type: 3}
   offset: {x: 0, y: 3.6, z: 0}
+  fadeDuration: 0.2
   buttonContainer: {fileID: 5165099687735030434}
   choicePrefab: {fileID: 7943253524121559936, guid: 47923de8c965a7340ab2166e197916d7, type: 3}
+  buttonCG: {fileID: 7466312800127562124}
   timedChoiceCG: {fileID: 4953680735132823095}
   timedChoiceBar: {fileID: 8920024646674955373}
   BarAppearTime: 0.8

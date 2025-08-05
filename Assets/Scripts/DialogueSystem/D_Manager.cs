@@ -267,6 +267,20 @@ namespace Subtegral.DialogueSystem.Runtime
             CampfireManager.Instance.AdvanceCampfire();
             if (nodeData.EndAction == EndAction.LoadScene)
             SceneLoader.Instance.LoadScene(nodeData.DialogueText);
+            if (nodeData.EndAction == EndAction.StartDialogue)
+            {
+                var dialogueFiles = Resources.LoadAll<DialogueContainer>("Dialogues");
+                var dialogueNames = dialogueFiles.Select(file => file.name).ToList();
+
+                foreach (var dialogueName in dialogueNames)
+                {
+                    if (dialogueName == nodeData.DialogueText)
+                    {
+                        StartDialogue(Resources.Load<DialogueContainer>($"Dialogues/{dialogueName}"));
+                        break;
+                    }
+                }
+            }
         }
 
         private void Update()

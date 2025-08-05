@@ -70,39 +70,6 @@ namespace Subtegral.DialogueSystem.Editor
             return group;
         }
 
-        public void AddPropertyToBlackBoard(ExposedProperty property, bool loadMode = false)
-        {
-            var localPropertyName = property.PropertyName;
-            var localPropertyValue = property.PropertyValue;
-            if (!loadMode)
-            {
-                while (ExposedProperties.Any(x => x.PropertyName == localPropertyName))
-                localPropertyName = $"{localPropertyName}(1)";
-            }
-
-            var item = ExposedProperty.CreateInstance();
-            item.PropertyName = localPropertyName;
-            item.PropertyValue = localPropertyValue;
-            ExposedProperties.Add(item);
-
-            var container = new VisualElement();
-            var field = new BlackboardField { text = localPropertyName, typeText = "string" };
-            container.Add(field);
-
-            var propertyValueTextField = new TextField("Value:")
-            {
-                value = localPropertyValue
-            };
-            propertyValueTextField.RegisterValueChangedCallback(evt =>
-            {
-                var index = ExposedProperties.FindIndex(x => x.PropertyName == item.PropertyName);
-                ExposedProperties[index].PropertyValue = evt.newValue;
-            });
-            var sa = new BlackboardRow(field, propertyValueTextField);
-            container.Add(sa);
-            Blackboard.Add(container);
-        }
-
         public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
         {
             var compatiblePorts = new List<Port>();
@@ -283,6 +250,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.7f, 0.1f, 0.1f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -307,6 +275,7 @@ namespace Subtegral.DialogueSystem.Editor
             node.FailTime = savedData.FailTime;
 
             var failPort = GetPortInstance(node, Direction.Output);
+            failPort.portColor = new Color(0.6f, 0.1f, 0.7f);
             failPort.portName = "Fail";
             node.outputContainer.Add(failPort);
 
@@ -366,6 +335,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.7f, 0.6f, 0f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -381,10 +351,12 @@ namespace Subtegral.DialogueSystem.Editor
             }
 
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             truePort.portName = "True";
             node.outputContainer.Add(truePort);
 
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
 
@@ -413,10 +385,12 @@ namespace Subtegral.DialogueSystem.Editor
             }
 
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             truePort.portName = "True";
             node.outputContainer.Add(truePort);
 
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
 
@@ -445,10 +419,12 @@ namespace Subtegral.DialogueSystem.Editor
             }
 
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             truePort.portName = "True";
             node.outputContainer.Add(truePort);
 
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
 
@@ -488,10 +464,12 @@ namespace Subtegral.DialogueSystem.Editor
             }
 
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             truePort.portName = "True";
             node.outputContainer.Add(truePort);
 
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
 
@@ -555,10 +533,12 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Add ports
             var truePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            truePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             truePort.portName = "True";
             node.outputContainer.Add(truePort);
 
             var falsePort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            falsePort.portColor = new Color(0.1f, 0.5f, 0.2f);
             falsePort.portName = "False";
             node.outputContainer.Add(falsePort);
         }
@@ -602,6 +582,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.1f, 0.5f, 0.2f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -651,6 +632,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.1f, 0.1f, 0.7f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -694,6 +676,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.1f, 0.1f, 0.4f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -754,6 +737,7 @@ namespace Subtegral.DialogueSystem.Editor
 
             // Output port
             var outputPort = GetPortInstance(node, Direction.Output, Port.Capacity.Single);
+            outputPort.portColor = new Color(0.3f, 0.3f, 0.3f);
             outputPort.portName = "Next";
             node.outputContainer.Add(outputPort);
         }
@@ -777,6 +761,7 @@ namespace Subtegral.DialogueSystem.Editor
         public void AddChoicePort(DialogueNode nodeCache, string overriddenPortName = "", string displayText = "")
         {
             var generatedPort = GetPortInstance(nodeCache, Direction.Output);
+            generatedPort.portColor = new Color(0.5f, 0.1f, 0.8f);
 
             var outputPortCount = nodeCache.outputContainer.Query("connector").ToList().Count();
             var portNumber = outputPortCount + 1;

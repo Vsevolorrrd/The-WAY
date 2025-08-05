@@ -5144,6 +5144,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7466312800127562124, guid: 02b58f2bd7cc59341b6cc53d32fb001a, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7466312800127562124, guid: 02b58f2bd7cc59341b6cc53d32fb001a, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8856403201884475544, guid: 02b58f2bd7cc59341b6cc53d32fb001a, type: 3}
       propertyPath: m_Name
       value: DialogueSystem
