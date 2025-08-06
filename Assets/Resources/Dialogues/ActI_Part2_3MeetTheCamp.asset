@@ -289,7 +289,7 @@ MonoBehaviour:
   - PortName: Option 4
     BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
     TargetNodeGUID: 0dc61a2d-b7df-4a65-bc6a-eccf839d3db3
-    DisplayText: <color=blue>You picked up ash's lock, where did you learn tha?</color>
+    DisplayText: <color=#008080ff>You picked up ash's lock, where did you learn tha?</color>
   DialogueNodeData:
   - NodeGUID: f5dabbad-ab79-4243-a68e-32609608cb11
     DialogueText: A cramped corner of the shelter stacked with rusted piping and
@@ -329,7 +329,7 @@ MonoBehaviour:
   - NodeGUID: f400712e-39df-4683-936f-6dbf59106234
     DialogueText: There they are. Vane and Rook. Our resident scavengers. And tool
       thieves.
-    Position: {x: 513.60004, y: 200}
+    Position: {x: 513.6, y: 200}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -938,7 +938,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: cd80d20e-5a97-4caf-a8ff-2a66640d7a4c
     DialogueText: They do, Rook.
-    Position: {x: 5158.4004, y: 116.8}
+    Position: {x: 5158.4, y: 116.8}
     NodeType: 0
     Actor: Vale
     DisplayText: 
@@ -1171,7 +1171,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: f0bd0b37-25ae-45aa-826e-7f2febefed61
     DialogueText: CharacterAttribute Node
-    Position: {x: 5398.4004, y: -56}
+    Position: {x: 5398.4, y: -56}
     NodeType: 9
     Actor: Vale
     DisplayText: 
@@ -1237,7 +1237,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 41d6e5dd-b5b5-4faa-8447-01415a5672e9
     DialogueText: CharacterAttribute Node
-    Position: {x: 4962.4004, y: 271.2}
+    Position: {x: 4962.4, y: 271.2}
     NodeType: 9
     Actor: Rook
     DisplayText: 
@@ -1339,7 +1339,7 @@ MonoBehaviour:
 
       They know the ruins better than anyone. Can slip
       through cracks none of us can fit through. And somehow, they keep smiling.'
-    Position: {x: 5836.8003, y: 238.4}
+    Position: {x: 5836.8, y: 238.4}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1441,7 +1441,7 @@ MonoBehaviour:
 
       Of course! I even called you
       my uncle.'
-    Position: {x: 9133.601, y: 408.8}
+    Position: {x: 9133.6, y: 408.8}
     NodeType: 0
     Actor: Rook
     DisplayText: 
@@ -1474,7 +1474,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b800902d-ef59-4a9b-a20a-8f0239777d6d
     DialogueText: CharacterAttribute Node
-    Position: {x: 9133.601, y: 590.4}
+    Position: {x: 9133.6, y: 590.4}
     NodeType: 9
     Actor: Vale
     DisplayText: 
@@ -1573,7 +1573,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
     DialogueText: "Then we\u2019ll just have to make new memories."
-    Position: {x: 9669.601, y: 581.6}
+    Position: {x: 9669.6, y: 581.6}
     NodeType: 0
     Actor: Rook
     DisplayText: 
@@ -1640,7 +1640,7 @@ MonoBehaviour:
   - NodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
     DialogueText: "Let\u2019s just hope the memories you make now are <color=red>better</color>
       ones."
-    Position: {x: 10181.601, y: 581.6}
+    Position: {x: 10181.6, y: 581.6}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1708,7 +1708,7 @@ MonoBehaviour:
     DialogueText: "They go because they can get through places we can\u2019t.\n(He
       hesitates, eyes on the ground.)\nBecause they\u2019re the only ones who come
       back.\r"
-    Position: {x: 7282.4004, y: 336.8}
+    Position: {x: 7282.4, y: 336.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1741,7 +1741,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: e81bf346-58bf-4bb9-a488-ed3143f7f74b
     DialogueText: Long enough.
-    Position: {x: 7282.4004, y: 550.4}
+    Position: {x: 7282.4, y: 550.4}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1774,7 +1774,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 1ea6da6e-8bac-43e9-b17b-fca2c373a258
     DialogueText: Vane looks away.
-    Position: {x: 7282.4004, y: 167.2}
+    Position: {x: 7282.4, y: 167.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1808,7 +1808,7 @@ MonoBehaviour:
   - NodeGUID: df6062c4-b44e-41ca-b992-78d53bd3d952
     DialogueText: "Who knows. Maybe they abandoned us. Maybe they\u2019re dead. Who
       cares?"
-    Position: {x: 7496.8003, y: 167.2}
+    Position: {x: 7496.8, y: 167.2}
     NodeType: 0
     Actor: Rook
     DisplayText: 
@@ -1874,7 +1874,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 4b75ae4d-13c7-45a5-9061-f6a804639be0
     DialogueText: "Since before the sky turned black\u2026 I think."
-    Position: {x: 7496.8003, y: 550.4}
+    Position: {x: 7496.8, y: 550.4}
     NodeType: 0
     Actor: Vale
     DisplayText: 
@@ -1909,7 +1909,7 @@ MonoBehaviour:
     DialogueText: "(clears his throat)\nThey don\u2019t remember much from before.
       That\u2019s probably for the best.\n(His voice carries a hint of finality \u2014
       like he\u2019s closing a door.)"
-    Position: {x: 7790.4004, y: 550.4}
+    Position: {x: 7790.4, y: 550.4}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2107,7 +2107,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
     DialogueText: StringCondition Node
-    Position: {x: 6188.8003, y: 238.4}
+    Position: {x: 6188.8, y: 238.4}
     NodeType: 6
     Actor: 
     DisplayText: 
@@ -2140,7 +2140,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 12266bec-7921-4d4f-bc79-73cde73028af
     DialogueText: Choice Node
-    Position: {x: 6640.8003, y: 486.4}
+    Position: {x: 6640.8, y: 486.4}
     NodeType: 1
     Actor: 
     DisplayText: 
@@ -2173,7 +2173,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
     DialogueText: Choice Node
-    Position: {x: 6546.4004, y: 132.8}
+    Position: {x: 6546.4, y: 132.8}
     NodeType: 1
     Actor: 
     DisplayText: 

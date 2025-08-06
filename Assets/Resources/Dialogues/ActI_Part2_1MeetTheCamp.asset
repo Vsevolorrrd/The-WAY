@@ -278,38 +278,6 @@ MonoBehaviour:
     TargetNodeGUID: eb254c25-7850-43a0-8bc7-cc3cb4c0f93b
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 51be1fa6-f0fb-42a4-b4ce-1e83af8dd162
-    TargetNodeGUID: 9a855ad0-be77-44a7-8562-76d26d33f330
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 9a855ad0-be77-44a7-8562-76d26d33f330
-    TargetNodeGUID: dbae6af6-7551-4b96-a096-dfd31286ff77
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: dbae6af6-7551-4b96-a096-dfd31286ff77
-    TargetNodeGUID: a8f1c640-d041-4dcc-92fd-0197a92a174d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: a8f1c640-d041-4dcc-92fd-0197a92a174d
-    TargetNodeGUID: 72240903-78b5-4998-9361-817d56325423
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 72240903-78b5-4998-9361-817d56325423
-    TargetNodeGUID: 2afcc1a8-66a1-4050-9629-57ebc4d9afa1
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2afcc1a8-66a1-4050-9629-57ebc4d9afa1
-    TargetNodeGUID: 1b0226e8-ab9f-455c-822e-47c8828e7a08
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 1b0226e8-ab9f-455c-822e-47c8828e7a08
-    TargetNodeGUID: db4ffc33-e147-410f-8b53-6db8c57a63e4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: db4ffc33-e147-410f-8b53-6db8c57a63e4
-    TargetNodeGUID: 555f8b35-2106-4c7e-9afc-264205d84ac9
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 555f8b35-2106-4c7e-9afc-264205d84ac9
     TargetNodeGUID: 701741ed-6170-441d-8dd4-e1ebfaa04c69
     DisplayText: Next
@@ -474,34 +442,6 @@ MonoBehaviour:
     TargetNodeGUID: 4990215f-06b1-4f6f-8802-0b15d3dbbe1b
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 4990215f-06b1-4f6f-8802-0b15d3dbbe1b
-    TargetNodeGUID: 74f67a51-21c3-4984-a609-98bc80722927
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 74f67a51-21c3-4984-a609-98bc80722927
-    TargetNodeGUID: 74df6c3c-fa2f-4582-a3ac-276df0bad4df
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 74df6c3c-fa2f-4582-a3ac-276df0bad4df
-    TargetNodeGUID: 18bc1f42-4672-480c-a008-c522227c978b
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 18bc1f42-4672-480c-a008-c522227c978b
-    TargetNodeGUID: 2530c73b-3ebe-4a2e-bb48-9d7730b10df2
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2530c73b-3ebe-4a2e-bb48-9d7730b10df2
-    TargetNodeGUID: 42d08606-db18-4708-b4aa-635be15f583a
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 42d08606-db18-4708-b4aa-635be15f583a
-    TargetNodeGUID: 17d5dab4-4aa1-4d09-a671-06dc5a8d8f88
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 17d5dab4-4aa1-4d09-a671-06dc5a8d8f88
-    TargetNodeGUID: 7c5d49b4-93fd-4824-a259-a92b916090e5
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 7c5d49b4-93fd-4824-a259-a92b916090e5
     TargetNodeGUID: fe16128b-ce75-4736-8424-4004b5c44fe3
     DisplayText: Next
@@ -590,14 +530,6 @@ MonoBehaviour:
     TargetNodeGUID: a10adb32-f683-41cd-995f-d23e6f151f13
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: a10adb32-f683-41cd-995f-d23e6f151f13
-    TargetNodeGUID: 2e7f2ce2-48fb-4940-8518-5d04ce3c9d33
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2e7f2ce2-48fb-4940-8518-5d04ce3c9d33
-    TargetNodeGUID: 51be1fa6-f0fb-42a4-b4ce-1e83af8dd162
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: bfd8c09f-8e81-4c80-ba5b-3520c585e5d5
     TargetNodeGUID: 7929cf41-6d15-470f-a3e7-c2fb96e9157d
     DisplayText: Next
@@ -608,6 +540,78 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: 0805ef16-6202-42f7-9dc2-162eed9d6033
     TargetNodeGUID: add0a79a-e10f-4a45-8310-a0e4c71cb9d5
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a10adb32-f683-41cd-995f-d23e6f151f13
+    TargetNodeGUID: 2e7f2ce2-48fb-4940-8518-5d04ce3c9d33
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2e7f2ce2-48fb-4940-8518-5d04ce3c9d33
+    TargetNodeGUID: 51be1fa6-f0fb-42a4-b4ce-1e83af8dd162
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 51be1fa6-f0fb-42a4-b4ce-1e83af8dd162
+    TargetNodeGUID: 9a855ad0-be77-44a7-8562-76d26d33f330
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9a855ad0-be77-44a7-8562-76d26d33f330
+    TargetNodeGUID: dbae6af6-7551-4b96-a096-dfd31286ff77
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: dbae6af6-7551-4b96-a096-dfd31286ff77
+    TargetNodeGUID: a8f1c640-d041-4dcc-92fd-0197a92a174d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a8f1c640-d041-4dcc-92fd-0197a92a174d
+    TargetNodeGUID: 72240903-78b5-4998-9361-817d56325423
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 72240903-78b5-4998-9361-817d56325423
+    TargetNodeGUID: 2afcc1a8-66a1-4050-9629-57ebc4d9afa1
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2afcc1a8-66a1-4050-9629-57ebc4d9afa1
+    TargetNodeGUID: 1b0226e8-ab9f-455c-822e-47c8828e7a08
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1b0226e8-ab9f-455c-822e-47c8828e7a08
+    TargetNodeGUID: db4ffc33-e147-410f-8b53-6db8c57a63e4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: db4ffc33-e147-410f-8b53-6db8c57a63e4
+    TargetNodeGUID: 555f8b35-2106-4c7e-9afc-264205d84ac9
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 4990215f-06b1-4f6f-8802-0b15d3dbbe1b
+    TargetNodeGUID: 74f67a51-21c3-4984-a609-98bc80722927
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 74f67a51-21c3-4984-a609-98bc80722927
+    TargetNodeGUID: 74df6c3c-fa2f-4582-a3ac-276df0bad4df
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 74df6c3c-fa2f-4582-a3ac-276df0bad4df
+    TargetNodeGUID: 18bc1f42-4672-480c-a008-c522227c978b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 18bc1f42-4672-480c-a008-c522227c978b
+    TargetNodeGUID: 2530c73b-3ebe-4a2e-bb48-9d7730b10df2
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2530c73b-3ebe-4a2e-bb48-9d7730b10df2
+    TargetNodeGUID: 42d08606-db18-4708-b4aa-635be15f583a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 42d08606-db18-4708-b4aa-635be15f583a
+    TargetNodeGUID: 17d5dab4-4aa1-4d09-a671-06dc5a8d8f88
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 17d5dab4-4aa1-4d09-a671-06dc5a8d8f88
+    TargetNodeGUID: 7c5d49b4-93fd-4824-a259-a92b916090e5
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a77636b6-5c9c-40c1-ae26-db13b6d1907e
+    TargetNodeGUID: c04cf85d-ea66-4ece-84cf-33abf8ed3146
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: 37742cb8-6a99-45ad-86b8-0f4d868bb4bd
@@ -1451,7 +1455,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 2dbf78e1-4564-4dd4-bac9-f691258ab36a
-    DialogueText: "Ree smirks. You catch the faintest twitch in Gravehound\u2019s
+    DialogueText: "Reed smirks. You catch the faintest twitch in Gravehound\u2019s
       jaw \u2014 restraint or rage, hard to tell."
     Position: {x: 6265.6, y: 199.2}
     NodeType: 0
@@ -1583,72 +1587,6 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 289fc6c6-3c22-4e6e-9806-9f86d2d55126
-    DialogueText: CharacterAttribute Node
-    Position: {x: 7417.6, y: 463.2}
-    NodeType: 9
-    Actor: Doc
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: -1
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: a77636b6-5c9c-40c1-ae26-db13b6d1907e
-    DialogueText: CharacterAttribute Node
-    Position: {x: 7622.4, y: 463.2}
-    NodeType: 9
-    Actor: Grave
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 2
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 2
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: d8e6dab3-b761-4864-8030-62cc3e1b6566
     DialogueText: CharacterAttribute Node
     Position: {x: 7487.2, y: -106.4}
@@ -1704,72 +1642,6 @@ MonoBehaviour:
     CharacterAction: 0
     TargetAttribute: 0
     AttributeValue: 4
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: c04cf85d-ea66-4ece-84cf-33abf8ed3146
-    DialogueText: CharacterAttribute Node
-    Position: {x: 7843.2, y: 462.4}
-    NodeType: 9
-    Actor: Grave
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 1
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: -1
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: dee10d27-f2c6-4b4b-8928-facdbaf1413a
-    DialogueText: "So\u2019s the knife in his back.\r"
-    Position: {x: 8075.2, y: 462.4}
-    NodeType: 0
-    Actor: Doc
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -4362,7 +4234,7 @@ MonoBehaviour:
   - NodeGUID: a6737f97-6bd4-4eeb-a8fc-276d7545fb2c
     DialogueText: '(snaps)
 
-      <color="red">He was sixteen.<color>
+      <color="red">He was sixteen.</color>
 
       Barely
       had a mustache.'
@@ -4565,8 +4437,8 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 51be1fa6-f0fb-42a4-b4ce-1e83af8dd162
-    DialogueText: "(pulling bloodied cloth through her hands)\nLeft it in him. Like
-      he knew I\u2019d be the one to pull it out."
+    DialogueText: "(pulling <color=\"red\">bloodied</color> cloth through her hands)\nLeft
+      it in him. Like he knew I\u2019d be the one to pull it out."
     Position: {x: 13635.2, y: 67.2}
     NodeType: 0
     Actor: Doc
@@ -5062,6 +4934,138 @@ MonoBehaviour:
     CharacterAction: 0
     TargetAttribute: 0
     AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 289fc6c6-3c22-4e6e-9806-9f86d2d55126
+    DialogueText: CharacterAttribute Node
+    Position: {x: 7406.4, y: 462.4}
+    NodeType: 9
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: -1
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: dee10d27-f2c6-4b4b-8928-facdbaf1413a
+    DialogueText: "So\u2019s the knife in his back.\r"
+    Position: {x: 8090.4, y: 462.4}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: c04cf85d-ea66-4ece-84cf-33abf8ed3146
+    DialogueText: CharacterAttribute Node
+    Position: {x: 7854.4, y: 462.4}
+    NodeType: 9
+    Actor: Grave
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 1
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: -1
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: a77636b6-5c9c-40c1-ae26-db13b6d1907e
+    DialogueText: CharacterAttribute Node
+    Position: {x: 7622.4, y: 462.4}
+    NodeType: 9
+    Actor: Grave
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 2
     RandomConditionValue: 0
     EventType: 0
     EventName: 
