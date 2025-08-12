@@ -139,7 +139,7 @@ namespace Subtegral.DialogueSystem.Runtime
             }
 
             ProceedToNarrative(nextLink.TargetNodeGUID);
-            eventManager.DialogueEvent(nodeData, conditionManager);
+            eventManager.DialogueEvent(nodeData, conditionManager, UIManager);
         }
         private void StringConditionNode(DialogueNodeData nodeData)
         {

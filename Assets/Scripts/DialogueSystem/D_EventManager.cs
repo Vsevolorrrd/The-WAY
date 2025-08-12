@@ -4,7 +4,7 @@ using Characters;
 
 public class D_EventManager : MonoBehaviour
 {
-    public void DialogueEvent(DialogueNodeData nodeData, D_conditionManager conditionManager)
+    public void DialogueEvent(DialogueNodeData nodeData, D_conditionManager conditionManager, D_UI UI)
     {
         switch (nodeData.EventType)
         {
@@ -66,6 +66,7 @@ public class D_EventManager : MonoBehaviour
                 break;
 
             case DialogueEventType.AddMemory:
+                UI.AddedMemory();
                 conditionManager.AddMemory(nodeData.EventName);
                 break;
 

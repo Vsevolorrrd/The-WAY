@@ -10,6 +10,7 @@ using TMPro;
 
 public class D_UI : MonoBehaviour
 {
+    [SerializeField] GameObject memoryIcon;
     [SerializeField] GameObject UI;
 
     [Header("Text")]
@@ -276,5 +277,10 @@ public class D_UI : MonoBehaviour
         }
         cg.alpha = 0f;
         cg.gameObject.SetActive(false);
+    }
+
+    public void AddedMemory()
+    {
+        memoryIcon.SetActive(true);
     }
 }
