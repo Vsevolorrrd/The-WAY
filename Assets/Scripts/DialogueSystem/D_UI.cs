@@ -19,6 +19,7 @@ public class D_UI : MonoBehaviour
     [SerializeField] GameObject textBoxPrefab;
     [SerializeField] Vector3 offset = new Vector3(0, 4f, 0);
     [SerializeField] float fadeDuration = 0.2f;
+    [SerializeField] float textDelayPerCharacter = 0.04f;
 
     private GameObject currentBox;
     private Transform currentTarget;
@@ -26,6 +27,7 @@ public class D_UI : MonoBehaviour
     private CanvasGroup floatingCG;
     private Camera mainCam;
     private bool boxIsVisible = false;
+    private string textToType;
 
     [Header("Choice")]
     [SerializeField] Transform buttonContainer;
@@ -40,6 +42,7 @@ public class D_UI : MonoBehaviour
     private Coroutine textRoutine;
     private Coroutine floatingRoutine;
     private Coroutine buttonRoutine;
+    private Coroutine typewriterRoutine;
 
     private void Awake()
     {
@@ -84,8 +87,15 @@ public class D_UI : MonoBehaviour
         if (nodeData.Actor == "narrator_id")
         {
             HideFloatingText();
-            dialogueText.text = nodeData.DialogueText;
+            dialogueText.text = "";
             yield return FadeIn(dialogueCG);
+
+            if (typewriterRoutine != null)
+            {
+                StopCoroutine(typewriterRoutine);
+                typewriterRoutine = null;
+            }
+            typewriterRoutine = StartCoroutine(TypeText(dialogueText, nodeData.DialogueText, textDelayPerCharacter));
         }
         else
         {
@@ -100,8 +110,15 @@ public class D_UI : MonoBehaviour
             {
                 yield return HideFloatingTextCoroutine();
                 string text = $"<b>{nodeData.Actor}</b>\n{nodeData.DialogueText}";
-                dialogueText.text = text;
+                dialogueText.text = "";
                 yield return FadeIn(dialogueCG);
+
+                if (typewriterRoutine != null)
+                {
+                    StopCoroutine(typewriterRoutine);
+                    typewriterRoutine = null;
+                }
+                typewriterRoutine = StartCoroutine(TypeText(dialogueText, text, textDelayPerCharacter));
             }
         }
     }
@@ -136,7 +153,15 @@ public class D_UI : MonoBehaviour
         currentBox.SetActive(true);
         boxIsVisible = true;
         floatingCG.alpha = 0f;
+        currentText.text = "";
         yield return FadeIn(floatingCG);
+
+        if (typewriterRoutine != null)
+        {
+            StopCoroutine(typewriterRoutine);
+            typewriterRoutine = null;
+        }
+        typewriterRoutine = StartCoroutine(TypeText(currentText, formattedText, textDelayPerCharacter));
     }
 
     private IEnumerator FadeOutFloatingText()
@@ -278,7 +303,57 @@ public class D_UI : MonoBehaviour
         cg.alpha = 0f;
         cg.gameObject.SetActive(false);
     }
+    private IEnumerator TypeText(TextMeshProUGUI textMesh, string fullText, float delayPerChar = 0.03f)
+    {
+        textToType = fullText;
+        textMesh.text = "";
+        int visibleCount = 0;
+        bool insideTag = false;
+        string displayedText = "";
 
+        foreach (char c in fullText)
+        {
+            if (c == '<') insideTag = true;
+            displayedText += c;
+            if (c == '>') insideTag = false;
+
+            if (!insideTag && c != '<')
+            {
+                visibleCount++;
+                textMesh.text = displayedText;
+                yield return new WaitForSeconds(delayPerChar);
+            }
+            else
+            {
+                textMesh.text = displayedText;
+            }
+        }
+
+        textMesh.text = fullText;
+        typewriterRoutine = null;
+    }
+    public bool SkipTypewriterIfActive()
+    {
+        if (typewriterRoutine != null)
+        {
+            StopCoroutine(typewriterRoutine);
+            typewriterRoutine = null;
+
+            // Immediately show full text
+            if (boxIsVisible)
+            {
+                currentText.text = textToType;
+                textToType = null;
+            }
+            else
+            {
+                dialogueText.text = textToType;
+                textToType = null;
+            }
+            return true;
+        }
+        return false;
+    }
     public void AddedMemory()
     {
         memoryIcon.SetActive(true);

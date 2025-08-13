@@ -115,7 +115,6 @@ namespace Subtegral.DialogueSystem.Runtime
             awatingImput = true;
 
             if (nodeData.CheckThisNode == false) return;
-
         }
 
         private void ChoiceNode(DialogueNodeData nodeData)
@@ -289,6 +288,8 @@ namespace Subtegral.DialogueSystem.Runtime
 
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
+                if (UIManager.SkipTypewriterIfActive()) return;
+
                 var nextLink = dialogueContainer.NodeLinks.FirstOrDefault(x => x.BaseNodeGUID == savedDialogueNodeData.NodeGUID);
                 if (nextLink != null)
                 {
