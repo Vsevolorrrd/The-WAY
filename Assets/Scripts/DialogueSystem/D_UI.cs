@@ -88,7 +88,6 @@ public class D_UI : MonoBehaviour
         {
             HideFloatingText();
             dialogueText.text = "";
-            yield return FadeIn(dialogueCG);
 
             if (typewriterRoutine != null)
             {
@@ -111,7 +110,6 @@ public class D_UI : MonoBehaviour
                 yield return HideFloatingTextCoroutine();
                 string text = $"<b>{nodeData.Actor}</b>\n{nodeData.DialogueText}";
                 dialogueText.text = "";
-                yield return FadeIn(dialogueCG);
 
                 if (typewriterRoutine != null)
                 {
@@ -133,8 +131,7 @@ public class D_UI : MonoBehaviour
 
     public void ShowFloatingText(GameObject character, string text, string actor = null)
     {
-        if (floatingRoutine != null) StopCoroutine(floatingRoutine);
-        floatingRoutine = StartCoroutine(FadeInFloatingText(character, text, actor));
+        SetFloatingText(character, text, actor);
     }
 
     public void HideFloatingText()
@@ -143,7 +140,7 @@ public class D_UI : MonoBehaviour
         floatingRoutine = StartCoroutine(FadeOutFloatingText());
     }
 
-    private IEnumerator FadeInFloatingText(GameObject character, string text, string actor = null)
+    private void SetFloatingText(GameObject character, string text, string actor = null)
     {
         string formattedText = string.IsNullOrEmpty(actor) ? text : $"<b>{actor}</b>\n{text}"; //< b > to bold the actor's name
 
@@ -154,7 +151,6 @@ public class D_UI : MonoBehaviour
         boxIsVisible = true;
         floatingCG.alpha = 0f;
         currentText.text = "";
-        yield return FadeIn(floatingCG);
 
         if (typewriterRoutine != null)
         {

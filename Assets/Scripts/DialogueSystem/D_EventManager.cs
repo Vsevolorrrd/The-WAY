@@ -68,6 +68,8 @@ public class D_EventManager : MonoBehaviour
             case DialogueEventType.AddMemory:
                 UI.AddedMemory();
                 conditionManager.AddMemory(nodeData.EventName);
+                AudioClip memoryClip = AudioManager.Instance.GetSoundByName("memoryadded");
+                if (memoryClip != null) AudioManager.Instance.PlaySound(memoryClip, 0.8f);
                 break;
 
             case DialogueEventType.SetPlayerName:

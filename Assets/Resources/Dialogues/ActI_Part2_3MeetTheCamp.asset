@@ -95,6 +95,10 @@ MonoBehaviour:
     TargetNodeGUID: ee80f271-a723-4ace-96ba-9d0ff3099859
     DisplayText: "Looks like you\u2019re both in trouble."
   - PortName: Next
+    BaseNodeGUID: 74918ef7-e833-4fbb-93f2-497feff72510
+    TargetNodeGUID: 6208a2c4-ce02-4be5-a693-a20f66cf103c
+    DisplayText: Next
+  - PortName: Next
     BaseNodeGUID: 485d9e1c-a39b-4b25-bd36-42814ebde768
     TargetNodeGUID: 41d6e5dd-b5b5-4faa-8447-01415a5672e9
     DisplayText: Next
@@ -105,6 +109,10 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: 7e9abf5b-139a-4613-8bbe-7c32f05767f5
     TargetNodeGUID: cd80d20e-5a97-4caf-a8ff-2a66640d7a4c
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: cd80d20e-5a97-4caf-a8ff-2a66640d7a4c
+    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 229ea6c8-7401-41d6-b9cd-5dc53e4834e1
@@ -127,16 +135,60 @@ MonoBehaviour:
     TargetNodeGUID: b261863e-9ee3-4472-a7c0-cbf7414cf93f
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: f0bd0b37-25ae-45aa-826e-7f2febefed61
+    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    DisplayText: Next
+  - PortName: Next
     BaseNodeGUID: b261863e-9ee3-4472-a7c0-cbf7414cf93f
     TargetNodeGUID: ccede58c-5caf-4a26-bc49-625374d940b9
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
-    TargetNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
+    BaseNodeGUID: ccede58c-5caf-4a26-bc49-625374d940b9
+    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 957806ee-af53-4519-861d-bbd1d75b816e
     TargetNodeGUID: 39d8a7b2-6817-4fec-a7e6-4c942f3c16ef
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6208a2c4-ce02-4be5-a693-a20f66cf103c
+    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 41d6e5dd-b5b5-4faa-8447-01415a5672e9
+    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
+    TargetNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
+    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
+    TargetNodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
+    DisplayText: If you think you can do it, go ahead.
+  - PortName: Next
+    BaseNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
+    TargetNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
+    TargetNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
+    TargetNodeGUID: e90224a0-6d9d-4637-8136-fad93acc02c0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e90224a0-6d9d-4637-8136-fad93acc02c0
+    TargetNodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
+    TargetNodeGUID: 92b4ea17-e1eb-42e7-b363-8d1385d8f8a3
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 86fae1e3-ce72-46f6-9d42-e331758c7d92
@@ -157,18 +209,6 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: 9a501151-8c87-4ae5-a2e9-cdf153f1fcb7
     TargetNodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
-    TargetNodeGUID: e90224a0-6d9d-4637-8136-fad93acc02c0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e90224a0-6d9d-4637-8136-fad93acc02c0
-    TargetNodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
-    TargetNodeGUID: 92b4ea17-e1eb-42e7-b363-8d1385d8f8a3
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 0dc61a2d-b7df-4a65-bc6a-eccf839d3db3
@@ -226,14 +266,6 @@ MonoBehaviour:
     BaseNodeGUID: 672e6633-806a-49ea-b4ca-2e2221d0444b
     TargetNodeGUID: b800902d-ef59-4a9b-a20a-8f0239777d6d
     DisplayText: Next
-  - PortName: True
-    BaseNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
-    TargetNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
-    DisplayText: True
-  - PortName: False
-    BaseNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
-    TargetNodeGUID: 12266bec-7921-4d4f-bc79-73cde73028af
-    DisplayText: False
   - PortName: Option 1
     BaseNodeGUID: 12266bec-7921-4d4f-bc79-73cde73028af
     TargetNodeGUID: 1ea6da6e-8bac-43e9-b17b-fca2c373a258
@@ -263,72 +295,40 @@ MonoBehaviour:
     TargetNodeGUID: 0dc61a2d-b7df-4a65-bc6a-eccf839d3db3
     DisplayText: <color=#00ffffff>You picked up ash's lock, where did you learn tha?</color>
   - PortName: Next
-    BaseNodeGUID: f0bd0b37-25ae-45aa-826e-7f2febefed61
-    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    BaseNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
+    TargetNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
     DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
+    TargetNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
+    TargetNodeGUID: 12266bec-7921-4d4f-bc79-73cde73028af
+    DisplayText: False
   - PortName: Next
-    BaseNodeGUID: cd80d20e-5a97-4caf-a8ff-2a66640d7a4c
-    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 41d6e5dd-b5b5-4faa-8447-01415a5672e9
-    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ccede58c-5caf-4a26-bc49-625374d940b9
-    TargetNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 74918ef7-e833-4fbb-93f2-497feff72510
-    TargetNodeGUID: 6208a2c4-ce02-4be5-a693-a20f66cf103c
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
-    TargetNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 6208a2c4-ce02-4be5-a693-a20f66cf103c
-    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
-    DisplayText: Next
-  - PortName: Option 1
-    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
-    TargetNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
-    DisplayText: Rook please just ask Ash to fix it.
-  - PortName: Next
-    BaseNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
-    TargetNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
-    TargetNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
-    TargetNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    BaseNodeGUID: 3ab89aac-7d16-4fce-b440-e696947647e3
     TargetNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
-    DisplayText: Next
-  - PortName: Option 2
-    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
-    TargetNodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
-    DisplayText: If you think you can do it, go ahead.
-  - PortName: Next
-    BaseNodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
-    TargetNodeGUID: 1e6b2a5f-5aae-4a56-a7c1-dee2b22cf85b
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 1e6b2a5f-5aae-4a56-a7c1-dee2b22cf85b
     TargetNodeGUID: 3ab89aac-7d16-4fce-b440-e696947647e3
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 3ab89aac-7d16-4fce-b440-e696947647e3
+    BaseNodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
+    TargetNodeGUID: 1e6b2a5f-5aae-4a56-a7c1-dee2b22cf85b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
     TargetNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
+    TargetNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    DisplayText: Rook please just ask Ash to fix it.
+  - PortName: Next
+    BaseNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    TargetNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: f5dabbad-ab79-4243-a68e-32609608cb11
@@ -1474,140 +1474,6 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
-    DialogueText: "Fine\u2026 but only because you asked."
-    Position: {x: 6663.2, y: 40}
-    NodeType: 0
-    Actor: Rook
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
-    DialogueText: '(relieved)
-
-      Thank you.'
-    Position: {x: 6891.2, y: 40}
-    NodeType: 0
-    Actor: Vale
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
-    DialogueText: Good choice. We still need them in one piece.
-    Position: {x: 7104, y: 40}
-    NodeType: 0
-    Actor: Reed
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
-    DialogueText: Event Node
-    Position: {x: 7399.2, y: 40}
-    NodeType: 3
-    Actor: 
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 10
-    EventName: Rook_AshFixesRifle
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
     DialogueText: "Then we\u2019ll just have to make new memories."
     Position: {x: 11474.4, y: 622.4}
@@ -2514,6 +2380,140 @@ MonoBehaviour:
   - NodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
     DialogueText: If you say so
     Position: {x: 6663.2, y: 318.4}
+    NodeType: 0
+    Actor: Reed
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    DialogueText: Event Node
+    Position: {x: 6685.6, y: 33.6}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 10
+    EventName: Rook_AshFixesRifle
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
+    DialogueText: "Fine\u2026 but only because you asked."
+    Position: {x: 6964.8, y: 33.6}
+    NodeType: 0
+    Actor: Rook
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
+    DialogueText: '(relieved)
+
+      Thank you.'
+    Position: {x: 7192.8, y: 33.6}
+    NodeType: 0
+    Actor: Vale
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
+    DialogueText: Good choice. We still need them in one piece.
+    Position: {x: 7405.6, y: 33.6}
     NodeType: 0
     Actor: Reed
     DisplayText: 
