@@ -1,0 +1,3168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b3fd9154634ebdb8c8a48960b9a16a, type: 3}
+  m_Name: ActI_Part4_1Gone
+  m_EditorClassIdentifier: 
+  NodeLinks:
+  - PortName: Next
+    BaseNodeGUID: 08457418-e555-4496-924e-8635ca7a031d
+    TargetNodeGUID: 619aaa8b-e90d-49c2-9738-7b38e94359ef
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 619aaa8b-e90d-49c2-9738-7b38e94359ef
+    TargetNodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
+    TargetNodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
+    TargetNodeGUID: a8ff8ff7-febc-4884-8e3c-6790d3b5a3c4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a8ff8ff7-febc-4884-8e3c-6790d3b5a3c4
+    TargetNodeGUID: 1fbe7a90-3127-4355-94e5-04d9da60a01f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1fbe7a90-3127-4355-94e5-04d9da60a01f
+    TargetNodeGUID: 9de4def4-4354-4ec0-b042-bd93ce27ee16
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9de4def4-4354-4ec0-b042-bd93ce27ee16
+    TargetNodeGUID: 57389e84-eeda-417b-a933-e7691dd7b14d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 57389e84-eeda-417b-a933-e7691dd7b14d
+    TargetNodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
+    TargetNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
+    TargetNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
+    DisplayText: '[Leave Reed, to help Rook.]'
+  - PortName: Next
+    BaseNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
+    TargetNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
+    TargetNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
+    DisplayText: Next
+  - PortName: Option 3
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
+    DisplayText: '[Stay with Reed.]'
+  - PortName: Next
+    BaseNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
+    TargetNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
+    DisplayText: Next
+  - PortName: Option 4
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
+    DisplayText: You are alive. What Happened?
+  - PortName: Fail
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
+    DisplayText: Fail
+  - PortName: Next
+    BaseNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
+    TargetNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
+    TargetNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    TargetNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    TargetNodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
+    DisplayText: "I\u2026 I don\u2019t know. "
+  - PortName: Option 3
+    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    TargetNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
+    DisplayText: "The cuts started to appear all over his body. I couldn\u2019t do
+      anything\u2026"
+  - PortName: Fail
+    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    TargetNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
+    DisplayText: Fail
+  - PortName: Option 4
+    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    TargetNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
+    DisplayText: "The thing \u2014 it did this to him."
+  - PortName: Next
+    BaseNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
+    TargetNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
+    TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
+    TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
+    TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    TargetNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
+    TargetNodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
+    DisplayText: "This thing\u2026 it just left."
+  - PortName: Next
+    BaseNodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
+    TargetNodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
+    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
+    TargetNodeGUID: 6982ad3e-9193-49eb-b367-009bb477a1ca
+    DisplayText: "I\u2019m fine."
+  - PortName: Option 3
+    BaseNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
+    TargetNodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
+    DisplayText: '[Stay silent.]'
+  - PortName: Next
+    BaseNodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
+    TargetNodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
+    TargetNodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6982ad3e-9193-49eb-b367-009bb477a1ca
+    TargetNodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
+    TargetNodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    TargetNodeGUID: 018fac6f-a94e-423a-a65f-31c88f774d68
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 018fac6f-a94e-423a-a65f-31c88f774d68
+    TargetNodeGUID: 68f2179f-e26c-45ae-9102-4e2e71059d4a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 68f2179f-e26c-45ae-9102-4e2e71059d4a
+    TargetNodeGUID: 31b09055-b374-422e-a0d4-6f13225e8d6e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 31b09055-b374-422e-a0d4-6f13225e8d6e
+    TargetNodeGUID: 91c68cdf-9b97-4ce3-9c84-b2f3df99f1c4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 91c68cdf-9b97-4ce3-9c84-b2f3df99f1c4
+    TargetNodeGUID: b8b36865-7e94-406b-9a9e-6580853c9c9c
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b8b36865-7e94-406b-9a9e-6580853c9c9c
+    TargetNodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
+    TargetNodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
+    TargetNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
+    TargetNodeGUID: 585bf88a-86b8-492d-a93d-6732bf64f76d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 585bf88a-86b8-492d-a93d-6732bf64f76d
+    TargetNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
+    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DisplayText: '[You silently nod.]'
+  - PortName: Next
+    BaseNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    TargetNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
+    TargetNodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
+    TargetNodeGUID: 40221662-558c-4fc5-939d-d66e4af6cd2a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 40221662-558c-4fc5-939d-d66e4af6cd2a
+    TargetNodeGUID: f7f18878-c324-4afa-8602-0267daf9a092
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f7f18878-c324-4afa-8602-0267daf9a092
+    TargetNodeGUID: 4cf16328-cb8c-423b-a571-5afe3c815e78
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 4cf16328-cb8c-423b-a571-5afe3c815e78
+    TargetNodeGUID: 62dbfe7c-c1c9-4a3d-a79b-b49470042624
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 62dbfe7c-c1c9-4a3d-a79b-b49470042624
+    TargetNodeGUID: 13217d45-9564-4192-8569-028e06cca88d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 13217d45-9564-4192-8569-028e06cca88d
+    TargetNodeGUID: 738459cd-3b0f-46ed-b09d-809e92e0f735
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 738459cd-3b0f-46ed-b09d-809e92e0f735
+    TargetNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    TargetNodeGUID: be1288a1-b03f-480e-8076-06c4e7cca2a5
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
+    TargetNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    DisplayText: Next
+  - PortName: False
+    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    TargetNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    TargetNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
+    DisplayText: True
+  - PortName: Next
+    BaseNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
+    TargetNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
+    TargetNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
+    TargetNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
+    TargetNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
+    DisplayText: Next
+  - PortName: Option 4
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
+    DisplayText: You are alive. What Happened?
+  - PortName: Option 3
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
+    DisplayText: Stay with Reed.
+  - PortName: Option 2
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
+    DisplayText: Run to meet them.
+  - PortName: Fail
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
+    DisplayText: Fail
+  - PortName: Next
+    BaseNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
+    TargetNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    DisplayText: Next
+  - PortName: False
+    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    TargetNodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    TargetNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
+    DisplayText: True
+  - PortName: Option 1
+    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    TargetNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    DisplayText: Are we just going to leave him?
+  - PortName: False
+    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    TargetNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    TargetNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    DisplayText: True
+  - PortName: Next
+    BaseNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
+    TargetNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    DisplayText: Next
+  - PortName: False
+    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    TargetNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
+    DisplayText: False
+  - PortName: Next
+    BaseNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
+    TargetNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    TargetNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
+    DisplayText: True
+  - PortName: Next
+    BaseNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
+    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    TargetNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
+    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
+    TargetNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    DisplayText: Next
+  - PortName: False
+    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    TargetNodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
+    DisplayText: False
+  - PortName: True
+    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    TargetNodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
+    DisplayText: True
+  - PortName: Next
+    BaseNodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
+    TargetNodeGUID: 14fb862d-09bc-45be-8a0f-3ba3534c739d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 14fb862d-09bc-45be-8a0f-3ba3534c739d
+    TargetNodeGUID: a7f2c05d-b621-49f1-ae93-f8c0aed9e50b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a7f2c05d-b621-49f1-ae93-f8c0aed9e50b
+    TargetNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    DisplayText: Next
+  DialogueNodeData:
+  - NodeGUID: 619aaa8b-e90d-49c2-9738-7b38e94359ef
+    DialogueText: The scent of iron clings to the back of your throat.
+    Position: {x: 206.4, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
+    DialogueText: The <color=red>blood</color> on your hands is already cooling,
+      darkening.
+    Position: {x: 801.6, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
+    DialogueText: "Reed\u2019s weight in your arms is unbearable now."
+    Position: {x: 512.8, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: a8ff8ff7-febc-4884-8e3c-6790d3b5a3c4
+    DialogueText: The world feels too quiet, the absence of the creature heavier
+      than its presence ever was.
+    Position: {x: 1108, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 1fbe7a90-3127-4355-94e5-04d9da60a01f
+    DialogueText: Event Node
+    Position: {x: 1416, y: 200}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 9
+    EventName: 
+    EventValue: 0.3
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 9de4def4-4354-4ec0-b042-bd93ce27ee16
+    DialogueText: A voice cuts through the silence.
+    Position: {x: 1618.4, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 57389e84-eeda-417b-a933-e7691dd7b14d
+    DialogueText: "(shouting from somewhere behind you)\nWe\u2019re here!\r"
+    Position: {x: 1835.2, y: 200}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
+    DialogueText: "You turn. Shapes emerge from the haze \u2014 Doc, Vane, and Rook."
+    Position: {x: 2088, y: 200}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DialogueText: 'Doc (quiet, but cutting): What happened to him?'
+    Position: {x: 4714.4, y: 168.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    DialogueText: TimedChoice Node
+    Position: {x: 5026.4, y: 168.8}
+    NodeType: 2
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
+    DialogueText: "Doc exhales through her nose, a sharp, controlled sound. She doesn\u2019t
+      argue \u2014 but her eyes stay on you a second too long before she moves again."
+    Position: {x: 5588.8, y: 112.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
+    DialogueText: "Doc\u2019s mouth tightens. No response."
+    Position: {x: 5588.8, y: 292}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
+    DialogueText: You try to speak. The words die before they leave your throat.
+    Position: {x: 5589.6, y: -47.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    DialogueText: StringCondition Node
+    Position: {x: 2420, y: 200}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: Rook_AshFixesRifle
+    ConditionType: 1
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    DialogueText: And what about you? Not a single scratch?
+    Position: {x: 6290.4, y: 420}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
+    DialogueText: Choice Node
+    Position: {x: 6583.2, y: 420}
+    NodeType: 1
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
+    DialogueText: "Her brow furrows slightly. She doesn\u2019t look up from Reed."
+    Position: {x: 6859.2, y: 307.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
+    DialogueText: Lucky you.
+    Position: {x: 7173.6, y: 307.2}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6982ad3e-9193-49eb-b367-009bb477a1ca
+    DialogueText: "She gives a faint, humorless snort \u2014 like she doesn\u2019t
+      believe it\u2019s that simple."
+    Position: {x: 6859.2, y: 470.4}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
+    DialogueText: "Her gaze flicks up at you briefly. There\u2019s no accusation
+      in her voice, but the pause says enough."
+    Position: {x: 6860, y: 640}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
+    DialogueText: "\u2026Right."
+    Position: {x: 7163.2, y: 640}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    DialogueText: Event Node
+    Position: {x: 7442.4, y: 445.6}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 9
+    EventName: 
+    EventValue: 0.3
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 018fac6f-a94e-423a-a65f-31c88f774d68
+    DialogueText: Her hands still. The look on her face tells you the truth before
+      her words do.
+    Position: {x: 7642.4, y: 445.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 68f2179f-e26c-45ae-9102-4e2e71059d4a
+    DialogueText: Event Node
+    Position: {x: 7948, y: 442.4}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 9
+    EventName: 
+    EventValue: 0.2
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 31b09055-b374-422e-a0d4-6f13225e8d6e
+    DialogueText: "He\u2019s gone."
+    Position: {x: 8152, y: 442.4}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 91c68cdf-9b97-4ce3-9c84-b2f3df99f1c4
+    DialogueText: She closes her eyes for a breath, then exhales sharply, shifting
+      her focus to Rook.
+    Position: {x: 8356.8, y: 442.4}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: b8b36865-7e94-406b-9a9e-6580853c9c9c
+    DialogueText: Event Node
+    Position: {x: 8671.2, y: 442.4}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 9
+    EventName: 
+    EventValue: 0.3
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
+    DialogueText: We need to get back. Now.
+    Position: {x: 8887.2, y: 442.4}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
+    DialogueText: "All you can do is meet her eyes and give a slow shake of your
+      head. She exhales sharply, crouching to check Reed\u2019s pulse."
+    Position: {x: 5932, y: -47.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
+    DialogueText: "Doc\u2019s shoulder is braced under Rook\u2019s arm, Vane clutching
+      her other side. The girl\u2019s bandaged forearm is <color=red>soaked through</color>,
+      dark spots blooming in the cloth. Her head hangs low, eyes glassy."
+    Position: {x: 2825.6, y: 424.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
+    DialogueText: '(to Rook, low)
+
+      Keep moving. Just a bit more.'
+    Position: {x: 3134.4, y: 424.8}
+    NodeType: 0
+    Actor: Vale
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    DialogueText: TimedChoice Node
+    Position: {x: 3352.8, y: 424.8}
+    NodeType: 2
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
+    DialogueText: You keep your grip on him, shaking his shoulders, willing him to
+      wake.
+    Position: {x: 3712.8, y: 604}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
+    DialogueText: "As they struggle to drug Rook, you can feel Doc\u2019s eyes on
+      you \u2014 sharp, measuring, like she\u2019s weighing something she can\u2019t
+      quite name \u2014 before she crouches beside you and focuses on Reed."
+    Position: {x: 4016.8, y: 604}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
+    DialogueText: "Then sprint toward them. Doc\u2019s eyes flick to you in brief
+      relief. Vane shifts Rook into your arms without a word. She\u2019s lighter
+      than you expect \u2014 all wiry muscle and bone, trembling with each breath."
+    Position: {x: 4016.8, y: 400}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
+    DialogueText: "You kneel, setting Reed down as gently as you can.\r"
+    Position: {x: 3712.8, y: 400}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
+    DialogueText: You carry her back to where Reed lies. Doc immediately drops beside
+      him, hands moving fast.
+    Position: {x: 4321.6, y: 400}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
+    DialogueText: "(Doc\u2019s voice cuts across yours)\nDropped into one of the
+      building. No time to explain."
+    Position: {x: 3712, y: 807.2}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
+    DialogueText: Still in shock, you stay where you are, staring at them with an
+      empty, unfocused gaze.
+    Position: {x: 3708.8, y: 168.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
+    DialogueText: "As they struggle to drug Rook. Doc spares you a glance \u2014
+      cold and quick \u2014 before her eyes drop back to Reed."
+    Position: {x: 4016.8, y: 156}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
+    DialogueText: "As they struggle to drug Rook. Doc spares you a glance \u2014
+      cold and quick \u2014 before her eyes drop back to Reed."
+    Position: {x: 4016, y: 807.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
+    DialogueText: "They\u2019re on their feet, moving fast, all three flushed and
+      breathing hard."
+    Position: {x: 2831.2, y: 48}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    DialogueText: TimedChoice Node
+    Position: {x: 3356.8, y: -409.6}
+    NodeType: 2
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
+    DialogueText: You kneel, setting Reed down as gently as you can, then sprint
+      toward them.
+    Position: {x: 3706.4, y: -391.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
+    DialogueText: " Doc\u2019s eyes flick to you \u2014 a flash of relief, then something
+      tighter behind it."
+    Position: {x: 4016, y: -391.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
+    DialogueText: The three of you make your way back to Reed together Doc immediately
+      drops beside him, hands moving fast.
+    Position: {x: 4322.4, y: -391.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
+    DialogueText: You keep your grip on him, shaking his shoulders, willing him to
+      wake.
+    Position: {x: 3706.4, y: -226.4}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
+    DialogueText: "You can feel Doc\u2019s eyes on you \u2014 sharp, measuring, like
+      she\u2019s running through possibilities \u2014 before she crouches beside
+      you and focuses on Reed."
+    Position: {x: 4016, y: -226.4}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
+    DialogueText: "(Doc\u2019s voice cuts across yours)\nDropped into one of the
+      building. No time to explain."
+    Position: {x: 3703.2, y: -60.8}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
+    DialogueText: "You stay frozen, staring blankly as they approach. Doc spares
+      you a glance \u2014 quick, cold \u2014 before dropping her eyes back to Reed"
+    Position: {x: 4323.2, y: -601.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    DialogueText: StringCondition Node
+    Position: {x: 9092, y: 445.6}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: Rook_AshFixesRifle
+    ConditionType: 1
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
+    DialogueText: Event Node
+    Position: {x: 9387.2, y: 601.6}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 9
+    EventName: 
+    EventValue: 0.1
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
+    DialogueText: "(snarling under her breath) I can keep her stable, but the metal\u2019s
+      still in. I need to get it out, before infection sets in."
+    Position: {x: 9595.2, y: 601.6}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    DialogueText: Choice Node
+    Position: {x: 10441.6, y: 428.8}
+    NodeType: 1
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
+    DialogueText: Vane shifts uncomfortably, glancing between you and Reed before
+      looking away.
+    Position: {x: 9933.6, y: 428.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 585bf88a-86b8-492d-a93d-6732bf64f76d
+    DialogueText: Then we move.
+    Position: {x: 10236, y: 428.8}
+    NodeType: 0
+    Actor: Vale
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
+    DialogueText: The trek back is a blur. The path stretches endlessly ahead, your
+      legs numb, each step heavier than the last.
+    Position: {x: 12306.4, y: 544.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
+    DialogueText: Event Node
+    Position: {x: 12060, y: 544.8}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0.6
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    DialogueText: StringCondition Node
+    Position: {x: 10785.6, y: 348}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: Rook_AshFixesRifle
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
+    DialogueText: "That thing is lurking somewhere around the shadows, and Rook needs
+      immediate care.\r"
+    Position: {x: 11084.8, y: 328}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    DialogueText: "if we don\u2019t go now there will be more bodies to bury for
+      Ash and \u2026<b>him</b>."
+    Position: {x: 11404.8, y: 328}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    DialogueText: "That thing\u2019s still out there. If we don\u2019t move, there\u2019ll
+      be more bodies to bury for Ash and \u2026him."
+    Position: {x: 11086.4, y: 156.8}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DialogueText: "Doc bends down and closes Reed\u2019s eyes. The silence between
+      you says more than either of you will."
+    Position: {x: 11728, y: 544.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    DialogueText: StringCondition Node
+    Position: {x: 12620, y: 544.8}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: Rook_AshFixesRifle
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    DialogueText: Ash spots you first. His grin spreads, hand lifting to wave
+    Position: {x: 13540.8, y: 512.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
+    DialogueText: "Hey! You made it ba\u2014"
+    Position: {x: 13861.6, y: 512.8}
+    NodeType: 0
+    Actor: Ash
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
+    DialogueText: "Rook\u2019s labored breathing scrapes at your ears like gravel
+      dragged across stone."
+    Position: {x: 12914.4, y: 681.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
+    DialogueText: The sound of boots against grit is the only measure of time until
+      the camp comes into view
+    Position: {x: 12914.4, y: 499.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
+    DialogueText: "Camp emerges from the dark \u2014 sagging tents, the glow of the
+      firepit. "
+    Position: {x: 13223.2, y: 681.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    DialogueText: StringCondition Node
+    Position: {x: 14073.6, y: 512.8}
+    NodeType: 6
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: Rook_AshFixesRifle
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
+    DialogueText: His voice stops dead. His eyes flick to Rook, then  to your eyes.
+      The grin crumbles.
+    Position: {x: 14421.6, y: 588.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 40221662-558c-4fc5-939d-d66e4af6cd2a
+    DialogueText: "(soft, almost to himself) \u2026No."
+    Position: {x: 14725.6, y: 588.8}
+    NodeType: 0
+    Actor: Ash
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: f7f18878-c324-4afa-8602-0267daf9a092
+    DialogueText: "You walk past him without answering, heading straight for Doc\u2019s
+      makeshift clinic. She\u2019s already clearing space, dragging a wooden table
+      from the far wall into the center."
+    Position: {x: 14932, y: 588.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 4cf16328-cb8c-423b-a571-5afe3c815e78
+    DialogueText: Here.
+    Position: {x: 15235.2, y: 588.8}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 62dbfe7c-c1c9-4a3d-a79b-b49470042624
+    DialogueText: "You lay Rook down. She\u2019s already unconscious, arm limp at
+      her side."
+    Position: {x: 15445.6, y: 588.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 13217d45-9564-4192-8569-028e06cca88d
+    DialogueText: Leave. Now.
+    Position: {x: 15750.4, y: 588.8}
+    NodeType: 0
+    Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 738459cd-3b0f-46ed-b09d-809e92e0f735
+    DialogueText: You exit the room. The air feels brittle. By the time you reach
+      the fire, the others in camp are already gathering.
+    Position: {x: 15952.8, y: 588.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
+    DialogueText: His voice stops dead. His eyes flick to blood spots on you then
+      to your eyes. The grin crumbles.
+    Position: {x: 14416.8, y: 379.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 14fb862d-09bc-45be-8a0f-3ba3534c739d
+    DialogueText: "(soft, almost to himself) \u2026No."
+    Position: {x: 14725.6, y: 379.2}
+    NodeType: 0
+    Actor: Ash
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: a7f2c05d-b621-49f1-ae93-f8c0aed9e50b
+    DialogueText: The air feels brittle. By the time you reach the fire, the others
+      in camp are already gathering.
+    Position: {x: 14932, y: 379.2}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: be1288a1-b03f-480e-8076-06c4e7cca2a5
+    DialogueText: ActI_Part5_1TheFirstGrave
+    Position: {x: 16497.6, y: 405.6}
+    NodeType: 13
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 2
+  - NodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    DialogueText: There is nobody to bury tonight.
+    Position: {x: 16281.6, y: 405.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  CommentBlockData: []
