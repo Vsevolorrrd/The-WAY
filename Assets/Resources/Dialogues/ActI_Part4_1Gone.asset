@@ -22,12 +22,12 @@ MonoBehaviour:
     TargetNodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
-    TargetNodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
     TargetNodeGUID: a8ff8ff7-febc-4884-8e3c-6790d3b5a3c4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 591f7ef9-8f41-4b50-9263-e61331888daa
+    TargetNodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: a8ff8ff7-febc-4884-8e3c-6790d3b5a3c4
@@ -46,94 +46,30 @@ MonoBehaviour:
     TargetNodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
-    TargetNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
-    TargetNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
-    DisplayText: Next
-  - PortName: Option 2
-    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
-    TargetNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
-    DisplayText: '[Leave Reed, to help Rook.]'
-  - PortName: Next
-    BaseNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
-    TargetNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
-    TargetNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
-    DisplayText: Next
-  - PortName: Option 3
-    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
-    TargetNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
-    DisplayText: '[Stay with Reed.]'
-  - PortName: Next
-    BaseNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
-    TargetNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
-    DisplayText: Next
-  - PortName: Option 4
-    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
-    TargetNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
-    DisplayText: You are alive. What Happened?
-  - PortName: Fail
-    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
-    TargetNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
-    DisplayText: Fail
-  - PortName: Next
-    BaseNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
-    TargetNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
-    TargetNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    BaseNodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
+    TargetNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
     TargetNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
     DisplayText: Next
-  - PortName: Option 2
+  - PortName: Fail
     BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
     TargetNodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
+    DisplayText: Fail
+  - PortName: Option 2
+    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
+    TargetNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
     DisplayText: "I\u2026 I don\u2019t know. "
   - PortName: Option 3
     BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
-    TargetNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
+    TargetNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
     DisplayText: "The cuts started to appear all over his body. I couldn\u2019t do
       anything\u2026"
-  - PortName: Fail
-    BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
-    TargetNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
-    DisplayText: Fail
   - PortName: Option 4
     BaseNodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
     TargetNodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
     DisplayText: "The thing \u2014 it did this to him."
-  - PortName: Next
-    BaseNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
-    TargetNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
-    TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
-    DisplayText: Next
   - PortName: Next
     BaseNodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
     TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
@@ -143,6 +79,18 @@ MonoBehaviour:
     TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: ca12c87f-d12d-4613-b7a8-455e52ff580e
+    TargetNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    TargetNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
+    TargetNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
+    DisplayText: False
+  - PortName: Next
     BaseNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
     TargetNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
     DisplayText: Next
@@ -150,10 +98,6 @@ MonoBehaviour:
     BaseNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
     TargetNodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
     DisplayText: "This thing\u2026 it just left."
-  - PortName: Next
-    BaseNodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
-    TargetNodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
-    DisplayText: Next
   - PortName: Option 2
     BaseNodeGUID: 2a60b9cb-29d4-4a65-a6c0-fa99e53b9414
     TargetNodeGUID: 6982ad3e-9193-49eb-b367-009bb477a1ca
@@ -163,8 +107,8 @@ MonoBehaviour:
     TargetNodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
     DisplayText: '[Stay silent.]'
   - PortName: Next
-    BaseNodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
-    TargetNodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
+    BaseNodeGUID: 05273665-c82e-4fbe-bbe9-a89bed706513
+    TargetNodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 6c2146cf-6c01-462f-b4db-393e8324f731
@@ -173,6 +117,10 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: 6982ad3e-9193-49eb-b367-009bb477a1ca
     TargetNodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 8d0b1f34-e2bd-49bc-81db-dda94742ff0b
+    TargetNodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: f1bf8ecd-1cdd-4c6c-9e6d-9811a558508b
@@ -203,6 +151,130 @@ MonoBehaviour:
     TargetNodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
+    TargetNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 346f9d7c-da6f-4a7b-8ac5-f055904a7e78
+    TargetNodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
+    TargetNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d5027fb8-b189-4fdc-b9ee-238a8471faf4
+    TargetNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    DisplayText: Next
+  - PortName: Fail
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
+    DisplayText: Fail
+  - PortName: Option 2
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
+    DisplayText: '[Leave Reed, to help Rook.]'
+  - PortName: Option 3
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
+    DisplayText: '[Stay with Reed.]'
+  - PortName: Option 4
+    BaseNodeGUID: f80e4874-3bdf-4615-a920-e8dc2688d60c
+    TargetNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
+    DisplayText: You are alive. What Happened?
+  - PortName: Next
+    BaseNodeGUID: 75831d7a-2c0e-45c6-a083-157463c52080
+    TargetNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e1b92a65-fa0e-495c-b1d8-30081c197909
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
+    TargetNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 049aaac9-738d-49c1-831d-fc5763e01b0f
+    TargetNodeGUID: e6a5606d-92f7-4fb7-ab5d-1f397f6110b0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6077d392-afbc-43c1-be37-767f70e80ac5
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 5e936827-32eb-4ed5-be14-b0594175be15
+    TargetNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 02fe951a-1e07-47bb-a28a-3956651cb55b
+    TargetNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e46af086-ae04-4558-862f-33bf5a84351f
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e6a07668-ab0b-412c-a56b-334b9ab77434
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
+    TargetNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    DisplayText: Next
+  - PortName: Fail
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
+    DisplayText: Fail
+  - PortName: Option 2
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
+    DisplayText: You are alive. What Happened?
+  - PortName: Option 3
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
+    DisplayText: Stay with Reed.
+  - PortName: Option 4
+    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
+    TargetNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
+    DisplayText: Run to meet them.
+  - PortName: Next
+    BaseNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
+    TargetNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
+    TargetNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
+    TargetNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
+    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    TargetNodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
+    TargetNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
+    DisplayText: False
+  - PortName: Next
     BaseNodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
     TargetNodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
     DisplayText: Next
@@ -210,6 +282,14 @@ MonoBehaviour:
     BaseNodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
     TargetNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
     DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DisplayText: '[You silently nod.]'
+  - PortName: Option 2
+    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
+    TargetNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    DisplayText: Are we just going to leave him?
   - PortName: Next
     BaseNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
     TargetNodeGUID: 585bf88a-86b8-492d-a93d-6732bf64f76d
@@ -219,25 +299,73 @@ MonoBehaviour:
     TargetNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
-    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
-    DisplayText: Next
-  - PortName: Option 2
-    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
-    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
-    DisplayText: '[You silently nod.]'
-  - PortName: Next
-    BaseNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
-    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
-    TargetNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
+    BaseNodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
+    TargetNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
     TargetNodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
     DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    TargetNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
+    TargetNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    DisplayText: False
+  - PortName: Next
+    BaseNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
+    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    TargetNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    TargetNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
+    TargetNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
+    DisplayText: False
+  - PortName: Next
+    BaseNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    TargetNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
+    TargetNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
+    TargetNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
+    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
+    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
+    DisplayText: Next
+  - PortName: True
+    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    TargetNodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
+    DisplayText: True
+  - PortName: False
+    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
+    TargetNodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
+    DisplayText: False
   - PortName: Next
     BaseNodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
     TargetNodeGUID: 40221662-558c-4fc5-939d-d66e4af6cd2a
@@ -267,138 +395,6 @@ MonoBehaviour:
     TargetNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
-    TargetNodeGUID: be1288a1-b03f-480e-8076-06c4e7cca2a5
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 019f0428-1487-47cf-805f-3d5493ec0efb
-    TargetNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
-    DisplayText: Next
-  - PortName: False
-    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
-    TargetNodeGUID: b7154cba-811c-4406-8d9c-12234c33a4db
-    DisplayText: False
-  - PortName: True
-    BaseNodeGUID: 41ddbe85-2e7d-47bf-8e2a-7a9cd958a294
-    TargetNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
-    DisplayText: True
-  - PortName: Next
-    BaseNodeGUID: 831ebce4-c4dc-4dc8-8ecf-01d4e042c26c
-    TargetNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
-    TargetNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 6907e300-599d-420e-add9-d97e3859f6f7
-    TargetNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
-    TargetNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
-    DisplayText: Next
-  - PortName: Option 4
-    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
-    TargetNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
-    DisplayText: You are alive. What Happened?
-  - PortName: Option 3
-    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
-    TargetNodeGUID: c7bd7656-b631-4939-ac0f-d9017597b1d4
-    DisplayText: Stay with Reed.
-  - PortName: Option 2
-    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
-    TargetNodeGUID: 754e8d68-09be-4bc3-8ece-e6ef39bd6b92
-    DisplayText: Run to meet them.
-  - PortName: Fail
-    BaseNodeGUID: ce4171df-2695-46ad-ac9a-15dbb4e0ca14
-    TargetNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
-    DisplayText: Fail
-  - PortName: Next
-    BaseNodeGUID: c9ac21e1-7126-4dcc-b091-db0538581f9a
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 157228ad-5d0a-4d35-ac67-5d662686bdc8
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 1ce6a08d-e23e-4791-b783-236a1f466eb7
-    TargetNodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 7aaacf94-b6df-4af0-9de4-1c584e3005b6
-    TargetNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
-    DisplayText: Next
-  - PortName: False
-    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
-    TargetNodeGUID: ab81a44c-dd60-405b-bd78-fdd322d55d24
-    DisplayText: False
-  - PortName: True
-    BaseNodeGUID: 94433bd0-54cc-40ae-8b28-005e7bbe07aa
-    TargetNodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
-    DisplayText: True
-  - PortName: Option 1
-    BaseNodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
-    TargetNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
-    DisplayText: Are we just going to leave him?
-  - PortName: False
-    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
-    TargetNodeGUID: d60bb13c-54ce-4f93-9be7-a6b47c2574d3
-    DisplayText: False
-  - PortName: True
-    BaseNodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
-    TargetNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
-    DisplayText: True
-  - PortName: Next
-    BaseNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
-    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 5e662b6e-ced4-4897-906e-1727bfe46a4d
-    TargetNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
-    DisplayText: Next
-  - PortName: False
-    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
-    TargetNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
-    DisplayText: False
-  - PortName: Next
-    BaseNodeGUID: b6f3cd79-cbcc-400d-8209-3d67668c942c
-    TargetNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
-    DisplayText: Next
-  - PortName: True
-    BaseNodeGUID: 22cc8bf3-1718-48d3-b20a-c0b988426122
-    TargetNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
-    DisplayText: True
-  - PortName: Next
-    BaseNodeGUID: 6fd6089d-4642-4735-bac3-6dfe4e9d70fc
-    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
-    TargetNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2aba44b9-d461-4915-8d00-27232b859d7a
-    TargetNodeGUID: 6e412030-c7a9-4557-babd-a0ee96c1d57e
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
-    TargetNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
-    DisplayText: Next
-  - PortName: False
-    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
-    TargetNodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
-    DisplayText: False
-  - PortName: True
-    BaseNodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
-    TargetNodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
-    DisplayText: True
-  - PortName: Next
     BaseNodeGUID: c573830c-09d2-48ce-8e1a-8a489b60aec8
     TargetNodeGUID: 14fb862d-09bc-45be-8a0f-3ba3534c739d
     DisplayText: Next
@@ -409,6 +405,10 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: a7f2c05d-b621-49f1-ae93-f8c0aed9e50b
     TargetNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
+    TargetNodeGUID: be1288a1-b03f-480e-8076-06c4e7cca2a5
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: 619aaa8b-e90d-49c2-9738-7b38e94359ef
@@ -678,10 +678,12 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 9159bb62-da2a-4d65-b22d-cc379df1bebf
-    DialogueText: 'Doc (quiet, but cutting): What happened to him?'
+    DialogueText: 'Doc (quiet, but cutting)
+
+      What happened to him?'
     Position: {x: 4714.4, y: 168.8}
     NodeType: 0
-    Actor: narrator_id
+    Actor: Doc
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5
@@ -717,7 +719,7 @@ MonoBehaviour:
     Actor: 
     DisplayText: 
     CheckThisNode: 0
-    FailTime: 5
+    FailTime: 4
     StringConditionKey: 
     ConditionType: 0
     BoolConditionKey: 
@@ -1453,7 +1455,7 @@ MonoBehaviour:
     Actor: 
     DisplayText: 
     CheckThisNode: 0
-    FailTime: 5
+    FailTime: 4
     StringConditionKey: 
     ConditionType: 0
     BoolConditionKey: 
@@ -1827,7 +1829,7 @@ MonoBehaviour:
     Actor: 
     DisplayText: 
     CheckThisNode: 0
-    FailTime: 5
+    FailTime: 4
     StringConditionKey: 
     ConditionType: 0
     BoolConditionKey: 
@@ -2159,7 +2161,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 98f5441f-5de6-4139-9f75-496f76b220d2
-    DialogueText: "(snarling under her breath) I can keep her stable, but the metal\u2019s
+    DialogueText: "(snarling under her breath)\nI can keep her stable, but the metal\u2019s
       still in. I need to get it out, before infection sets in."
     Position: {x: 9595.2, y: 601.6}
     NodeType: 0
@@ -2431,7 +2433,7 @@ MonoBehaviour:
       Ash and \u2026<b>him</b>."
     Position: {x: 11404.8, y: 328}
     NodeType: 0
-    Actor: narrator_id
+    Actor: Doc
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5
@@ -2462,7 +2464,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
     DialogueText: "That thing\u2019s still out there. If we don\u2019t move, there\u2019ll
-      be more bodies to bury for Ash and \u2026him."
+      be more bodies to bury for Ash and \u2026<b>him</b>."
     Position: {x: 11086.4, y: 156.8}
     NodeType: 0
     Actor: Doc

@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Cam: {fileID: 375940946373498037}
-  threshhold: 5
+  threshhold: 3
   speed: 5
   direction: {x: 0, y: 0, z: 0}
 --- !u!1 &7259032753678711650

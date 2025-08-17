@@ -162,22 +162,14 @@ MonoBehaviour:
     BaseNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
     TargetNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
     DisplayText: Next
-  - PortName: Option 2
+  - PortName: Option 1
     BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
     TargetNodeGUID: d4f1ce58-8407-450e-9f22-04592ce55f57
     DisplayText: If you think you can do it, go ahead.
-  - PortName: Next
-    BaseNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
-    TargetNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
-    TargetNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
-    DisplayText: Next
+  - PortName: Option 2
+    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
+    TargetNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    DisplayText: Rook please just ask Ash to fix it.
   - PortName: Next
     BaseNodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
     TargetNodeGUID: e90224a0-6d9d-4637-8136-fad93acc02c0
@@ -286,14 +278,6 @@ MonoBehaviour:
     BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
     TargetNodeGUID: 0dc61a2d-b7df-4a65-bc6a-eccf839d3db3
     DisplayText: You send kids into that hell?
-  - PortName: Option 3
-    BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
-    TargetNodeGUID: e81bf346-58bf-4bb9-a488-ed3143f7f74b
-    DisplayText: How long have they been with you?
-  - PortName: Option 4
-    BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
-    TargetNodeGUID: 0dc61a2d-b7df-4a65-bc6a-eccf839d3db3
-    DisplayText: <color=#00ffffff>You picked up ash's lock, where did you learn tha?</color>
   - PortName: Next
     BaseNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
     TargetNodeGUID: 4626768a-7143-4bfb-abab-a9314bc2c975
@@ -319,16 +303,36 @@ MonoBehaviour:
     TargetNodeGUID: 1e6b2a5f-5aae-4a56-a7c1-dee2b22cf85b
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
+    TargetNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
+    TargetNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 9db3776e-e013-463e-a768-ae821cc2653d
+    TargetNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
+    DisplayText: Next
+  - PortName: Next
     BaseNodeGUID: 76bd1619-d1b1-48b8-be93-024cd5dc8a31
     TargetNodeGUID: 8b300840-7ebc-4874-9928-0b6db1784ce7
     DisplayText: Next
-  - PortName: Option 1
-    BaseNodeGUID: a673885a-6189-494c-92ac-b6b68c7f8c8f
-    TargetNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
-    DisplayText: Rook please just ask Ash to fix it.
   - PortName: Next
-    BaseNodeGUID: 20cc46a4-ce9a-4363-83d7-4a46aebc67f8
-    TargetNodeGUID: 25f00c68-5f3f-45ab-9dd5-61d8ae43563f
+    BaseNodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    TargetNodeGUID: d3aa2949-4a1c-41cf-885c-bb8f73b0decc
+    DisplayText: Next
+  - PortName: Option 3
+    BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
+    TargetNodeGUID: e81bf346-58bf-4bb9-a488-ed3143f7f74b
+    DisplayText: How long have they been with you?
+  - PortName: Option 4
+    BaseNodeGUID: 92127a5a-ac0f-44d2-b906-019823ae4827
+    TargetNodeGUID: 653202de-4489-4883-a4ca-bf20aaedd5d4
+    DisplayText: You picked up ash's lock, where did you learn that?
+  - PortName: Next
+    BaseNodeGUID: 653202de-4489-4883-a4ca-bf20aaedd5d4
+    TargetNodeGUID: 12266bec-7921-4d4f-bc79-73cde73028af
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: f5dabbad-ab79-4243-a68e-32609608cb11
@@ -401,7 +405,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: e3bf51ff-f017-484a-a94a-c8c67284943f
-    DialogueText: "Alright, Rook\u2014I know it\u2019s your idea. What are ya up
+    DialogueText: "Alright, Rook \u2014 I know it\u2019s your idea. What are ya up
       to this time?"
     Position: {x: 816, y: 200.8}
     NodeType: 0
@@ -1440,40 +1444,6 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
-    DialogueText: We barely have any weapons here, please I can fix it. I just need
-      a chance.
-    Position: {x: 5683.2, y: 108.8}
-    NodeType: 0
-    Actor: Rook
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: 9127bf00-c776-4cc8-8e0b-9ab6f6f44f98
     DialogueText: "Then we\u2019ll just have to make new memories."
     Position: {x: 11474.4, y: 622.4}
@@ -1541,8 +1511,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: eb8df35d-a039-49f3-974b-e7d325d9b7b3
-    DialogueText: "Let\u2019s just hope the memories you make now are <color=red>better</color>
-      ones."
+    DialogueText: "Let\u2019s just hope the memories you make now are better ones."
     Position: {x: 11986.4, y: 622.4}
     NodeType: 0
     Actor: Reed
@@ -2312,7 +2281,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 3ab89aac-7d16-4fce-b440-e696947647e3
-    DialogueText: "(under his breath) This will end badly\u2026"
+    DialogueText: "(under his breath)\nThis will end badly\u2026"
     Position: {x: 7104, y: 318.4}
     NodeType: 0
     Actor: Vale
@@ -2516,6 +2485,73 @@ MonoBehaviour:
     Position: {x: 7405.6, y: 33.6}
     NodeType: 0
     Actor: Reed
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: d2250b68-8a87-4e1f-9f57-81c005520de4
+    DialogueText: We barely have any weapons here, please I can fix it. I just need
+      a chance.
+    Position: {x: 5747.2, y: 103.2}
+    NodeType: 0
+    Actor: Rook
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 653202de-4489-4883-a4ca-bf20aaedd5d4
+    DialogueText: I didn't, he just forgot to lock it
+    Position: {x: 8862.4, y: 770.4}
+    NodeType: 0
+    Actor: Rook
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5

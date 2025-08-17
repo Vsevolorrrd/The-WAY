@@ -48,9 +48,9 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        StartMusic();
+        StartMusic(volume);
     }
-    public void StartMusic()
+    public void StartMusic(float volume)
     {
         /*
         double startTime = AudioSettings.dspTime + 0.1f;

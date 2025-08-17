@@ -41,7 +41,6 @@ namespace Subtegral.DialogueSystem.Runtime
         {
             var nodeData = dialogueContainer.DialogueNodeData.Find(x => x.NodeGUID == narrativeDataGUID);
             UIManager.ClearButtons();
-            UIManager.ClearText();
 
             switch (nodeData.NodeType)
             {

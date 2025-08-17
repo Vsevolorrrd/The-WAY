@@ -33,6 +33,7 @@ public class D_UI : MonoBehaviour
     [SerializeField] Transform buttonContainer;
     [SerializeField] Button choicePrefab;
     [SerializeField] CanvasGroup buttonCG;
+    [SerializeField] AudioClip choiceSound;
 
     [Header("Timed Choice")]
     [SerializeField] CanvasGroup timedChoiceCG;
@@ -57,7 +58,7 @@ public class D_UI : MonoBehaviour
     {
         UI.gameObject.SetActive(true);
         UpdateTimedChoiceBar(0);
-        timedChoiceCG.alpha = 0;
+        timedChoiceCG.alpha = 0f;
     }
 
     public void CloseDialogueUI()
@@ -67,7 +68,7 @@ public class D_UI : MonoBehaviour
         if (buttonRoutine != null) StopCoroutine(buttonRoutine);
 
         dialogueText.text = "";
-        dialogueCG.alpha = 0;
+        dialogueCG.alpha = 0f;
         ClearButtons();
         HideChoiceBar();
         HideFloatingTextImmediate();
@@ -87,6 +88,7 @@ public class D_UI : MonoBehaviour
         if (nodeData.Actor == "narrator_id")
         {
             HideFloatingText();
+            dialogueCG.alpha = 1f;
             dialogueText.text = "";
 
             if (typewriterRoutine != null)
@@ -102,6 +104,7 @@ public class D_UI : MonoBehaviour
             if (character != null)
             {
                 yield return HideFloatingTextCoroutine();
+                dialogueCG.alpha = 1f;
                 dialogueText.text = "";
                 ShowFloatingText(character, nodeData.DialogueText, nodeData.Actor);
             }
@@ -109,6 +112,7 @@ public class D_UI : MonoBehaviour
             {
                 yield return HideFloatingTextCoroutine();
                 string text = $"<b>{nodeData.Actor}</b>\n{nodeData.DialogueText}";
+                dialogueCG.alpha = 1f;
                 dialogueText.text = "";
 
                 if (typewriterRoutine != null)
@@ -119,14 +123,6 @@ public class D_UI : MonoBehaviour
                 typewriterRoutine = StartCoroutine(TypeText(dialogueText, text, textDelayPerCharacter));
             }
         }
-    }
-
-    public void ClearText()
-    {
-        if (textRoutine != null) StopCoroutine(textRoutine);
-        dialogueText.text = "";
-        dialogueCG.alpha = 0;
-        HideFloatingTextImmediate();
     }
 
     public void ShowFloatingText(GameObject character, string text, string actor = null)
@@ -142,14 +138,12 @@ public class D_UI : MonoBehaviour
 
     private void SetFloatingText(GameObject character, string text, string actor = null)
     {
-        string formattedText = string.IsNullOrEmpty(actor) ? text : $"<b>{actor}</b>\n{text}"; //< b > to bold the actor's name
-
+        string formattedText = string.IsNullOrEmpty(actor) ? text : $"<b>{actor}</b>\n{text}";
 
         currentTarget = character.transform;
-        currentText.text = formattedText;
         currentBox.SetActive(true);
+        floatingCG.alpha = 1f;
         boxIsVisible = true;
-        floatingCG.alpha = 0f;
         currentText.text = "";
 
         if (typewriterRoutine != null)
@@ -194,11 +188,17 @@ public class D_UI : MonoBehaviour
         {
             var button = Instantiate(choicePrefab, buttonContainer);
             button.GetComponentInChildren<TextMeshProUGUI>().text = choice.DisplayText;
-            button.onClick.AddListener(() => manager.ProceedToNarrative(choice.TargetNodeGUID));
+            button.onClick.AddListener(() =>
+            {
+                manager.ProceedToNarrative(choice.TargetNodeGUID);
+
+                if (choiceSound)
+                AudioManager.Instance.PlaySound(choiceSound, 0.9f);
+            });
         }
 
         if (buttonRoutine != null) StopCoroutine(buttonRoutine);
-        buttonRoutine = StartCoroutine(FadeIn(buttonCG));
+        buttonRoutine = StartCoroutine(HandleButtonFadeIn());
     }
 
     public void ClearButtons()
@@ -227,11 +227,28 @@ public class D_UI : MonoBehaviour
                 HideChoiceBar();
                 manager.StopTimedCountDown();
                 manager.ProceedToNarrative(choice.TargetNodeGUID);
+
+                if(choiceSound)
+                AudioManager.Instance.PlaySound(choiceSound, 0.9f);
             });
         }
 
         if (buttonRoutine != null) StopCoroutine(buttonRoutine);
-        buttonRoutine = StartCoroutine(FadeIn(buttonCG));
+        buttonRoutine = StartCoroutine(HandleButtonFadeIn());
+    }
+    private IEnumerator HandleButtonFadeIn()
+    {
+        yield return FadeOut(dialogueCG);
+        dialogueText.text = "";
+
+        if (boxIsVisible && floatingCG != null && floatingCG.alpha > 0f)
+        {
+            yield return FadeOut(floatingCG);
+            currentBox.SetActive(false);
+            currentText.text = "";
+        }
+
+        yield return FadeIn(buttonCG);
     }
 
     public void UpdateTimedChoiceBar(float progress)
@@ -297,13 +314,12 @@ public class D_UI : MonoBehaviour
             yield return null;
         }
         cg.alpha = 0f;
-        cg.gameObject.SetActive(false);
     }
+
     private IEnumerator TypeText(TextMeshProUGUI textMesh, string fullText, float delayPerChar = 0.03f)
     {
         textToType = fullText;
         textMesh.text = "";
-        int visibleCount = 0;
         bool insideTag = false;
         string displayedText = "";
 
@@ -315,7 +331,6 @@ public class D_UI : MonoBehaviour
 
             if (!insideTag && c != '<')
             {
-                visibleCount++;
                 textMesh.text = displayedText;
                 yield return new WaitForSeconds(delayPerChar);
             }
@@ -328,6 +343,7 @@ public class D_UI : MonoBehaviour
         textMesh.text = fullText;
         typewriterRoutine = null;
     }
+
     public bool SkipTypewriterIfActive()
     {
         if (typewriterRoutine != null)
@@ -335,7 +351,6 @@ public class D_UI : MonoBehaviour
             StopCoroutine(typewriterRoutine);
             typewriterRoutine = null;
 
-            // Immediately show full text
             if (boxIsVisible)
             {
                 currentText.text = textToType;
@@ -350,8 +365,9 @@ public class D_UI : MonoBehaviour
         }
         return false;
     }
+
     public void AddedMemory()
     {
-        memoryIcon.SetActive(true);
+        //memoryIcon.SetActive(true);
     }
 }

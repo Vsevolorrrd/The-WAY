@@ -138,10 +138,14 @@ MonoBehaviour:
     BaseNodeGUID: febdbed9-fa55-4b85-a941-d3267e704353
     TargetNodeGUID: 8e8b6c2e-6e33-42d8-80da-99ebb9063504
     DisplayText: "Don\u2019t tell me you\u2019ve got kids here."
-  - PortName: Option 4
+  - PortName: Option 3
     BaseNodeGUID: febdbed9-fa55-4b85-a941-d3267e704353
     TargetNodeGUID: 380c687f-4bf5-43b4-980b-31c9f18e62c8
     DisplayText: (To Reed) Is it always this organized here?
+  - PortName: Option 4
+    BaseNodeGUID: febdbed9-fa55-4b85-a941-d3267e704353
+    TargetNodeGUID: a32f185a-040b-474f-98c4-6a289a442d10
+    DisplayText: Sounds like you need to build a better lock.
   - PortName: Next
     BaseNodeGUID: b5033d36-40d1-4b52-953a-08b10c3cabc2
     TargetNodeGUID: 33cecd79-13ac-4ae7-b258-083c6320de1a
@@ -190,10 +194,6 @@ MonoBehaviour:
     BaseNodeGUID: cb0138dd-bf41-419e-a5d2-444644de75e4
     TargetNodeGUID: 6173d884-355f-44cf-ad0b-8fc78e0a3a4d
     DisplayText: Next
-  - PortName: Option 3
-    BaseNodeGUID: febdbed9-fa55-4b85-a941-d3267e704353
-    TargetNodeGUID: a32f185a-040b-474f-98c4-6a289a442d10
-    DisplayText: Sounds like you need to build a better lock.
   - PortName: Next
     BaseNodeGUID: a32f185a-040b-474f-98c4-6a289a442d10
     TargetNodeGUID: f440e725-38e7-4bff-917f-891a2e7f6e8c
@@ -306,39 +306,6 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 8dce3733-9bd4-439b-b821-65dae2335175
-    DialogueText: '[Player] here lost memories. Woke up blank.'
-    Position: {x: 1167.2, y: 200}
-    NodeType: 0
-    Actor: Reed
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: 07fc8147-dca3-43bd-ac4a-fe3f88bc4566
     DialogueText: No shit! My friend, how are you feeling?
     Position: {x: 1443.2, y: 200}
@@ -379,7 +346,7 @@ MonoBehaviour:
     Actor: 
     DisplayText: 
     CheckThisNode: 0
-    FailTime: 3
+    FailTime: 2.2
     StringConditionKey: 
     ConditionType: 0
     BoolConditionKey: 
@@ -474,8 +441,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 4eac4d8d-76ae-469e-addf-a188a81158b8
-    DialogueText: '[He doubles over, hacking. You and Reed freeze. It goes on too
-      long.'
+    DialogueText: He doubles over, hacking. You and Reed freeze. It goes on too long.
     Position: {x: 2871.2, y: 226.4}
     NodeType: 0
     Actor: narrator_id
@@ -709,7 +675,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: dbb51ce9-57ae-4821-9284-0f2003848a0e
-    DialogueText: "[Waving it off weakly.]\nPfft. I\u2019m good. Just that the air
+    DialogueText: "(Waving it off weakly)\nPfft. I\u2019m good. Just that the air
       in here tastes like rust and regret."
     Position: {x: 4728.8, y: 97.6}
     NodeType: 0
@@ -743,7 +709,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: c4ba1c7c-bd82-4049-9252-8f470914b793
-    DialogueText: "[Waving it off weakly.]\nI\u2019m good. Just that the air in here
+    DialogueText: "(Waving it off weakly)\nI\u2019m good. Just that the air in here
       tastes like rust and regret."
     Position: {x: 4728.8, y: -67.2}
     NodeType: 0
@@ -777,7 +743,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: d53eabc7-f556-4bae-a41f-4ea65e390028
-    DialogueText: '(straightening, brushing off his coat):
+    DialogueText: '(straightening, brushing off his coat)
 
       Anyway!'
     Position: {x: 5040, y: 9.599998}
@@ -1212,7 +1178,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: ff926ea1-bdf5-4e2b-9e43-cb59ac572f00
-    DialogueText: '(He glances at you, shrugs.)
+    DialogueText: '(He glances at you, shrugs)
 
       Kids these days, right?'
     Position: {x: 8608.8, y: 148.8}
@@ -1485,6 +1451,42 @@ MonoBehaviour:
     Position: {x: 7431.2, y: 161.6}
     NodeType: 0
     Actor: Ash
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 8dce3733-9bd4-439b-b821-65dae2335175
+    DialogueText: '(looks toward Ash, then briefly at you)
+
+      Anomaly. Lost memories.
+      Woke up blank this morning.'
+    Position: {x: 1151.2, y: 200}
+    NodeType: 0
+    Actor: Reed
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5

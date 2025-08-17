@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Campfire.unity
     guid: bdbf02c4b7d08ac4b983d704b3261b75
   - enabled: 1
-    path: Assets/Scenes/Act I/ActI_Map.unity
-    guid: aa79ee333b2961444a6c4893feecd020
-  - enabled: 1
     path: Assets/Scenes/Act I/ActI_Part1.unity
     guid: 4fb8c0957da810a44b866b698eb30167
   - enabled: 1
@@ -28,7 +25,13 @@ EditorBuildSettings:
     guid: 33d09824c79784a4680aa9ca288a0f82
   - enabled: 1
     path: Assets/Scenes/Act I/ActI_Part4.unity
-    guid: c3966673f5e5a90408950443c6331533
+    guid: 026bc555cfba52f45986a01b274fb2c0
+  - enabled: 1
+    path: Assets/Scenes/Act I/ActI_Part5.unity
+    guid: 1033e289d8c290a43ba05a3df7176bde
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 19574c06ecee3154aa5116489ee77d14
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

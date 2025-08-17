@@ -48,7 +48,7 @@ MonoBehaviour:
   maxSoundsPlaying: 25
   soundList:
   - name: shot
-    Clip: {fileID: 0}
+    Clip: {fileID: 8300000, guid: 05a404346113e614393cef86766ab47d, type: 3}
   - name: bootUp
     Clip: {fileID: 8300000, guid: 16969fe75116790448c15e02b8668d76, type: 3}
   - name: thunder

@@ -34,14 +34,13 @@ public class D_EventManager : MonoBehaviour
                 break;
 
             case DialogueEventType.PlayMusic:
-                AudioClip music = AudioManager.Instance.GetSoundByName(nodeData.EventName.ToLowerInvariant());
-                if (music != null)
-                AudioManager.Instance.PlaySound(music, nodeData.EventValue, null, true);
-                else Debug.LogWarning($"Music '{nodeData.EventName}' not found in AudioManager.");
+                if(MusicManager.Instance)
+                MusicManager.Instance.StartMusic(nodeData.EventValue);
                 break;
 
             case DialogueEventType.StopAllMusic:
-                AudioManager.Instance.StopAllLoopSources(nodeData.EventValue);
+                if (MusicManager.Instance)
+                MusicManager.Instance.StopMusic(nodeData.EventValue);
                 break;
 
             case DialogueEventType.ScreenShake:

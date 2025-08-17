@@ -49,7 +49,7 @@ MonoBehaviour:
   musicSource: {fileID: 7933240488113905644}
   introClip: {fileID: 0}
   musicClip: {fileID: 8300000, guid: 0bcfc6a03c468fb41a1033e5da03d3e0, type: 3}
-  volume: 0.7
+  volume: 0.5
 --- !u!1 &8098875936917080495
 GameObject:
   m_ObjectHideFlags: 0
