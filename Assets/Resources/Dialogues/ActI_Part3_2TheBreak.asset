@@ -250,94 +250,6 @@ MonoBehaviour:
     TargetNodeGUID: 0a61b1bf-9a39-4c3f-b03a-5b6ee54df3df
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 0a61b1bf-9a39-4c3f-b03a-5b6ee54df3df
-    TargetNodeGUID: ec85f513-2e62-4a67-bc7d-17aa6864c348
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ec85f513-2e62-4a67-bc7d-17aa6864c348
-    TargetNodeGUID: 2acf6877-7ccf-4c04-95c5-cbe8d4ec23e4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2acf6877-7ccf-4c04-95c5-cbe8d4ec23e4
-    TargetNodeGUID: 68bc8d72-8ec6-462a-a2b4-c677b4338bf4
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c503d1c0-5cc8-42cd-900c-060c8cdaa815
-    TargetNodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
-    TargetNodeGUID: 04f2dfe1-8d4f-4d35-8f56-c21b99201400
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 04f2dfe1-8d4f-4d35-8f56-c21b99201400
-    TargetNodeGUID: d00f9283-4bab-45f6-a957-58e254fe06ed
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d00f9283-4bab-45f6-a957-58e254fe06ed
-    TargetNodeGUID: 2f9e579e-61ea-41aa-a13b-50d0b90550b0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 2f9e579e-61ea-41aa-a13b-50d0b90550b0
-    TargetNodeGUID: 3bb06efc-b6d5-431a-9695-a060c5687aeb
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 3bb06efc-b6d5-431a-9695-a060c5687aeb
-    TargetNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
-    DisplayText: Next
-  - PortName: Fail
-    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
-    TargetNodeGUID: 7fa579c3-ab8a-4d17-bdea-bbfa73634b0c
-    DisplayText: Fail
-  - PortName: Option 2
-    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
-    TargetNodeGUID: ab463f31-7c88-44a8-a5e1-fc681030208b
-    DisplayText: I promise.
-  - PortName: Option 3
-    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
-    TargetNodeGUID: 5554ef40-6ca8-4968-9ffe-e1f96babb34c
-    DisplayText: "I don\u2019t know if I can\u2026"
-  - PortName: Option 4
-    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
-    TargetNodeGUID: bc41d64c-b71b-4cce-b6b3-42a14a64bba5
-    DisplayText: "What\u2019s at this place? What\u2019s on the map?"
-  - PortName: Next
-    BaseNodeGUID: ab463f31-7c88-44a8-a5e1-fc681030208b
-    TargetNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 7fa579c3-ab8a-4d17-bdea-bbfa73634b0c
-    TargetNodeGUID: a07f2e6a-9a08-467b-906b-429def2748cb
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
-    TargetNodeGUID: d735c5dc-a79b-4854-a25d-9d9ec169d15f
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: d735c5dc-a79b-4854-a25d-9d9ec169d15f
-    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 3bac4ba2-05c0-4937-97a4-ad2aa018ff20
-    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: a07f2e6a-9a08-467b-906b-429def2748cb
-    TargetNodeGUID: 3bac4ba2-05c0-4937-97a4-ad2aa018ff20
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 5554ef40-6ca8-4968-9ffe-e1f96babb34c
-    TargetNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: bc41d64c-b71b-4cce-b6b3-42a14a64bba5
-    TargetNodeGUID: 01a336d5-a604-4df9-ba92-cdb905478892
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 01a336d5-a604-4df9-ba92-cdb905478892
-    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 5b2cc1ee-0799-4862-b025-5eb98a1f56b8
     TargetNodeGUID: 9b170b0f-1d2a-4c6c-aa77-0e19c7b10d8d
     DisplayText: Next
@@ -485,22 +397,6 @@ MonoBehaviour:
     BaseNodeGUID: ad46c33c-40c4-4926-a191-e0698c5a0a0a
     TargetNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
     DisplayText: Next
-  - PortName: Fail
-    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
-    TargetNodeGUID: 022727ff-d1e2-472b-9ec3-4840ad6ac58e
-    DisplayText: Fail
-  - PortName: Option 2
-    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
-    TargetNodeGUID: 6ccc1bbe-f11b-4759-84f0-5bd6599a6aa5
-    DisplayText: Do you see that?
-  - PortName: Option 3
-    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
-    TargetNodeGUID: cf7f14e4-e35b-4546-a2e1-4e4224e1dff3
-    DisplayText: Run!
-  - PortName: Option 4
-    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
-    TargetNodeGUID: de3d1f48-ace6-45e7-9806-6e1eeb346194
-    DisplayText: "Keep close. Don\u2019t get separated."
   - PortName: Next
     BaseNodeGUID: 022727ff-d1e2-472b-9ec3-4840ad6ac58e
     TargetNodeGUID: f6aca875-6826-4371-82e7-c7e251cbe9ac
@@ -524,10 +420,6 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: de3d1f48-ace6-45e7-9806-6e1eeb346194
     TargetNodeGUID: ddde9042-110a-4bd4-ae3c-fe3f857e6929
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: b9f30e47-4013-4625-9166-81e50bc47ca7
-    TargetNodeGUID: cab3e5a0-046b-40a9-a517-2c588e3f4fa2
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: cab3e5a0-046b-40a9-a517-2c588e3f4fa2
@@ -561,21 +453,129 @@ MonoBehaviour:
     BaseNodeGUID: 9b3653ae-6782-4eb9-839d-66b9991200a3
     TargetNodeGUID: afdd12e1-3e5c-48b3-9fc9-5244ee0a1875
     DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ddde9042-110a-4bd4-ae3c-fe3f857e6929
-    TargetNodeGUID: cf312f01-2128-4359-8531-dfa14a60adb9
-    DisplayText: Next
+  - PortName: Fail
+    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
+    TargetNodeGUID: 022727ff-d1e2-472b-9ec3-4840ad6ac58e
+    DisplayText: Fail
+  - PortName: Option 2
+    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
+    TargetNodeGUID: 6ccc1bbe-f11b-4759-84f0-5bd6599a6aa5
+    DisplayText: Do you see that?
+  - PortName: Option 3
+    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
+    TargetNodeGUID: cf7f14e4-e35b-4546-a2e1-4e4224e1dff3
+    DisplayText: Run!
+  - PortName: Option 4
+    BaseNodeGUID: 34d2e8a4-7bab-4b07-abea-b2dbbf87384f
+    TargetNodeGUID: de3d1f48-ace6-45e7-9806-6e1eeb346194
+    DisplayText: "Keep close. Don\u2019t get separated."
   - PortName: Next
     BaseNodeGUID: cf312f01-2128-4359-8531-dfa14a60adb9
     TargetNodeGUID: b9f30e47-4013-4625-9166-81e50bc47ca7
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: ddde9042-110a-4bd4-ae3c-fe3f857e6929
+    TargetNodeGUID: cf312f01-2128-4359-8531-dfa14a60adb9
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b9f30e47-4013-4625-9166-81e50bc47ca7
+    TargetNodeGUID: cab3e5a0-046b-40a9-a517-2c588e3f4fa2
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 0a61b1bf-9a39-4c3f-b03a-5b6ee54df3df
+    TargetNodeGUID: ec85f513-2e62-4a67-bc7d-17aa6864c348
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ec85f513-2e62-4a67-bc7d-17aa6864c348
+    TargetNodeGUID: 2acf6877-7ccf-4c04-95c5-cbe8d4ec23e4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2acf6877-7ccf-4c04-95c5-cbe8d4ec23e4
+    TargetNodeGUID: 68bc8d72-8ec6-462a-a2b4-c677b4338bf4
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 04f2dfe1-8d4f-4d35-8f56-c21b99201400
+    TargetNodeGUID: d00f9283-4bab-45f6-a957-58e254fe06ed
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d00f9283-4bab-45f6-a957-58e254fe06ed
+    TargetNodeGUID: 2f9e579e-61ea-41aa-a13b-50d0b90550b0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 2f9e579e-61ea-41aa-a13b-50d0b90550b0
+    TargetNodeGUID: 3bb06efc-b6d5-431a-9695-a060c5687aeb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 3bb06efc-b6d5-431a-9695-a060c5687aeb
+    TargetNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
+    DisplayText: Next
+  - PortName: Fail
+    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
+    TargetNodeGUID: 7fa579c3-ab8a-4d17-bdea-bbfa73634b0c
+    DisplayText: Fail
+  - PortName: Option 2
+    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
+    TargetNodeGUID: ab463f31-7c88-44a8-a5e1-fc681030208b
+    DisplayText: I promise.
+  - PortName: Option 3
+    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
+    TargetNodeGUID: 5554ef40-6ca8-4968-9ffe-e1f96babb34c
+    DisplayText: "I don\u2019t know if I can\u2026"
+  - PortName: Option 4
+    BaseNodeGUID: eab67070-80e7-4c3e-9a14-aeb885d97d94
+    TargetNodeGUID: bc41d64c-b71b-4cce-b6b3-42a14a64bba5
+    DisplayText: "What\u2019s at this place? What\u2019s on the map?"
+  - PortName: Next
+    BaseNodeGUID: ab463f31-7c88-44a8-a5e1-fc681030208b
+    TargetNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 7fa579c3-ab8a-4d17-bdea-bbfa73634b0c
+    TargetNodeGUID: a07f2e6a-9a08-467b-906b-429def2748cb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
+    TargetNodeGUID: d735c5dc-a79b-4854-a25d-9d9ec169d15f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: d735c5dc-a79b-4854-a25d-9d9ec169d15f
+    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 3bac4ba2-05c0-4937-97a4-ad2aa018ff20
+    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a07f2e6a-9a08-467b-906b-429def2748cb
+    TargetNodeGUID: 3bac4ba2-05c0-4937-97a4-ad2aa018ff20
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 5554ef40-6ca8-4968-9ffe-e1f96babb34c
+    TargetNodeGUID: ef87f54d-94b6-42e5-9a65-c7744adeea4a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: bc41d64c-b71b-4cce-b6b3-42a14a64bba5
+    TargetNodeGUID: 01a336d5-a604-4df9-ba92-cdb905478892
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 01a336d5-a604-4df9-ba92-cdb905478892
+    TargetNodeGUID: 98005a60-0e95-4ab1-b958-90f368f46c6d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c503d1c0-5cc8-42cd-900c-060c8cdaa815
+    TargetNodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
+    DisplayText: Next
+  - PortName: Next
     BaseNodeGUID: 68bc8d72-8ec6-462a-a2b4-c677b4338bf4
+    TargetNodeGUID: c503d1c0-5cc8-42cd-900c-060c8cdaa815
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
     TargetNodeGUID: 124a90f0-76e8-4c5c-886c-1296c114a00c
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 124a90f0-76e8-4c5c-886c-1296c114a00c
-    TargetNodeGUID: c503d1c0-5cc8-42cd-900c-060c8cdaa815
+    TargetNodeGUID: 04f2dfe1-8d4f-4d35-8f56-c21b99201400
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: e53db33e-b74f-42a3-8043-92319a4713af
@@ -616,7 +616,7 @@ MonoBehaviour:
   - NodeGUID: d45bd814-aa25-42bb-bbf2-abf6d86e9b7b
     DialogueText: "At the square\u2019s center rises a monument \u2014 tall and thin.\nWords
       are carved into its stone:\n\"To those who lost in the darkness.\""
-    Position: {x: 549.60004, y: 200}
+    Position: {x: 549.6, y: 200}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -683,7 +683,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 558bbfe7-561d-42fb-ad24-1a6306681daf
     DialogueText: Every puddle here is <color="red">red. Blood. Fresh</color>.
-    Position: {x: 1158.3999, y: 200}
+    Position: {x: 1158.4, y: 200}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -816,7 +816,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: d2c729d9-05ea-4b35-9e81-a64521e08e3b
     DialogueText: Choice Node
-    Position: {x: 2265.5999, y: 200}
+    Position: {x: 2265.6, y: 200}
     NodeType: 1
     Actor: 
     DisplayText: 
@@ -849,7 +849,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 6f647308-b3ee-440f-a7e8-5b251e13c20e
     DialogueText: "You turn to speak \u2014 but the words catch in your throat."
-    Position: {x: 2665.5999, y: 113.600006}
+    Position: {x: 2665.6, y: 113.600006}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1049,7 +1049,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 81011c79-791b-4180-ab62-040dc76eb18f
     DialogueText: You step forward. Your boot splashes into a puddle.
-    Position: {x: 2665.5999, y: 315.2}
+    Position: {x: 2665.6, y: 315.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1149,7 +1149,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 4b98fa70-a8db-483f-b193-4650dc14f4a2
     DialogueText: 'Then it happens. '
-    Position: {x: 4262.4004, y: 315.2}
+    Position: {x: 4262.4, y: 315.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1182,7 +1182,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 972d6c1e-549a-4b3f-80d9-190c1be0b7af
     DialogueText: Event Node
-    Position: {x: 4476.8003, y: 315.2}
+    Position: {x: 4476.8, y: 315.2}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   - NodeGUID: 7c2d756c-360c-4c57-aa87-945e32c0fee7
     DialogueText: She yanks the battered rifle from her back. The same busted piece
       of junk you saw her tinkering with earlier.
-    Position: {x: 11817.601, y: 615.2}
+    Position: {x: 11817.6, y: 615.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1382,7 +1382,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b1a1861c-70e8-4450-8a92-a5da7d5a5389
     DialogueText: "That\u2019s the only way. Move!"
-    Position: {x: 16041.601, y: 352.8}
+    Position: {x: 16041.6, y: 352.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1616,7 +1616,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 88117148-b04e-4c9d-a51b-41b5634eed5d
     DialogueText: The light shaters, like glass.
-    Position: {x: 17860.799, y: 352.8}
+    Position: {x: 17860.8, y: 352.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1715,7 +1715,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 84ed8adc-2984-4813-9c25-abec5a5521a6
     DialogueText: Event Node
-    Position: {x: 18552.799, y: 352.8}
+    Position: {x: 18552.8, y: 352.8}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1880,7 +1880,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 0563bd52-6009-481a-9c0b-285d58cc0f04
     DialogueText: Vane lunges to grab her.
-    Position: {x: 14401.601, y: 611.2}
+    Position: {x: 14401.6, y: 611.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1947,7 +1947,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: d76200fb-3cfe-470a-ba5a-acf241b18041
     DialogueText: No! Hold on!
-    Position: {x: 14921.601, y: 611.2}
+    Position: {x: 14921.6, y: 611.2}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -2148,7 +2148,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 15307869-d869-4a8f-ab2c-91c0720b5f9f
     DialogueText: "And there\u2019s only silence."
-    Position: {x: 16532.799, y: 611.2}
+    Position: {x: 16532.8, y: 611.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2181,7 +2181,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5a896a7c-2be5-44f3-80ff-357062af69e4
     DialogueText: It rolls you over.
-    Position: {x: 19306.398, y: 609.6}
+    Position: {x: 19306.4, y: 609.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2280,7 +2280,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 9777e829-8369-4075-9076-fcac0f7d1d13
     DialogueText: Reed stumbles forward, trying to put himself between you and it.
-    Position: {x: 20050.398, y: 609.6}
+    Position: {x: 20050.4, y: 609.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2313,7 +2313,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 86b5a9d4-a13b-40c7-abc4-5213600415b5
     DialogueText: Event Node
-    Position: {x: 20354.398, y: 605.6}
+    Position: {x: 20354.4, y: 605.6}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -2348,7 +2348,7 @@ MonoBehaviour:
     DialogueText: But crimson lines <color=red>split</color> across his skin, arms,
       chest, throat. Too many to count. They bloom faster than the <color=red>blood</color>
       can flow.
-    Position: {x: 20554.398, y: 605.6}
+    Position: {x: 20554.4, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2448,7 +2448,7 @@ MonoBehaviour:
   - NodeGUID: 9b170b0f-1d2a-4c6c-aa77-0e19c7b10d8d
     DialogueText: "Rook\u2019s scream cuts through the air, as shards of metal tear
       into her arm."
-    Position: {x: 13873.601, y: 614.4}
+    Position: {x: 13873.6, y: 614.4}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2481,7 +2481,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b12fe927-064b-41f8-9fc9-ff76b7db40fd
     DialogueText: "A weight drops onto your shoulder \u2014 cold and heavy."
-    Position: {x: 18954.398, y: 605.6}
+    Position: {x: 18954.4, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2548,7 +2548,7 @@ MonoBehaviour:
   - NodeGUID: 5335655e-209b-4503-8c9e-b29364b7f599
     DialogueText: "Rook pulls out the rifle \u2014 the one you insisted she hand
       over to Ash for repairs."
-    Position: {x: 11713.601, y: 341.6}
+    Position: {x: 11713.6, y: 341.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2614,7 +2614,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: d64ee0e1-207f-4cbd-9d0c-7ff85bd9e148
     DialogueText: Like nothing ever happened.
-    Position: {x: 13189.601, y: 353.6}
+    Position: {x: 13189.6, y: 353.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2915,7 +2915,7 @@ MonoBehaviour:
   - NodeGUID: c10e134a-b228-45f7-bc5a-5598f761b38d
     DialogueText: Then you see a pale, unnatural light bleeding through the shadows
       ahead.
-    Position: {x: 14761.601, y: 352.8}
+    Position: {x: 14761.6, y: 352.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3114,7 +3114,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 62be12b5-d325-4518-95db-859959855e5b
     DialogueText: Event Node
-    Position: {x: 12337.601, y: 615.2}
+    Position: {x: 12337.6, y: 615.2}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -3352,7 +3352,7 @@ MonoBehaviour:
       you\u2019ve never heard \u2014 syllables that slither into your mind like ice
       water, each one <color=red>drilling</color> through your thoughts as if hollowing
       out your skull from the inside."
-    Position: {x: 9861.601, y: 480}
+    Position: {x: 9861.6, y: 480}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3485,7 +3485,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 16fe001c-e3a9-456e-9f99-0a62eb1793ee
     DialogueText: (shouting) No, no, no! Not again!
-    Position: {x: 8881.601, y: 480}
+    Position: {x: 8881.6, y: 480}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -3588,7 +3588,7 @@ MonoBehaviour:
   - NodeGUID: ad46c33c-40c4-4926-a191-e0698c5a0a0a
     DialogueText: Black lengths slither across the stone like snakes, their shapes
       wrong, their motion too smooth, too alive.
-    Position: {x: 5130.4004, y: 315.2}
+    Position: {x: 5130.4, y: 315.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3656,7 +3656,7 @@ MonoBehaviour:
     DialogueText: '(grim)
 
       Not just an anomaly. This is worse.'
-    Position: {x: 5978.4004, y: 301.6}
+    Position: {x: 5978.4, y: 301.6}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -3723,7 +3723,7 @@ MonoBehaviour:
   - NodeGUID: 97c5c43d-6a7f-4f70-bfdb-8a1f8cfe5d40
     DialogueText: A wet, tearing sound blooms around you, like a thousand whispering
       voices all screaming at once.
-    Position: {x: 6064.8003, y: 477.6}
+    Position: {x: 6064.8, y: 477.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3858,7 +3858,7 @@ MonoBehaviour:
       phasing in and out with every breath, limbs folding and reforming in ways your
       mind <color=red>rejects</color>. It hangs weightless in the air, as though
       gravity has no claim on it.
-    Position: {x: 7072.8003, y: 474.4}
+    Position: {x: 7072.8, y: 474.4}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3981,7 +3981,7 @@ MonoBehaviour:
     RandomConditionValue: 0
     EventType: 8
     EventName: pain
-    EventValue: 4
+    EventValue: 5
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
@@ -3991,7 +3991,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 1dd7b6cb-e0d7-4337-9b0d-ff2e9e241b0d
     DialogueText: Event Node
-    Position: {x: 8058.4004, y: 471.2}
+    Position: {x: 8058.4, y: 471.2}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -4014,7 +4014,7 @@ MonoBehaviour:
     RandomConditionValue: 0
     EventType: 7
     EventName: 
-    EventValue: 4
+    EventValue: 5
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
@@ -4057,7 +4057,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 9b3653ae-6782-4eb9-839d-66b9991200a3
     DialogueText: Event Node
-    Position: {x: 12445.601, y: 336.8}
+    Position: {x: 12445.6, y: 336.8}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -4123,7 +4123,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: cf312f01-2128-4359-8531-dfa14a60adb9
     DialogueText: Event Node
-    Position: {x: 6552.8003, y: 657.6}
+    Position: {x: 6552.8, y: 657.6}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -4156,7 +4156,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: ddde9042-110a-4bd4-ae3c-fe3f857e6929
     DialogueText: "From the twisting shadows, it emerges.\r"
-    Position: {x: 6372.8003, y: 477.6}
+    Position: {x: 6372.8, y: 477.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4223,7 +4223,7 @@ MonoBehaviour:
   - NodeGUID: 0a61b1bf-9a39-4c3f-b03a-5b6ee54df3df
     DialogueText: "The pressure on your chest vanishes. Your limbs flood with heat
       \u2014 you can move."
-    Position: {x: 21144.799, y: 605.6}
+    Position: {x: 21144.8, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4257,7 +4257,7 @@ MonoBehaviour:
   - NodeGUID: ec85f513-2e62-4a67-bc7d-17aa6864c348
     DialogueText: "<b><color=red>The creature</color></b> soars toward you. You brace
       for the strike\u2014\r"
-    Position: {x: 21436.799, y: 605.6}
+    Position: {x: 21436.8, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4324,40 +4324,6 @@ MonoBehaviour:
   - NodeGUID: 68bc8d72-8ec6-462a-a2b4-c677b4338bf4
     DialogueText: "But it doesn\u2019t come."
     Position: {x: 21917.6, y: 605.6}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
-    DialogueText: "You stagger to Reed. He\u2019s lying in a spreading pool of blood,
-      his face ghost-pale, eyes fluttering. You grab him."
-    Position: {x: 22805.6, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4557,7 +4523,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: ab463f31-7c88-44a8-a5e1-fc681030208b
     DialogueText: "(smiles, tired)\nYou were always meant to carry the fire.\r"
-    Position: {x: 24618.398, y: 419.2}
+    Position: {x: 24618.4, y: 419.2}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -4624,7 +4590,7 @@ MonoBehaviour:
   - NodeGUID: 7fa579c3-ab8a-4d17-bdea-bbfa73634b0c
     DialogueText: Reed exhales a slow, shuddering breath. A faint smile touches his
       lips.
-    Position: {x: 24616.799, y: 618.4}
+    Position: {x: 24616.8, y: 618.4}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4892,7 +4858,41 @@ MonoBehaviour:
   - NodeGUID: c503d1c0-5cc8-42cd-900c-060c8cdaa815
     DialogueText: <b><color=red>It</color></b> turns, and slowly melts back into
       the darkness of shadows.
-    Position: {x: 22496.799, y: 605.6}
+    Position: {x: 22133.6, y: 605.6}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 51f2d9a7-f4c3-47f3-af27-5f6f66ffc5ba
+    DialogueText: "You stagger to Reed. He\u2019s lying in a spreading pool of blood,
+      his face ghost-pale, eyes fluttering. You grab him."
+    Position: {x: 22454.4, y: 605.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -4925,7 +4925,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 124a90f0-76e8-4c5c-886c-1296c114a00c
     DialogueText: Event Node
-    Position: {x: 22180.799, y: 605.6}
+    Position: {x: 22821.6, y: 602.4}
     NodeType: 3
     Actor: 
     DisplayText: 

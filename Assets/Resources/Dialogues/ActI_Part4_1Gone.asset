@@ -323,10 +323,6 @@ MonoBehaviour:
     TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
-    TargetNodeGUID: ffb4e807-57e2-4a3b-acb0-746bb4096e22
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
     TargetNodeGUID: c0a012b5-4eec-4fe5-9ce3-08f7a22a5398
     DisplayText: Next
@@ -410,6 +406,10 @@ MonoBehaviour:
     BaseNodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
     TargetNodeGUID: be1288a1-b03f-480e-8076-06c4e7cca2a5
     DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    TargetNodeGUID: d1220267-e07c-4403-aec8-95e8120ccdc7
+    DisplayText: Next
   DialogueNodeData:
   - NodeGUID: 619aaa8b-e90d-49c2-9738-7b38e94359ef
     DialogueText: The scent of iron clings to the back of your throat.
@@ -447,7 +447,7 @@ MonoBehaviour:
   - NodeGUID: 9e3f84ad-b476-4990-a88a-da9b1d042849
     DialogueText: The <color=red>blood</color> on your hands is already cooling,
       darkening.
-    Position: {x: 801.6, y: 200}
+    Position: {x: 801.60004, y: 200}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -580,7 +580,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 9de4def4-4354-4ec0-b042-bd93ce27ee16
     DialogueText: A voice cuts through the silence.
-    Position: {x: 1618.4, y: 200}
+    Position: {x: 1618.3999, y: 200}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -681,7 +681,7 @@ MonoBehaviour:
     DialogueText: 'Doc (quiet, but cutting)
 
       What happened to him?'
-    Position: {x: 4714.4, y: 168.8}
+    Position: {x: 4714.4004, y: 168.8}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -714,7 +714,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 3833a9e3-3e9b-4969-8f87-3bb5265c849a
     DialogueText: TimedChoice Node
-    Position: {x: 5026.4, y: 168.8}
+    Position: {x: 5026.4004, y: 168.8}
     NodeType: 2
     Actor: 
     DisplayText: 
@@ -748,7 +748,7 @@ MonoBehaviour:
   - NodeGUID: f60c2a07-2ce3-4b10-8768-3c6f81cba4b7
     DialogueText: "Doc exhales through her nose, a sharp, controlled sound. She doesn\u2019t
       argue \u2014 but her eyes stay on you a second too long before she moves again."
-    Position: {x: 5588.8, y: 112.8}
+    Position: {x: 5588.8003, y: 112.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -781,7 +781,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: d9e9408c-bf32-484c-b56a-656f340df495
     DialogueText: "Doc\u2019s mouth tightens. No response."
-    Position: {x: 5588.8, y: 292}
+    Position: {x: 5588.8003, y: 292}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -880,7 +880,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5abca54f-ba5f-4a7d-97b4-67fff5f4594f
     DialogueText: And what about you? Not a single scratch?
-    Position: {x: 6290.4, y: 420}
+    Position: {x: 6290.4004, y: 420}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -1113,7 +1113,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 157785e6-0791-4096-aeec-3d4e5d841f45
     DialogueText: Event Node
-    Position: {x: 7442.4, y: 445.6}
+    Position: {x: 7442.4004, y: 445.6}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1147,7 +1147,7 @@ MonoBehaviour:
   - NodeGUID: 018fac6f-a94e-423a-a65f-31c88f774d68
     DialogueText: Her hands still. The look on her face tells you the truth before
       her words do.
-    Position: {x: 7642.4, y: 445.6}
+    Position: {x: 7642.4004, y: 445.6}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1382,7 +1382,7 @@ MonoBehaviour:
     DialogueText: "Doc\u2019s shoulder is braced under Rook\u2019s arm, Vane clutching
       her other side. The girl\u2019s bandaged forearm is <color=red>soaked through</color>,
       dark spots blooming in the cloth. Her head hangs low, eyes glassy."
-    Position: {x: 2825.6, y: 424.8}
+    Position: {x: 2825.5999, y: 424.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -1926,7 +1926,7 @@ MonoBehaviour:
   - NodeGUID: 0c93c4f6-64d7-4527-83eb-9d5d40dfe6bf
     DialogueText: The three of you make your way back to Reed together Doc immediately
       drops beside him, hands moving fast.
-    Position: {x: 4322.4, y: -391.2}
+    Position: {x: 4322.4004, y: -391.2}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2196,7 +2196,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 1484999b-928a-45df-8896-f0fa44acded6
     DialogueText: Choice Node
-    Position: {x: 10441.6, y: 428.8}
+    Position: {x: 10441.601, y: 428.8}
     NodeType: 1
     Actor: 
     DisplayText: 
@@ -2230,7 +2230,7 @@ MonoBehaviour:
   - NodeGUID: b378741d-6da3-49ed-bd3c-05c8eb80b3cf
     DialogueText: Vane shifts uncomfortably, glancing between you and Reed before
       looking away.
-    Position: {x: 9933.6, y: 428.8}
+    Position: {x: 9933.601, y: 428.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2363,7 +2363,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b29bfae8-5a0c-47d5-8b6b-3907c9b146d3
     DialogueText: StringCondition Node
-    Position: {x: 10785.6, y: 348}
+    Position: {x: 10785.601, y: 348}
     NodeType: 6
     Actor: 
     DisplayText: 
@@ -2432,40 +2432,6 @@ MonoBehaviour:
     DialogueText: "if we don\u2019t go now there will be more bodies to bury for
       Ash and \u2026<b>him</b>."
     Position: {x: 11404.8, y: 328}
-    NodeType: 0
-    Actor: Doc
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
-    DialogueText: "That thing\u2019s still out there. If we don\u2019t move, there\u2019ll
-      be more bodies to bury for Ash and \u2026<b>him</b>."
-    Position: {x: 11086.4, y: 156.8}
     NodeType: 0
     Actor: Doc
     DisplayText: 
@@ -2598,7 +2564,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 74dc1f9b-2811-4a80-ab49-6145dadf5d61
     DialogueText: "Hey! You made it ba\u2014"
-    Position: {x: 13861.6, y: 512.8}
+    Position: {x: 13861.601, y: 512.8}
     NodeType: 0
     Actor: Ash
     DisplayText: 
@@ -2733,7 +2699,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5ec64890-02a0-413a-8ab5-ff5ade27e8c1
     DialogueText: StringCondition Node
-    Position: {x: 14073.6, y: 512.8}
+    Position: {x: 14073.601, y: 512.8}
     NodeType: 6
     Actor: 
     DisplayText: 
@@ -2767,7 +2733,7 @@ MonoBehaviour:
   - NodeGUID: e3bdb919-6b90-40a0-8aec-190fcccea328
     DialogueText: His voice stops dead. His eyes flick to Rook, then  to your eyes.
       The grin crumbles.
-    Position: {x: 14421.6, y: 588.8}
+    Position: {x: 14421.601, y: 588.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -2800,7 +2766,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 40221662-558c-4fc5-939d-d66e4af6cd2a
     DialogueText: "(soft, almost to himself) \u2026No."
-    Position: {x: 14725.6, y: 588.8}
+    Position: {x: 14725.601, y: 588.8}
     NodeType: 0
     Actor: Ash
     DisplayText: 
@@ -2902,7 +2868,7 @@ MonoBehaviour:
   - NodeGUID: 62dbfe7c-c1c9-4a3d-a79b-b49470042624
     DialogueText: "You lay Rook down. She\u2019s already unconscious, arm limp at
       her side."
-    Position: {x: 15445.6, y: 588.8}
+    Position: {x: 15445.601, y: 588.8}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 
@@ -3036,7 +3002,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 14fb862d-09bc-45be-8a0f-3ba3534c739d
     DialogueText: "(soft, almost to himself) \u2026No."
-    Position: {x: 14725.6, y: 379.2}
+    Position: {x: 14725.601, y: 379.2}
     NodeType: 0
     Actor: Ash
     DisplayText: 
@@ -3133,12 +3099,46 @@ MonoBehaviour:
     CameraActionType: 0
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 2
+    EndAction: 0
   - NodeGUID: 2f3fa4f4-6f22-467c-b56e-2d0d236008bd
     DialogueText: There is nobody to bury tonight.
-    Position: {x: 16281.6, y: 405.6}
+    Position: {x: 16281.601, y: 405.6}
     NodeType: 0
     Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 845a9cdd-cae8-4d2f-b5af-92e4e686df07
+    DialogueText: "That thing\u2019s still out there. If we don\u2019t move, there\u2019ll
+      be more bodies to bury for Ash and \u2026<b>him</b>."
+    Position: {x: 11129.601, y: 569.6}
+    NodeType: 0
+    Actor: Doc
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5

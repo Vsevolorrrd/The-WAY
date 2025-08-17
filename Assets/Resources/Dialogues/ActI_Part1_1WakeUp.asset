@@ -18,86 +18,6 @@ MonoBehaviour:
     TargetNodeGUID: 8dca8273-4763-4cbc-9f07-c349d28946e3
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 8dca8273-4763-4cbc-9f07-c349d28946e3
-    TargetNodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: f324a7d8-8e17-485b-bdc7-20aca488f497
-    TargetNodeGUID: 8dc5e031-313e-43b0-bf88-8521c7be2033
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 1934d1c7-0776-4cc4-89b2-369eb00e49b8
-    TargetNodeGUID: 737c1b44-9f0b-4183-b14f-6c0e370927e6
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 0fa74608-0826-483c-a955-877ea8137c68
-    TargetNodeGUID: 3a73f443-53ba-4967-a7ab-8add0119b1fd
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 3a73f443-53ba-4967-a7ab-8add0119b1fd
-    TargetNodeGUID: f909f6c5-75e5-4267-b7fd-ecb049522568
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ee431510-c9a2-4801-ad2e-32e003f2c8a0
-    TargetNodeGUID: 4a24043d-6f9d-4a19-be4b-2322b9262abc
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: f909f6c5-75e5-4267-b7fd-ecb049522568
-    TargetNodeGUID: ee431510-c9a2-4801-ad2e-32e003f2c8a0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 4a24043d-6f9d-4a19-be4b-2322b9262abc
-    TargetNodeGUID: e5c698d6-f18b-498a-994d-2c88cfdb5264
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e5c698d6-f18b-498a-994d-2c88cfdb5264
-    TargetNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
-    DisplayText: Next
-  - PortName: Option 1
-    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
-    TargetNodeGUID: 1934d1c7-0776-4cc4-89b2-369eb00e49b8
-    DisplayText: '[Remain silent]'
-  - PortName: Option 2
-    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
-    TargetNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
-    DisplayText: ...Who are you?
-  - PortName: Option 3
-    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
-    TargetNodeGUID: 112f19f6-d3d1-4615-bd3f-9fb21d9fd104
-    DisplayText: ...Where are we?
-  - PortName: Next
-    BaseNodeGUID: 112f19f6-d3d1-4615-bd3f-9fb21d9fd104
-    TargetNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
-    TargetNodeGUID: 40439e08-abb5-4bdb-af4c-036569a9d1e9
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 737c1b44-9f0b-4183-b14f-6c0e370927e6
-    TargetNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
-    DisplayText: Next
-  - PortName: Option 1
-    BaseNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
-    TargetNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
-    DisplayText: ...Who are you?
-  - PortName: Next
-    BaseNodeGUID: 40439e08-abb5-4bdb-af4c-036569a9d1e9
-    TargetNodeGUID: 171a4504-4149-439f-abd9-e419b7dbba81
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 171a4504-4149-439f-abd9-e419b7dbba81
-    TargetNodeGUID: 87a33e39-9b23-4376-925c-d3570d6017d3
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 87a33e39-9b23-4376-925c-d3570d6017d3
-    TargetNodeGUID: ba38ca0c-2512-4af6-bd3a-b60e4aea5d4b
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: ba38ca0c-2512-4af6-bd3a-b60e4aea5d4b
-    TargetNodeGUID: 8c5ff31c-e09c-4b1f-9f2d-c69e8860556e
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 8c5ff31c-e09c-4b1f-9f2d-c69e8860556e
     TargetNodeGUID: a18b5cd9-4c45-4cdd-aa0a-06194bb37a91
     DisplayText: Next
@@ -138,10 +58,6 @@ MonoBehaviour:
     TargetNodeGUID: 93449319-9947-4069-a2db-69f2fc0e85a5
     DisplayText: Only the fire. It felt warm. And good...
   - PortName: Next
-    BaseNodeGUID: 948e68d7-68e0-4a9f-b905-71c11ad86faf
-    TargetNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
-    DisplayText: Next
-  - PortName: Next
     BaseNodeGUID: 4327c99d-7c07-4bad-8d0f-6c750abb600b
     TargetNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
     DisplayText: Next
@@ -152,10 +68,6 @@ MonoBehaviour:
   - PortName: Next
     BaseNodeGUID: 93449319-9947-4069-a2db-69f2fc0e85a5
     TargetNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
-    TargetNodeGUID: 216c92a2-768a-4e97-be5d-e952cb3eefbb
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 216c92a2-768a-4e97-be5d-e952cb3eefbb
@@ -202,26 +114,118 @@ MonoBehaviour:
     TargetNodeGUID: 5f6b03bf-96ae-4e66-a90f-68eee8b7903e
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: 8dc5e031-313e-43b0-bf88-8521c7be2033
-    TargetNodeGUID: d827afb6-620a-46cc-895e-5c6271accd9d
+    BaseNodeGUID: 8dca8273-4763-4cbc-9f07-c349d28946e3
+    TargetNodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ba38ca0c-2512-4af6-bd3a-b60e4aea5d4b
+    TargetNodeGUID: 8c5ff31c-e09c-4b1f-9f2d-c69e8860556e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 87a33e39-9b23-4376-925c-d3570d6017d3
+    TargetNodeGUID: ba38ca0c-2512-4af6-bd3a-b60e4aea5d4b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 171a4504-4149-439f-abd9-e419b7dbba81
+    TargetNodeGUID: 87a33e39-9b23-4376-925c-d3570d6017d3
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 40439e08-abb5-4bdb-af4c-036569a9d1e9
+    TargetNodeGUID: 171a4504-4149-439f-abd9-e419b7dbba81
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
+    TargetNodeGUID: 40439e08-abb5-4bdb-af4c-036569a9d1e9
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
+    TargetNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
+    DisplayText: ...Who are you?
+  - PortName: Next
+    BaseNodeGUID: 112f19f6-d3d1-4615-bd3f-9fb21d9fd104
+    TargetNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 737c1b44-9f0b-4183-b14f-6c0e370927e6
+    TargetNodeGUID: 71b8e96f-d61e-432d-bfee-089503c4ec10
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 1934d1c7-0776-4cc4-89b2-369eb00e49b8
+    TargetNodeGUID: 737c1b44-9f0b-4183-b14f-6c0e370927e6
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
+    TargetNodeGUID: 1934d1c7-0776-4cc4-89b2-369eb00e49b8
+    DisplayText: '[Remain silent]'
+  - PortName: Option 2
+    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
+    TargetNodeGUID: fcfd8d6c-346f-4327-9065-2ee63615dddf
+    DisplayText: ...Who are you?
+  - PortName: Option 3
+    BaseNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
+    TargetNodeGUID: 112f19f6-d3d1-4615-bd3f-9fb21d9fd104
+    DisplayText: ...Where are we?
+  - PortName: Next
+    BaseNodeGUID: e5c698d6-f18b-498a-994d-2c88cfdb5264
+    TargetNodeGUID: cba0018f-170b-4861-99eb-71f91877d885
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 4a24043d-6f9d-4a19-be4b-2322b9262abc
+    TargetNodeGUID: e5c698d6-f18b-498a-994d-2c88cfdb5264
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: ee431510-c9a2-4801-ad2e-32e003f2c8a0
+    TargetNodeGUID: 4a24043d-6f9d-4a19-be4b-2322b9262abc
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f909f6c5-75e5-4267-b7fd-ecb049522568
+    TargetNodeGUID: ee431510-c9a2-4801-ad2e-32e003f2c8a0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 3a73f443-53ba-4967-a7ab-8add0119b1fd
+    TargetNodeGUID: f909f6c5-75e5-4267-b7fd-ecb049522568
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 0fa74608-0826-483c-a955-877ea8137c68
+    TargetNodeGUID: 3a73f443-53ba-4967-a7ab-8add0119b1fd
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: d827afb6-620a-46cc-895e-5c6271accd9d
     TargetNodeGUID: 0fa74608-0826-483c-a955-877ea8137c68
     DisplayText: Next
   - PortName: Next
-    BaseNodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
-    TargetNodeGUID: 74d4e8db-431a-48d7-a548-8f58a7ac4f64
+    BaseNodeGUID: 8dc5e031-313e-43b0-bf88-8521c7be2033
+    TargetNodeGUID: d827afb6-620a-46cc-895e-5c6271accd9d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f324a7d8-8e17-485b-bdc7-20aca488f497
+    TargetNodeGUID: 8dc5e031-313e-43b0-bf88-8521c7be2033
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 74d4e8db-431a-48d7-a548-8f58a7ac4f64
     TargetNodeGUID: f324a7d8-8e17-485b-bdc7-20aca488f497
     DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 948e68d7-68e0-4a9f-b905-71c11ad86faf
+    TargetNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 7a57e6fb-b4f8-4e48-8788-85741202f268
+    TargetNodeGUID: 216c92a2-768a-4e97-be5d-e952cb3eefbb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
+    TargetNodeGUID: eafd973d-5a6b-48b5-87e6-2b67ecd3a2ee
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: eafd973d-5a6b-48b5-87e6-2b67ecd3a2ee
+    TargetNodeGUID: 74d4e8db-431a-48d7-a548-8f58a7ac4f64
+    DisplayText: Next
   DialogueNodeData:
   - NodeGUID: 8c5ff31c-e09c-4b1f-9f2d-c69e8860556e
     DialogueText: Hell, you were at my side when we lost the tower. When Cael almost
       drowned.
-    Position: {x: 5054.4, y: 116}
+    Position: {x: 5054.4004, y: 116}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -254,7 +258,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: a18b5cd9-4c45-4cdd-aa0a-06194bb37a91
     DialogueText: Event Node
-    Position: {x: 5358.4, y: 116}
+    Position: {x: 5358.4004, y: 116}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -386,7 +390,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: c8263a50-193c-4b6d-96ec-675efffd5a8e
     DialogueText: You remember anything at all?
-    Position: {x: 6202.4, y: 116.8}
+    Position: {x: 6202.4004, y: 116.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -419,7 +423,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: b20cee29-77d2-45db-9d59-1cb292955488
     DialogueText: Choice Node
-    Position: {x: 6412.8, y: 116.8}
+    Position: {x: 6412.8003, y: 116.8}
     NodeType: 1
     Actor: 
     DisplayText: 
@@ -453,7 +457,7 @@ MonoBehaviour:
   - NodeGUID: 4327c99d-7c07-4bad-8d0f-6c750abb600b
     DialogueText: "Probably us dragging you in.\r\nGravehound and Doc were barkin\u2019
       at each other again \u2014 as usual.\r\nMight\u2019ve blended into your dreams.\r"
-    Position: {x: 6886.4, y: 127.2}
+    Position: {x: 6886.4004, y: 127.2}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -489,7 +493,7 @@ MonoBehaviour:
 
       But I guess if you passed out hard enough, that
       checks out'
-    Position: {x: 6886.4, y: 305.6}
+    Position: {x: 6886.4004, y: 305.6}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -521,9 +525,9 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 93449319-9947-4069-a2db-69f2fc0e85a5
-    DialogueText: "(He pauses, eyes narrowing just a bit.)\r\nThat\u2019s... strange.
+    DialogueText: "(He pauses, eyes narrowing just a bit)\r\nThat\u2019s... strange.
       But it sounds right. Somehow..."
-    Position: {x: 6886.4, y: 470.4}
+    Position: {x: 6886.4004, y: 470.4}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -590,7 +594,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: dde053c1-baa8-42ce-8495-42aea758087b
     DialogueText: "Gone cold.\r"
-    Position: {x: 7902.4, y: 268}
+    Position: {x: 7902.4004, y: 268}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -624,7 +628,7 @@ MonoBehaviour:
   - NodeGUID: 23fe0185-7026-4ee7-9070-0687df42ded9
     DialogueText: "Scared the hell outta everyone.\r\nDoc said you\u2019d wake up,
       but\u2026 still. It wasn\u2019t normal."
-    Position: {x: 8114.4, y: 268}
+    Position: {x: 8114.4004, y: 268}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -825,7 +829,7 @@ MonoBehaviour:
   - NodeGUID: a5711f82-bfdb-4d67-8cd0-14fa8725948c
     DialogueText: "How 'bout it? \nFeel like takin\u2019 a walk? \nEveryone\u2019s
       outside."
-    Position: {x: 10245.6, y: 268}
+    Position: {x: 10245.601, y: 268}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -891,7 +895,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 5f6b03bf-96ae-4e66-a90f-68eee8b7903e
     DialogueText: Event Node
-    Position: {x: 9489.6, y: 268}
+    Position: {x: 9489.601, y: 268}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -948,39 +952,6 @@ MonoBehaviour:
     EventType: 0
     EventName: 
     EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 8dca8273-4763-4cbc-9f07-c349d28946e3
-    DialogueText: Event Node
-    Position: {x: 185.6, y: 200}
-    NodeType: 3
-    Actor: 
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 8
-    EventName: dizzy
-    EventValue: 5
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
@@ -1090,7 +1061,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 40439e08-abb5-4bdb-af4c-036569a9d1e9
     DialogueText: Event Node
-    Position: {x: 4200.8, y: 116.8}
+    Position: {x: 4200.8003, y: 116.8}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1255,7 +1226,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 1934d1c7-0776-4cc4-89b2-369eb00e49b8
-    DialogueText: "[Reed watches you for a moment.]\nYou\u2019re looking at me like
+    DialogueText: "(Reed watches you for a moment)\nYou\u2019re looking at me like
       a stranger. You alright in there?"
     Position: {x: 3296, y: 491.2}
     NodeType: 0
@@ -1457,7 +1428,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 3a73f443-53ba-4967-a7ab-8add0119b1fd
     DialogueText: Event Node
-    Position: {x: 1924.8, y: 200}
+    Position: {x: 1924.7999, y: 200}
     NodeType: 3
     Actor: 
     DisplayText: 
@@ -1490,7 +1461,7 @@ MonoBehaviour:
     EndAction: 0
   - NodeGUID: 0fa74608-0826-483c-a955-877ea8137c68
     DialogueText: "Hey... you're awake.\r\nHow you feelin\u2019?"
-    Position: {x: 1732.8, y: 200}
+    Position: {x: 1732.7999, y: 200}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1625,75 +1596,9 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 74d4e8db-431a-48d7-a548-8f58a7ac4f64
-    DialogueText: A collapsed concrete shelter.
-    Position: {x: 631.2, y: 199.2}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
-    DialogueText: Event Node
-    Position: {x: 400, y: 199.2}
-    NodeType: 3
-    Actor: 
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 4
-    EventName: thunder
-    EventValue: 0.7
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: 948e68d7-68e0-4a9f-b905-71c11ad86faf
     DialogueText: "(sighs)\r\nThen it\u2019s worse than I thought."
-    Position: {x: 6886.4, y: -24.8}
+    Position: {x: 6886.4004, y: -24.8}
     NodeType: 0
     Actor: Reed
     DisplayText: 
@@ -1750,6 +1655,138 @@ MonoBehaviour:
     EventType: 0
     EventName: 
     EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 74d4e8db-431a-48d7-a548-8f58a7ac4f64
+    DialogueText: A collapsed concrete shelter.
+    Position: {x: 655.2, y: 216.8}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: fbb6228b-5b50-4923-a2be-21e204d75d93
+    DialogueText: Event Node
+    Position: {x: 211.2, y: 392}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 4
+    EventName: thunder
+    EventValue: 0.7
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 8dca8273-4763-4cbc-9f07-c349d28946e3
+    DialogueText: Event Node
+    Position: {x: -3.2, y: 392}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 8
+    EventName: dizzy
+    EventValue: 5
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: eafd973d-5a6b-48b5-87e6-2b67ecd3a2ee
+    DialogueText: Event Node
+    Position: {x: 426.40002, y: 392}
+    NodeType: 3
+    Actor: 
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 7
+    EventName: light
+    EventValue: 15
     AnimationName: 
     LoopAnimation: 1
     MoveTo: {x: 0, y: 0, z: 0}
