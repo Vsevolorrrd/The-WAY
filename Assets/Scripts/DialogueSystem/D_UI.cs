@@ -193,7 +193,7 @@ public class D_UI : MonoBehaviour
                 manager.ProceedToNarrative(choice.TargetNodeGUID);
 
                 if (choiceSound)
-                AudioManager.Instance.PlaySound(choiceSound, 0.9f);
+                AudioManager.Instance.PlaySound(choiceSound, 0.7f);
             });
         }
 
@@ -229,7 +229,7 @@ public class D_UI : MonoBehaviour
                 manager.ProceedToNarrative(choice.TargetNodeGUID);
 
                 if(choiceSound)
-                AudioManager.Instance.PlaySound(choiceSound, 0.9f);
+                AudioManager.Instance.PlaySound(choiceSound, 0.7f);
             });
         }
 
@@ -370,4 +370,29 @@ public class D_UI : MonoBehaviour
     {
         //memoryIcon.SetActive(true);
     }
+    public void FadeAllText()
+    {
+        if (textRoutine != null) StopCoroutine(textRoutine);
+        if (floatingRoutine != null) StopCoroutine(floatingRoutine);
+
+        StartCoroutine(FadeAllTextCoroutine());
+    }
+
+    private IEnumerator FadeAllTextCoroutine()
+    {
+        if (dialogueCG != null && dialogueCG.alpha > 0f)
+        {
+            yield return FadeOut(dialogueCG);
+            dialogueText.text = "";
+        }
+        if (boxIsVisible && floatingCG != null && floatingCG.alpha > 0f)
+        {
+            yield return FadeOut(floatingCG);
+            currentBox.SetActive(false);
+            currentText.text = "";
+            boxIsVisible = false;
+            currentTarget = null;
+        }
+    }
+
 }

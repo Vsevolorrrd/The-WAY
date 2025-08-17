@@ -17,54 +17,6 @@ MonoBehaviour:
     BaseNodeGUID: 173169a6-231d-47f0-a5a7-32c584d2d428
     TargetNodeGUID: 37742cb8-6a99-45ad-86b8-0f4d868bb4bd
     DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 37742cb8-6a99-45ad-86b8-0f4d868bb4bd
-    TargetNodeGUID: a00616f4-d4e9-4831-82ad-c9944338860d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: a00616f4-d4e9-4831-82ad-c9944338860d
-    TargetNodeGUID: f2b21b9e-b07f-4370-ace0-4822eb660890
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: f2b21b9e-b07f-4370-ace0-4822eb660890
-    TargetNodeGUID: b3f74f2a-a888-4d1f-9e80-38e6b873ecbb
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: b3f74f2a-a888-4d1f-9e80-38e6b873ecbb
-    TargetNodeGUID: a8e13730-fd0d-4673-8404-34e3d9ac07e0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 6ad2d7ad-f864-43b1-8109-b0d9f2250450
-    TargetNodeGUID: be0b0f7a-f469-487a-80b4-0a5916ccda89
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: be0b0f7a-f469-487a-80b4-0a5916ccda89
-    TargetNodeGUID: 7321a799-5daa-48ea-9360-83c0cb3c3667
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 7321a799-5daa-48ea-9360-83c0cb3c3667
-    TargetNodeGUID: b02b57b8-60ca-4f40-bde8-9ea275761f3b
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: b02b57b8-60ca-4f40-bde8-9ea275761f3b
-    TargetNodeGUID: e2b91d65-d711-4a6d-86a4-f63e50212b0f
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: e2b91d65-d711-4a6d-86a4-f63e50212b0f
-    TargetNodeGUID: beaf80ae-84a5-4ab4-b085-18ebd17280cb
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: beaf80ae-84a5-4ab4-b085-18ebd17280cb
-    TargetNodeGUID: 34b42680-ccc1-4b45-9e90-161a21be9ea0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 34b42680-ccc1-4b45-9e90-161a21be9ea0
-    TargetNodeGUID: c112511d-c7a6-4a60-9a16-72aed569148a
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c112511d-c7a6-4a60-9a16-72aed569148a
-    TargetNodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
-    DisplayText: Next
   - PortName: Option 1
     BaseNodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
     TargetNodeGUID: 1a6e1354-f890-4f8e-a2b2-bc41e0e88734
@@ -610,12 +562,60 @@ MonoBehaviour:
     TargetNodeGUID: c04cf85d-ea66-4ece-84cf-33abf8ed3146
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: c112511d-c7a6-4a60-9a16-72aed569148a
+    TargetNodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 34b42680-ccc1-4b45-9e90-161a21be9ea0
+    TargetNodeGUID: c112511d-c7a6-4a60-9a16-72aed569148a
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: beaf80ae-84a5-4ab4-b085-18ebd17280cb
+    TargetNodeGUID: 34b42680-ccc1-4b45-9e90-161a21be9ea0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: e2b91d65-d711-4a6d-86a4-f63e50212b0f
+    TargetNodeGUID: beaf80ae-84a5-4ab4-b085-18ebd17280cb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b02b57b8-60ca-4f40-bde8-9ea275761f3b
+    TargetNodeGUID: e2b91d65-d711-4a6d-86a4-f63e50212b0f
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 7321a799-5daa-48ea-9360-83c0cb3c3667
+    TargetNodeGUID: b02b57b8-60ca-4f40-bde8-9ea275761f3b
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: be0b0f7a-f469-487a-80b4-0a5916ccda89
+    TargetNodeGUID: 7321a799-5daa-48ea-9360-83c0cb3c3667
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 37742cb8-6a99-45ad-86b8-0f4d868bb4bd
+    TargetNodeGUID: a00616f4-d4e9-4831-82ad-c9944338860d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: a00616f4-d4e9-4831-82ad-c9944338860d
+    TargetNodeGUID: f2b21b9e-b07f-4370-ace0-4822eb660890
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: f2b21b9e-b07f-4370-ace0-4822eb660890
+    TargetNodeGUID: b3f74f2a-a888-4d1f-9e80-38e6b873ecbb
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b3f74f2a-a888-4d1f-9e80-38e6b873ecbb
+    TargetNodeGUID: a8e13730-fd0d-4673-8404-34e3d9ac07e0
+    DisplayText: Next
+  - PortName: Next
     BaseNodeGUID: a8e13730-fd0d-4673-8404-34e3d9ac07e0
     TargetNodeGUID: 1c471910-9189-4d60-8c32-59418e6937d0
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 1c471910-9189-4d60-8c32-59418e6937d0
     TargetNodeGUID: 6ad2d7ad-f864-43b1-8109-b0d9f2250450
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 6ad2d7ad-f864-43b1-8109-b0d9f2250450
+    TargetNodeGUID: be0b0f7a-f469-487a-80b4-0a5916ccda89
     DisplayText: Next
   DialogueNodeData:
   - NodeGUID: 6dbaa1a2-99af-45d8-b095-a1113a1feab8
@@ -673,39 +673,6 @@ MonoBehaviour:
     CharacterAction: 0
     TargetAttribute: 0
     AttributeValue: 1
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
-  - NodeGUID: 5d2b35a3-b7c6-4a66-b93b-9b731ae1e1de
-    DialogueText: '[She nods, grimly.]'
-    Position: {x: 4220, y: -36}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
     RandomConditionValue: 0
     EventType: 0
     EventName: 
@@ -2824,7 +2791,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 175086dd-9eeb-41d3-ae1f-50cf640f8164
-    DialogueText: "Selene glances at you \u2014 surprised, maybe even impressed."
+    DialogueText: "Doc glances at you \u2014 surprised, maybe even impressed."
     Position: {x: 17732, y: 11.200001}
     NodeType: 0
     Actor: narrator_id
@@ -3425,7 +3392,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 3f4494c9-c6e0-400b-ba02-88edede6dc85
-    DialogueText: "He walks ahead.\nBehind you, Selene sighs. Gravehound swears under
+    DialogueText: "He walks ahead.\nBehind you, Doc sighs. Gravehound swears under
       his breath. The wind outside howls louder now.\r"
     Position: {x: 22065.6, y: 962.4}
     NodeType: 0
@@ -3869,7 +3836,7 @@ MonoBehaviour:
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
   - NodeGUID: 7929cf41-6d15-470f-a3e7-c2fb96e9157d
-    DialogueText: Selene twists the blade ever so slightly.
+    DialogueText: Doc twists the blade ever so slightly.
     Position: {x: 5337.6, y: 200}
     NodeType: 0
     Actor: narrator_id
@@ -4273,7 +4240,7 @@ MonoBehaviour:
   - NodeGUID: 4990215f-06b1-4f6f-8802-0b15d3dbbe1b
     DialogueText: 'Yeah.
 
-      He looks off.]'
+      He looks off.'
     Position: {x: 17601.6, y: 396}
     NodeType: 0
     Actor: Grave
@@ -5086,6 +5053,39 @@ MonoBehaviour:
   - NodeGUID: 6ad2d7ad-f864-43b1-8109-b0d9f2250450
     DialogueText: Doc stops. Straightens slowly. Eyes flick toward you.
     Position: {x: 1864.8, y: 196}
+    NodeType: 0
+    Actor: narrator_id
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 5d2b35a3-b7c6-4a66-b93b-9b731ae1e1de
+    DialogueText: She nods, grimly.
+    Position: {x: 4220, y: -36}
     NodeType: 0
     Actor: narrator_id
     DisplayText: 

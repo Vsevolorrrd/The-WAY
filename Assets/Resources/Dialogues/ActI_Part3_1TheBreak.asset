@@ -126,62 +126,6 @@ MonoBehaviour:
     TargetNodeGUID: d6d64095-84e4-4650-b1cd-409ea5274990
     DisplayText: '[Just keep moving.]'
   - PortName: Option 1
-    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
-    TargetNodeGUID: b183dbc3-cd8d-4233-bd13-0bd15512ac87
-    DisplayText: What happened here?
-  - PortName: Option 2
-    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
-    TargetNodeGUID: 21f10b48-4961-411a-8103-3c1e350cc0dd
-    DisplayText: How do people survive in this place?
-  - PortName: Option 3
-    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
-    TargetNodeGUID: d6d64095-84e4-4650-b1cd-409ea5274990
-    DisplayText: '[Just keep moving.]'
-  - PortName: Next
-    BaseNodeGUID: b183dbc3-cd8d-4233-bd13-0bd15512ac87
-    TargetNodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
-    TargetNodeGUID: 4c524f05-5a56-4685-b78b-1b69007e74e2
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 4c524f05-5a56-4685-b78b-1b69007e74e2
-    TargetNodeGUID: 04f93c3b-5d15-471a-87f5-f36385f631b2
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 04f93c3b-5d15-471a-87f5-f36385f631b2
-    TargetNodeGUID: 05347a08-cf4e-4f05-b8d9-3b1d1d62b217
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c4954483-f559-456a-a313-48dded2e1625
-    TargetNodeGUID: 8e47509f-c574-47a0-bf51-b511d23d386d
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 8e47509f-c574-47a0-bf51-b511d23d386d
-    TargetNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 21f10b48-4961-411a-8103-3c1e350cc0dd
-    TargetNodeGUID: 55937e8d-2122-4260-ac99-c8cf5c13e3ea
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 55937e8d-2122-4260-ac99-c8cf5c13e3ea
-    TargetNodeGUID: 0d510cfa-5e3f-4bc1-8ff4-86a3610f7c62
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: 0d510cfa-5e3f-4bc1-8ff4-86a3610f7c62
-    TargetNodeGUID: cf51c2c5-12a2-474c-b6e7-2fd1b973657e
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: cf51c2c5-12a2-474c-b6e7-2fd1b973657e
-    TargetNodeGUID: c276a103-a75f-432b-8615-55c5fb28df01
-    DisplayText: Next
-  - PortName: Next
-    BaseNodeGUID: c276a103-a75f-432b-8615-55c5fb28df01
-    TargetNodeGUID: 05347a08-cf4e-4f05-b8d9-3b1d1d62b217
-    DisplayText: Next
-  - PortName: Option 1
     BaseNodeGUID: 05347a08-cf4e-4f05-b8d9-3b1d1d62b217
     TargetNodeGUID: 2bfc653d-fe34-4913-b6be-8e3faaab479e
     DisplayText: Anomalies? What are they?
@@ -270,6 +214,46 @@ MonoBehaviour:
     TargetNodeGUID: 7dd16a94-17c4-4805-9829-7e8cbb91ef6a
     DisplayText: Next
   - PortName: Next
+    BaseNodeGUID: 21f10b48-4961-411a-8103-3c1e350cc0dd
+    TargetNodeGUID: 55937e8d-2122-4260-ac99-c8cf5c13e3ea
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 55937e8d-2122-4260-ac99-c8cf5c13e3ea
+    TargetNodeGUID: 0d510cfa-5e3f-4bc1-8ff4-86a3610f7c62
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: cf51c2c5-12a2-474c-b6e7-2fd1b973657e
+    TargetNodeGUID: c276a103-a75f-432b-8615-55c5fb28df01
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c276a103-a75f-432b-8615-55c5fb28df01
+    TargetNodeGUID: 05347a08-cf4e-4f05-b8d9-3b1d1d62b217
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 0d510cfa-5e3f-4bc1-8ff4-86a3610f7c62
+    TargetNodeGUID: cf51c2c5-12a2-474c-b6e7-2fd1b973657e
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: c4954483-f559-456a-a313-48dded2e1625
+    TargetNodeGUID: 8e47509f-c574-47a0-bf51-b511d23d386d
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 8e47509f-c574-47a0-bf51-b511d23d386d
+    TargetNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
+    DisplayText: Next
+  - PortName: Option 1
+    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
+    TargetNodeGUID: b183dbc3-cd8d-4233-bd13-0bd15512ac87
+    DisplayText: What happened here?
+  - PortName: Option 2
+    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
+    TargetNodeGUID: 21f10b48-4961-411a-8103-3c1e350cc0dd
+    DisplayText: How do people survive in this place?
+  - PortName: Option 3
+    BaseNodeGUID: 36ab102c-69ee-4efb-a72f-aa40d69d3a56
+    TargetNodeGUID: d6d64095-84e4-4650-b1cd-409ea5274990
+    DisplayText: '[Just keep moving.]'
+  - PortName: Next
     BaseNodeGUID: d6d64095-84e4-4650-b1cd-409ea5274990
     TargetNodeGUID: 792f100d-b28a-450f-93ee-ba4ee5a0dc72
     DisplayText: Next
@@ -279,6 +263,22 @@ MonoBehaviour:
     DisplayText: Next
   - PortName: Next
     BaseNodeGUID: 9bdc4659-326b-41fa-a5a7-7444f0e2c221
+    TargetNodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
+    TargetNodeGUID: 4c524f05-5a56-4685-b78b-1b69007e74e2
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 4c524f05-5a56-4685-b78b-1b69007e74e2
+    TargetNodeGUID: 04f93c3b-5d15-471a-87f5-f36385f631b2
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: 04f93c3b-5d15-471a-87f5-f36385f631b2
+    TargetNodeGUID: 05347a08-cf4e-4f05-b8d9-3b1d1d62b217
+    DisplayText: Next
+  - PortName: Next
+    BaseNodeGUID: b183dbc3-cd8d-4233-bd13-0bd15512ac87
     TargetNodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
     DisplayText: Next
   DialogueNodeData:
@@ -1929,39 +1929,6 @@ MonoBehaviour:
     CameraActionDuration: 1
     CameraActionPosition: {x: 0, y: 0, z: 0}
     EndAction: 0
-  - NodeGUID: 9bdc4659-326b-41fa-a5a7-7444f0e2c221
-    DialogueText: You overhear them speaking in hushed tones
-    Position: {x: 6288.8, y: 653.6}
-    NodeType: 0
-    Actor: narrator_id
-    DisplayText: 
-    CheckThisNode: 0
-    FailTime: 5
-    StringConditionKey: 
-    ConditionType: 0
-    BoolConditionKey: 
-    BoolConditionExpectedValue: 0
-    IntConditionKey: 
-    IntConditionComparison: 0
-    IntActionType: 0
-    IntConditionValue: 0
-    CharacterAttribute: 0
-    CharacterTarget: 0
-    CharacterComparisonValue: 0
-    CharacterAction: 0
-    TargetAttribute: 0
-    AttributeValue: 0
-    RandomConditionValue: 0
-    EventType: 0
-    EventName: 
-    EventValue: 0
-    AnimationName: 
-    LoopAnimation: 1
-    MoveTo: {x: 0, y: 0, z: 0}
-    CameraActionType: 0
-    CameraActionDuration: 1
-    CameraActionPosition: {x: 0, y: 0, z: 0}
-    EndAction: 0
   - NodeGUID: 8b83956b-c250-4776-ab93-5498aa8c7be0
     DialogueText: '(grinning, voice warm despite the cold)
 
@@ -2070,6 +2037,39 @@ MonoBehaviour:
     Position: {x: 6031.2, y: 320}
     NodeType: 0
     Actor: Doc
+    DisplayText: 
+    CheckThisNode: 0
+    FailTime: 5
+    StringConditionKey: 
+    ConditionType: 0
+    BoolConditionKey: 
+    BoolConditionExpectedValue: 0
+    IntConditionKey: 
+    IntConditionComparison: 0
+    IntActionType: 0
+    IntConditionValue: 0
+    CharacterAttribute: 0
+    CharacterTarget: 0
+    CharacterComparisonValue: 0
+    CharacterAction: 0
+    TargetAttribute: 0
+    AttributeValue: 0
+    RandomConditionValue: 0
+    EventType: 0
+    EventName: 
+    EventValue: 0
+    AnimationName: 
+    LoopAnimation: 1
+    MoveTo: {x: 0, y: 0, z: 0}
+    CameraActionType: 0
+    CameraActionDuration: 1
+    CameraActionPosition: {x: 0, y: 0, z: 0}
+    EndAction: 0
+  - NodeGUID: 9bdc4659-326b-41fa-a5a7-7444f0e2c221
+    DialogueText: You overhear them speaking in hushed tones.
+    Position: {x: 6288.8, y: 653.6}
+    NodeType: 0
+    Actor: narrator_id
     DisplayText: 
     CheckThisNode: 0
     FailTime: 5

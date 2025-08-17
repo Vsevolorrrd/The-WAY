@@ -4,6 +4,9 @@ using UnityEngine;
 public class VariablesManager : Singleton<VariablesManager>
 {
     private Dictionary<string, int> integerValues = new();
+    public List<string> memories = new List<string>();
+    public List<string> stringConditions = new List<string>(24);
+    public Dictionary<string, bool> boolConditions = new Dictionary<string, bool>(10);
 
     public void AddValue(string key, int value)
     {

@@ -132,6 +132,7 @@ namespace Subtegral.DialogueSystem.Runtime
 
             if (nodeData.EventType == DialogueEventType.Delay) // for delay
             {
+                UIManager.FadeAllText();
                 StartCoroutine(Delay(nextLink.TargetNodeGUID, nodeData.EventValue));
                 return;
             }
